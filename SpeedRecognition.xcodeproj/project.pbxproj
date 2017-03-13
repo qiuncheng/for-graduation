@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E462A1E76BD440051F0EA /* AppDelegate.swift */; };
+		F23E462D1E76BD440051F0EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E462C1E76BD440051F0EA /* ViewController.swift */; };
+		F23E46301E76BD440051F0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23E462E1E76BD440051F0EA /* Main.storyboard */; };
+		F23E46321E76BD440051F0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23E46311E76BD440051F0EA /* Assets.xcassets */; };
+		F23E46351E76BD440051F0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */; };
+		F23E46401E76BD440051F0EA /* SpeedRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E463F1E76BD440051F0EA /* SpeedRecognitionTests.swift */; };
+		F23E464B1E76BD440051F0EA /* SpeedRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E464A1E76BD440051F0EA /* SpeedRecognitionUITests.swift */; };
+		F23E46591E76BDE00051F0EA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E46581E76BDE00051F0EA /* Config.swift */; };
+		F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465B1E76BEA40051F0EA /* iflyMSC.framework */; };
+		F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465D1E76BECD0051F0EA /* libz.tbd */; };
+		F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465F1E76BED50051F0EA /* CoreLocation.framework */; };
+		F23E46621E76BEDC0051F0EA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46611E76BEDC0051F0EA /* AVFoundation.framework */; };
+		F23E46641E76BEE80051F0EA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46631E76BEE80051F0EA /* AddressBook.framework */; };
+		F23E46661E76BEED0051F0EA /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46651E76BEED0051F0EA /* Contacts.framework */; };
+		F23E466A1E76BEFE0051F0EA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46691E76BEFE0051F0EA /* AudioToolbox.framework */; };
+		F23E466C1E76BF060051F0EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E466B1E76BF060051F0EA /* SystemConfiguration.framework */; };
+		F23E466E1E76BF0D0051F0EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E466D1E76BF0D0051F0EA /* QuartzCore.framework */; };
+		F23E46701E76BF170051F0EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E466F1E76BF170051F0EA /* UIKit.framework */; };
+		F23E46721E76BF1E0051F0EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46711E76BF1E0051F0EA /* Foundation.framework */; };
+		F23E46741E76BF260051F0EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46731E76BF260051F0EA /* CoreGraphics.framework */; };
+		F23E467C1E76C1670051F0EA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E467B1E76C1670051F0EA /* libc++.tbd */; };
+		F23E467E1E76C20B0051F0EA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F23E463C1E76BD440051F0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F23E461F1E76BD430051F0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23E46261E76BD440051F0EA;
+			remoteInfo = SpeedRecognition;
+		};
+		F23E46471E76BD440051F0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F23E461F1E76BD430051F0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23E46261E76BD440051F0EA;
+			remoteInfo = SpeedRecognition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F23E46271E76BD440051F0EA /* SpeedRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23E462A1E76BD440051F0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F23E462C1E76BD440051F0EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F23E462F1E76BD440051F0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F23E46311E76BD440051F0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F23E46341E76BD440051F0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F23E46361E76BD440051F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23E463B1E76BD440051F0EA /* SpeedRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23E463F1E76BD440051F0EA /* SpeedRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedRecognitionTests.swift; sourceTree = "<group>"; };
+		F23E46411E76BD440051F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23E46461E76BD440051F0EA /* SpeedRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23E464A1E76BD440051F0EA /* SpeedRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedRecognitionUITests.swift; sourceTree = "<group>"; };
+		F23E464C1E76BD440051F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23E46581E76BDE00051F0EA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F23E465B1E76BEA40051F0EA /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		F23E465D1E76BECD0051F0EA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F23E465F1E76BED50051F0EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F23E46611E76BEDC0051F0EA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F23E46631E76BEE80051F0EA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		F23E46651E76BEED0051F0EA /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		F23E46671E76BEF70051F0EA /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		F23E46691E76BEFE0051F0EA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F23E466B1E76BF060051F0EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F23E466D1E76BF0D0051F0EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F23E466F1E76BF170051F0EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F23E46711E76BF1E0051F0EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F23E46731E76BF260051F0EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F23E46771E76C0220051F0EA /* SpeedRecognition-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
+		F23E467B1E76C1670051F0EA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F23E46241E76BD440051F0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23E467E1E76C20B0051F0EA /* CoreTelephony.framework in Frameworks */,
+				F23E467C1E76C1670051F0EA /* libc++.tbd in Frameworks */,
+				F23E46741E76BF260051F0EA /* CoreGraphics.framework in Frameworks */,
+				F23E46721E76BF1E0051F0EA /* Foundation.framework in Frameworks */,
+				F23E46701E76BF170051F0EA /* UIKit.framework in Frameworks */,
+				F23E466E1E76BF0D0051F0EA /* QuartzCore.framework in Frameworks */,
+				F23E466C1E76BF060051F0EA /* SystemConfiguration.framework in Frameworks */,
+				F23E466A1E76BEFE0051F0EA /* AudioToolbox.framework in Frameworks */,
+				F23E46661E76BEED0051F0EA /* Contacts.framework in Frameworks */,
+				F23E46641E76BEE80051F0EA /* AddressBook.framework in Frameworks */,
+				F23E46621E76BEDC0051F0EA /* AVFoundation.framework in Frameworks */,
+				F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */,
+				F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */,
+				F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23E46381E76BD440051F0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23E46431E76BD440051F0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F23E461E1E76BD430051F0EA = {
+			isa = PBXGroup;
+			children = (
+				F23E46291E76BD440051F0EA /* SpeedRecognition */,
+				F23E463E1E76BD440051F0EA /* SpeedRecognitionTests */,
+				F23E46491E76BD440051F0EA /* SpeedRecognitionUITests */,
+				F23E46281E76BD440051F0EA /* Products */,
+				F23E465A1E76BE9B0051F0EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F23E46281E76BD440051F0EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F23E46271E76BD440051F0EA /* SpeedRecognition.app */,
+				F23E463B1E76BD440051F0EA /* SpeedRecognitionTests.xctest */,
+				F23E46461E76BD440051F0EA /* SpeedRecognitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F23E46291E76BD440051F0EA /* SpeedRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				F23E462A1E76BD440051F0EA /* AppDelegate.swift */,
+				F23E462C1E76BD440051F0EA /* ViewController.swift */,
+				F23E46581E76BDE00051F0EA /* Config.swift */,
+				F23E462E1E76BD440051F0EA /* Main.storyboard */,
+				F23E46311E76BD440051F0EA /* Assets.xcassets */,
+				F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */,
+				F23E46361E76BD440051F0EA /* Info.plist */,
+				F23E46771E76C0220051F0EA /* SpeedRecognition-Bridging-Header.h */,
+			);
+			path = SpeedRecognition;
+			sourceTree = "<group>";
+		};
+		F23E463E1E76BD440051F0EA /* SpeedRecognitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				F23E463F1E76BD440051F0EA /* SpeedRecognitionTests.swift */,
+				F23E46411E76BD440051F0EA /* Info.plist */,
+			);
+			path = SpeedRecognitionTests;
+			sourceTree = "<group>";
+		};
+		F23E46491E76BD440051F0EA /* SpeedRecognitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F23E464A1E76BD440051F0EA /* SpeedRecognitionUITests.swift */,
+				F23E464C1E76BD440051F0EA /* Info.plist */,
+			);
+			path = SpeedRecognitionUITests;
+			sourceTree = "<group>";
+		};
+		F23E465A1E76BE9B0051F0EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */,
+				F23E467B1E76C1670051F0EA /* libc++.tbd */,
+				F23E46731E76BF260051F0EA /* CoreGraphics.framework */,
+				F23E46711E76BF1E0051F0EA /* Foundation.framework */,
+				F23E466F1E76BF170051F0EA /* UIKit.framework */,
+				F23E466D1E76BF0D0051F0EA /* QuartzCore.framework */,
+				F23E466B1E76BF060051F0EA /* SystemConfiguration.framework */,
+				F23E46691E76BEFE0051F0EA /* AudioToolbox.framework */,
+				F23E46671E76BEF70051F0EA /* AudioUnit.framework */,
+				F23E46651E76BEED0051F0EA /* Contacts.framework */,
+				F23E46631E76BEE80051F0EA /* AddressBook.framework */,
+				F23E46611E76BEDC0051F0EA /* AVFoundation.framework */,
+				F23E465F1E76BED50051F0EA /* CoreLocation.framework */,
+				F23E465D1E76BECD0051F0EA /* libz.tbd */,
+				F23E465B1E76BEA40051F0EA /* iflyMSC.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F23E46261E76BD440051F0EA /* SpeedRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23E464F1E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognition" */;
+			buildPhases = (
+				F23E46231E76BD440051F0EA /* Sources */,
+				F23E46241E76BD440051F0EA /* Frameworks */,
+				F23E46251E76BD440051F0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedRecognition;
+			productName = SpeedRecognition;
+			productReference = F23E46271E76BD440051F0EA /* SpeedRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F23E463A1E76BD440051F0EA /* SpeedRecognitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23E46521E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognitionTests" */;
+			buildPhases = (
+				F23E46371E76BD440051F0EA /* Sources */,
+				F23E46381E76BD440051F0EA /* Frameworks */,
+				F23E46391E76BD440051F0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F23E463D1E76BD440051F0EA /* PBXTargetDependency */,
+			);
+			name = SpeedRecognitionTests;
+			productName = SpeedRecognitionTests;
+			productReference = F23E463B1E76BD440051F0EA /* SpeedRecognitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F23E46451E76BD440051F0EA /* SpeedRecognitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23E46551E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognitionUITests" */;
+			buildPhases = (
+				F23E46421E76BD440051F0EA /* Sources */,
+				F23E46431E76BD440051F0EA /* Frameworks */,
+				F23E46441E76BD440051F0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F23E46481E76BD440051F0EA /* PBXTargetDependency */,
+			);
+			name = SpeedRecognitionUITests;
+			productName = SpeedRecognitionUITests;
+			productReference = F23E46461E76BD440051F0EA /* SpeedRecognitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F23E461F1E76BD430051F0EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Qiun Cheng";
+				TargetAttributes = {
+					F23E46261E76BD440051F0EA = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					F23E463A1E76BD440051F0EA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F23E46261E76BD440051F0EA;
+					};
+					F23E46451E76BD440051F0EA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F23E46261E76BD440051F0EA;
+					};
+				};
+			};
+			buildConfigurationList = F23E46221E76BD430051F0EA /* Build configuration list for PBXProject "SpeedRecognition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F23E461E1E76BD430051F0EA;
+			productRefGroup = F23E46281E76BD440051F0EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F23E46261E76BD440051F0EA /* SpeedRecognition */,
+				F23E463A1E76BD440051F0EA /* SpeedRecognitionTests */,
+				F23E46451E76BD440051F0EA /* SpeedRecognitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F23E46251E76BD440051F0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23E46351E76BD440051F0EA /* LaunchScreen.storyboard in Resources */,
+				F23E46321E76BD440051F0EA /* Assets.xcassets in Resources */,
+				F23E46301E76BD440051F0EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23E46391E76BD440051F0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23E46441E76BD440051F0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F23E46231E76BD440051F0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23E462D1E76BD440051F0EA /* ViewController.swift in Sources */,
+				F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */,
+				F23E46591E76BDE00051F0EA /* Config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23E46371E76BD440051F0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23E46401E76BD440051F0EA /* SpeedRecognitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23E46421E76BD440051F0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23E464B1E76BD440051F0EA /* SpeedRecognitionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F23E463D1E76BD440051F0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F23E46261E76BD440051F0EA /* SpeedRecognition */;
+			targetProxy = F23E463C1E76BD440051F0EA /* PBXContainerItemProxy */;
+		};
+		F23E46481E76BD440051F0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F23E46261E76BD440051F0EA /* SpeedRecognition */;
+			targetProxy = F23E46471E76BD440051F0EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F23E462E1E76BD440051F0EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23E462F1E76BD440051F0EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23E46341E76BD440051F0EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F23E464D1E76BD440051F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F23E464E1E76BD440051F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F23E46501E76BD440051F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SpeedRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeedRecognition/SpeedRecognition-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F23E46511E76BD440051F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = SpeedRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeedRecognition/SpeedRecognition-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F23E46531E76BD440051F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpeedRecognitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedRecognition.app/SpeedRecognition";
+			};
+			name = Debug;
+		};
+		F23E46541E76BD440051F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpeedRecognitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedRecognition.app/SpeedRecognition";
+			};
+			name = Release;
+		};
+		F23E46561E76BD440051F0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SpeedRecognitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SpeedRecognition;
+			};
+			name = Debug;
+		};
+		F23E46571E76BD440051F0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SpeedRecognitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SpeedRecognition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F23E46221E76BD430051F0EA /* Build configuration list for PBXProject "SpeedRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23E464D1E76BD440051F0EA /* Debug */,
+				F23E464E1E76BD440051F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23E464F1E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23E46501E76BD440051F0EA /* Debug */,
+				F23E46511E76BD440051F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23E46521E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23E46531E76BD440051F0EA /* Debug */,
+				F23E46541E76BD440051F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23E46551E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23E46561E76BD440051F0EA /* Debug */,
+				F23E46571E76BD440051F0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F23E461F1E76BD430051F0EA /* Project object */;
+}
