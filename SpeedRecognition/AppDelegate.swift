@@ -13,9 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow()
+        window?.frame = UIScreen.main.bounds
+        let nav = MainViewController()
+        window?.rootViewController = nav
+        
+        window?.makeKeyAndVisible()
+        
         let initString = "appid=\(Config.appID)"
         IFlySpeechUtility.createUtility(initString)
         

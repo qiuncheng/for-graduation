@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E462A1E76BD440051F0EA /* AppDelegate.swift */; };
-		F23E462D1E76BD440051F0EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E462C1E76BD440051F0EA /* ViewController.swift */; };
-		F23E46301E76BD440051F0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23E462E1E76BD440051F0EA /* Main.storyboard */; };
 		F23E46321E76BD440051F0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23E46311E76BD440051F0EA /* Assets.xcassets */; };
 		F23E46351E76BD440051F0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */; };
 		F23E46401E76BD440051F0EA /* SpeedRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E463F1E76BD440051F0EA /* SpeedRecognitionTests.swift */; };
 		F23E464B1E76BD440051F0EA /* SpeedRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E464A1E76BD440051F0EA /* SpeedRecognitionUITests.swift */; };
-		F23E46591E76BDE00051F0EA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E46581E76BDE00051F0EA /* Config.swift */; };
 		F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465B1E76BEA40051F0EA /* iflyMSC.framework */; };
 		F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465D1E76BECD0051F0EA /* libz.tbd */; };
 		F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465F1E76BED50051F0EA /* CoreLocation.framework */; };
@@ -29,6 +26,15 @@
 		F23E46741E76BF260051F0EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46731E76BF260051F0EA /* CoreGraphics.framework */; };
 		F23E467C1E76C1670051F0EA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E467B1E76C1670051F0EA /* libc++.tbd */; };
 		F23E467E1E76C20B0051F0EA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */; };
+		F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */; };
+		F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; };
+		F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; };
+		F2DEA0FC1E7AC31C00B4104D /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0FB1E7AC31C00B4104D /* Then.framework */; };
+		F2DEA0FE1E7AC3A200B4104D /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2DEA0FF1E7AC3BB00B4104D /* Then.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DEA0FB1E7AC31C00B4104D /* Then.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2DEA1001E7AC3BB00B4104D /* MBProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2DEA10A1E7AC46100B4104D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DEA1031E7AC46100B4104D /* Config.swift */; };
+		F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DEA10C1E7AC48600B4104D /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +54,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F2DEA0FD1E7AC39900B4104D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2DEA0FF1E7AC3BB00B4104D /* Then.framework in CopyFiles */,
+				F2DEA1001E7AC3BB00B4104D /* MBProgressHUD.framework in CopyFiles */,
+				F2DEA0FE1E7AC3A200B4104D /* SnapKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F23E46271E76BD440051F0EA /* SpeedRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23E462A1E76BD440051F0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F23E462C1E76BD440051F0EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F23E462F1E76BD440051F0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F23E46311E76BD440051F0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23E46341E76BD440051F0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F23E46361E76BD440051F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +81,6 @@
 		F23E46461E76BD440051F0EA /* SpeedRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23E464A1E76BD440051F0EA /* SpeedRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedRecognitionUITests.swift; sourceTree = "<group>"; };
 		F23E464C1E76BD440051F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F23E46581E76BDE00051F0EA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F23E465B1E76BEA40051F0EA /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		F23E465D1E76BECD0051F0EA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F23E465F1E76BED50051F0EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -79,6 +97,12 @@
 		F23E46771E76C0220051F0EA /* SpeedRecognition-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
 		F23E467B1E76C1670051F0EA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
+		F2DEA0F91E7AC31600B4104D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
+		F2DEA0FB1E7AC31C00B4104D /* Then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Then.framework; sourceTree = "<group>"; };
+		F2DEA1031E7AC46100B4104D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F2DEA10C1E7AC48600B4104D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,13 +117,16 @@
 				F23E46701E76BF170051F0EA /* UIKit.framework in Frameworks */,
 				F23E466E1E76BF0D0051F0EA /* QuartzCore.framework in Frameworks */,
 				F23E466C1E76BF060051F0EA /* SystemConfiguration.framework in Frameworks */,
+				F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */,
 				F23E466A1E76BEFE0051F0EA /* AudioToolbox.framework in Frameworks */,
+				F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */,
 				F23E46661E76BEED0051F0EA /* Contacts.framework in Frameworks */,
 				F23E46641E76BEE80051F0EA /* AddressBook.framework in Frameworks */,
 				F23E46621E76BEDC0051F0EA /* AVFoundation.framework in Frameworks */,
 				F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */,
 				F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */,
 				F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */,
+				F2DEA0FC1E7AC31C00B4104D /* Then.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,14 +171,13 @@
 		F23E46291E76BD440051F0EA /* SpeedRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				F23E462A1E76BD440051F0EA /* AppDelegate.swift */,
-				F23E462C1E76BD440051F0EA /* ViewController.swift */,
-				F23E46581E76BDE00051F0EA /* Config.swift */,
-				F23E462E1E76BD440051F0EA /* Main.storyboard */,
-				F23E46311E76BD440051F0EA /* Assets.xcassets */,
-				F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */,
-				F23E46361E76BD440051F0EA /* Info.plist */,
-				F23E46771E76C0220051F0EA /* SpeedRecognition-Bridging-Header.h */,
+				F2DEA1021E7AC46100B4104D /* Configs */,
+				F2DEA1041E7AC46100B4104D /* Controllers */,
+				F2DEA1051E7AC46100B4104D /* Helper */,
+				F2DEA1061E7AC46100B4104D /* Models */,
+				F2DEA1071E7AC46100B4104D /* ViewModels */,
+				F2DEA1091E7AC46100B4104D /* Views */,
+				F252DB2E1E7AC52B009D58E3 /* Support Files */,
 			);
 			path = SpeedRecognition;
 			sourceTree = "<group>";
@@ -177,6 +203,9 @@
 		F23E465A1E76BE9B0051F0EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2DEA0FB1E7AC31C00B4104D /* Then.framework */,
+				F2DEA0F91E7AC31600B4104D /* SnapKit.framework */,
+				F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */,
 				F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */,
 				F23E467B1E76C1670051F0EA /* libc++.tbd */,
 				F23E46731E76BF260051F0EA /* CoreGraphics.framework */,
@@ -196,6 +225,63 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		F252DB2E1E7AC52B009D58E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F23E462A1E76BD440051F0EA /* AppDelegate.swift */,
+				F23E46311E76BD440051F0EA /* Assets.xcassets */,
+				F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */,
+				F23E46361E76BD440051F0EA /* Info.plist */,
+				F23E46771E76C0220051F0EA /* SpeedRecognition-Bridging-Header.h */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		F2DEA1021E7AC46100B4104D /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				F2DEA1031E7AC46100B4104D /* Config.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		F2DEA1041E7AC46100B4104D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2DEA10C1E7AC48600B4104D /* MainViewController.swift */,
+				F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F2DEA1051E7AC46100B4104D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F2DEA1061E7AC46100B4104D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2DEA1071E7AC46100B4104D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F2DEA1091E7AC46100B4104D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +292,7 @@
 				F23E46231E76BD440051F0EA /* Sources */,
 				F23E46241E76BD440051F0EA /* Frameworks */,
 				F23E46251E76BD440051F0EA /* Resources */,
+				F2DEA0FD1E7AC39900B4104D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -306,7 +393,6 @@
 			files = (
 				F23E46351E76BD440051F0EA /* LaunchScreen.storyboard in Resources */,
 				F23E46321E76BD440051F0EA /* Assets.xcassets in Resources */,
-				F23E46301E76BD440051F0EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +417,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23E462D1E76BD440051F0EA /* ViewController.swift in Sources */,
+				F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */,
+				F2DEA10A1E7AC46100B4104D /* Config.swift in Sources */,
+				F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */,
 				F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */,
-				F23E46591E76BDE00051F0EA /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,14 +456,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F23E462E1E76BD440051F0EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F23E462F1E76BD440051F0EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -490,6 +569,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = SpeedRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,6 +590,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = SpeedRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";

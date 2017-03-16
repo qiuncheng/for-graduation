@@ -3,3 +3,5 @@
 //
 
 #import <iflyMSC/IFlyMSC.h>
+
+#import <MBProgressHUD/MBProgressHUD.h>
