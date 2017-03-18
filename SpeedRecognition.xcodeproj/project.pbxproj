@@ -26,6 +26,13 @@
 		F23E46741E76BF260051F0EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46731E76BF260051F0EA /* CoreGraphics.framework */; };
 		F23E467C1E76C1670051F0EA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E467B1E76C1670051F0EA /* libc++.tbd */; };
 		F23E467E1E76C20B0051F0EA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */; };
+		F24CD6DF1E7D1A2A0073889C /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */; };
+		F24CD6E01E7D1A340073889C /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */; };
+		F24CD6E11E7D1A340073889C /* DynamicColor.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */; };
+		F24CD6E61E7D1BD70073889C /* UITableView+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */; };
+		F24CD6E81E7D1C220073889C /* DispatchQueue+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */; };
+		F24CD6EB1E7D1C610073889C /* ViewIdentifierReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */; };
 		F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */; };
 		F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; };
 		F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; };
@@ -63,6 +70,7 @@
 			files = (
 				F2DEA0FF1E7AC3BB00B4104D /* Then.framework in CopyFiles */,
 				F2DEA1001E7AC3BB00B4104D /* MBProgressHUD.framework in CopyFiles */,
+				F24CD6E11E7D1A340073889C /* DynamicColor.framework in CopyFiles */,
 				F2DEA0FE1E7AC3A200B4104D /* SnapKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +105,11 @@
 		F23E46771E76C0220051F0EA /* SpeedRecognition-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
 		F23E467B1E76C1670051F0EA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DynamicColor.framework; sourceTree = "<group>"; };
+		F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedResultCell.swift; sourceTree = "<group>"; };
+		F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Speed.swift"; sourceTree = "<group>"; };
+		F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Speed.swift"; sourceTree = "<group>"; };
+		F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifierReuseable.swift; sourceTree = "<group>"; };
 		F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		F2DEA0F91E7AC31600B4104D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
@@ -115,6 +128,7 @@
 				F23E46741E76BF260051F0EA /* CoreGraphics.framework in Frameworks */,
 				F23E46721E76BF1E0051F0EA /* Foundation.framework in Frameworks */,
 				F23E46701E76BF170051F0EA /* UIKit.framework in Frameworks */,
+				F24CD6E01E7D1A340073889C /* DynamicColor.framework in Frameworks */,
 				F23E466E1E76BF0D0051F0EA /* QuartzCore.framework in Frameworks */,
 				F23E466C1E76BF060051F0EA /* SystemConfiguration.framework in Frameworks */,
 				F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */,
@@ -122,6 +136,7 @@
 				F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */,
 				F23E46661E76BEED0051F0EA /* Contacts.framework in Frameworks */,
 				F23E46641E76BEE80051F0EA /* AddressBook.framework in Frameworks */,
+				F24CD6DF1E7D1A2A0073889C /* DynamicColor.framework in Frameworks */,
 				F23E46621E76BEDC0051F0EA /* AVFoundation.framework in Frameworks */,
 				F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */,
 				F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */,
@@ -203,6 +218,7 @@
 		F23E465A1E76BE9B0051F0EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */,
 				F2DEA0FB1E7AC31C00B4104D /* Then.framework */,
 				F2DEA0F91E7AC31600B4104D /* SnapKit.framework */,
 				F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */,
@@ -223,6 +239,23 @@
 				F23E465B1E76BEA40051F0EA /* iflyMSC.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F24CD6E41E7D1BC80073889C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */,
+				F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		F24CD6E91E7D1C4E0073889C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		F252DB2E1E7AC52B009D58E3 /* Support Files */ = {
@@ -257,6 +290,8 @@
 		F2DEA1051E7AC46100B4104D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F24CD6E91E7D1C4E0073889C /* Protocols */,
+				F24CD6E41E7D1BC80073889C /* Extension */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -278,6 +313,7 @@
 		F2DEA1091E7AC46100B4104D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -418,8 +454,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */,
+				F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */,
 				F2DEA10A1E7AC46100B4104D /* Config.swift in Sources */,
+				F24CD6E61E7D1BD70073889C /* UITableView+Speed.swift in Sources */,
 				F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */,
+				F24CD6E81E7D1C220073889C /* DispatchQueue+Speed.swift in Sources */,
+				F24CD6EB1E7D1C610073889C /* ViewIdentifierReuseable.swift in Sources */,
 				F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,6 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
