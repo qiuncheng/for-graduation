@@ -33,6 +33,8 @@
 		F24CD6E61E7D1BD70073889C /* UITableView+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */; };
 		F24CD6E81E7D1C220073889C /* DispatchQueue+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */; };
 		F24CD6EB1E7D1C610073889C /* ViewIdentifierReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */; };
+		F24CD6ED1E7D2DAD0073889C /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */; };
+		F24CD6EF1E7D41DF0073889C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EE1E7D41DF0073889C /* Log.swift */; };
 		F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */; };
 		F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; };
 		F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; };
@@ -110,6 +112,8 @@
 		F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Speed.swift"; sourceTree = "<group>"; };
 		F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Speed.swift"; sourceTree = "<group>"; };
 		F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifierReuseable.swift; sourceTree = "<group>"; };
+		F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
+		F24CD6EE1E7D41DF0073889C /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		F2DEA0F91E7AC31600B4104D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
@@ -290,6 +294,7 @@
 		F2DEA1051E7AC46100B4104D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F24CD6EE1E7D41DF0073889C /* Log.swift */,
 				F24CD6E91E7D1C4E0073889C /* Protocols */,
 				F24CD6E41E7D1BC80073889C /* Extension */,
 			);
@@ -314,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */,
+				F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -453,7 +459,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24CD6ED1E7D2DAD0073889C /* ToolBarView.swift in Sources */,
 				F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */,
+				F24CD6EF1E7D41DF0073889C /* Log.swift in Sources */,
 				F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */,
 				F2DEA10A1E7AC46100B4104D /* Config.swift in Sources */,
 				F24CD6E61E7D1BD70073889C /* UITableView+Speed.swift in Sources */,
