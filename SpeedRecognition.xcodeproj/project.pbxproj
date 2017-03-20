@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F22FBD201E7FD6A60006C753 /* WaitingVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FBD1F1E7FD6A60006C753 /* WaitingVoiceCell.swift */; };
+		F22FBD221E7FD7490006C753 /* String+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FBD211E7FD7490006C753 /* String+Speed.swift */; };
+		F22FBD231E7FD7790006C753 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46611E76BEDC0051F0EA /* AVFoundation.framework */; };
 		F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E462A1E76BD440051F0EA /* AppDelegate.swift */; };
 		F23E46321E76BD440051F0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23E46311E76BD440051F0EA /* Assets.xcassets */; };
 		F23E46351E76BD440051F0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */; };
@@ -15,7 +18,6 @@
 		F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465B1E76BEA40051F0EA /* iflyMSC.framework */; };
 		F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465D1E76BECD0051F0EA /* libz.tbd */; };
 		F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465F1E76BED50051F0EA /* CoreLocation.framework */; };
-		F23E46621E76BEDC0051F0EA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46611E76BEDC0051F0EA /* AVFoundation.framework */; };
 		F23E46641E76BEE80051F0EA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46631E76BEE80051F0EA /* AddressBook.framework */; };
 		F23E46661E76BEED0051F0EA /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46651E76BEED0051F0EA /* Contacts.framework */; };
 		F23E466A1E76BEFE0051F0EA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46691E76BEFE0051F0EA /* AudioToolbox.framework */; };
@@ -80,6 +82,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F22FBD1F1E7FD6A60006C753 /* WaitingVoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingVoiceCell.swift; sourceTree = "<group>"; };
+		F22FBD211E7FD7490006C753 /* String+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Speed.swift"; sourceTree = "<group>"; };
 		F23E46271E76BD440051F0EA /* SpeedRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23E462A1E76BD440051F0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F23E46311E76BD440051F0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22FBD231E7FD7790006C753 /* AVFoundation.framework in Frameworks */,
 				F23E467E1E76C20B0051F0EA /* CoreTelephony.framework in Frameworks */,
 				F23E467C1E76C1670051F0EA /* libc++.tbd in Frameworks */,
 				F23E46741E76BF260051F0EA /* CoreGraphics.framework in Frameworks */,
@@ -141,7 +146,6 @@
 				F23E46661E76BEED0051F0EA /* Contacts.framework in Frameworks */,
 				F23E46641E76BEE80051F0EA /* AddressBook.framework in Frameworks */,
 				F24CD6DF1E7D1A2A0073889C /* DynamicColor.framework in Frameworks */,
-				F23E46621E76BEDC0051F0EA /* AVFoundation.framework in Frameworks */,
 				F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */,
 				F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */,
 				F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */,
@@ -250,6 +254,7 @@
 			children = (
 				F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */,
 				F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */,
+				F22FBD211E7FD7490006C753 /* String+Speed.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */,
+				F22FBD1F1E7FD6A60006C753 /* WaitingVoiceCell.swift */,
 				F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */,
 			);
 			path = Views;
@@ -459,10 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22FBD221E7FD7490006C753 /* String+Speed.swift in Sources */,
 				F24CD6ED1E7D2DAD0073889C /* ToolBarView.swift in Sources */,
 				F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */,
 				F24CD6EF1E7D41DF0073889C /* Log.swift in Sources */,
 				F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */,
+				F22FBD201E7FD6A60006C753 /* WaitingVoiceCell.swift in Sources */,
 				F2DEA10A1E7AC46100B4104D /* Config.swift in Sources */,
 				F24CD6E61E7D1BD70073889C /* UITableView+Speed.swift in Sources */,
 				F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */,
