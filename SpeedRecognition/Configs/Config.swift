@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias Completion<T> = (T) -> Void
+
 struct Config {
     static let appID = "58c4ccb9"
 }

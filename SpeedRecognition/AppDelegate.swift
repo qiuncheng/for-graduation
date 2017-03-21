@@ -23,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
+        IFlySetting.setLogFile(.LVL_ALL)
+        let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
+        if let cachePath = paths.first {
+            IFlySetting.setLogFilePath(cachePath)
+        }
         let initString = "appid=\(Config.appID)"
         IFlySpeechUtility.createUtility(initString)
         

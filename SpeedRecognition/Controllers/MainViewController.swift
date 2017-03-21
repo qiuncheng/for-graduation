@@ -16,6 +16,20 @@ class MainViewController: UIViewController {
   fileprivate weak var toolBarView: ToolBarView?
   fileprivate weak var imageView: UIImageView?
   
+  fileprivate var dataSources = [String]()
+  
+  fileprivate var pcmFilePath: String?
+  /// 识别对象
+  fileprivate var speechRecognizer: IFlySpeechRecognizer?
+  /// 数据上传对象 --> 主要是和上传联系人有关
+  fileprivate var uploader: IFlyDataUploader?
+  /// PCM 录音器，用于音频流识别的数据传入
+  fileprivate var pcmRecorder: IFlyPcmRecorder?
+  /// 是否是音频流识别
+  fileprivate var isStreamRec: Bool = false
+  /// 是否返回BeginOfSpeed回调
+  fileprivate var isBeginOfSpeed: Bool = false
+  
   fileprivate var isRecording: Bool = false
   
   override func viewDidLoad() {
@@ -54,9 +68,20 @@ class MainViewController: UIViewController {
     view.addSubview(toolBarView)
     
     makeContraints()
+    
+    uploader = IFlyDataUploader()
+    
+    let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
+    if let cachePath = paths.first {
+      pcmFilePath = cachePath + "/asr.pcm"
+    }
+    
   }
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    
+    /// 初始化语音识别对象
+    self.initRecognizer()
   }
   
   fileprivate func makeContraints() {
@@ -79,6 +104,36 @@ class MainViewController: UIViewController {
     })
   }
   
+  fileprivate func initRecognizer() {
+    Log("")
+    if speechRecognizer == nil {
+      speechRecognizer = IFlySpeechRecognizer.sharedInstance()
+      
+      speechRecognizer?.setParameter("", forKey: IFlySpeechConstant.params())
+      // 设置听写模式
+      speechRecognizer?.setParameter("iat", forKey: IFlySpeechConstant.ifly_DOMAIN())
+      speechRecognizer?.delegate = self
+    }
+    let config = SpeechConfig.default
+    speechRecognizer?.setParameter(config.speechTimeOut, forKey: IFlySpeechConstant.speech_TIMEOUT())
+    speechRecognizer?.setParameter(config.vadEos, forKey: IFlySpeechConstant.vad_EOS())
+    speechRecognizer?.setParameter(config.vadBos, forKey: IFlySpeechConstant.vad_BOS())
+    speechRecognizer?.setParameter("20000", forKey: IFlySpeechConstant.net_TIMEOUT())
+    
+    speechRecognizer?.setParameter(config.sampleRate, forKey: IFlySpeechConstant.sample_RATE())
+    speechRecognizer?.setParameter(config.language, forKey: IFlySpeechConstant.language())
+    speechRecognizer?.setParameter(config.accent, forKey: IFlySpeechConstant.accent())
+    
+    /// 初始化录音器
+    if pcmRecorder == nil {
+        pcmRecorder = IFlyPcmRecorder.sharedInstance()
+    }
+    pcmRecorder?.delegate = self
+    
+    pcmRecorder?.setSample(config.sampleRate)
+    pcmRecorder?.setSaveAudioPath(nil)
+  }
+
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
@@ -87,14 +142,37 @@ extension MainViewController: ToolBarViewDelegate {
   func toolBarView(_ toolBarView: ToolBarView, speedButtonSelected sender: UIButton) {
     Log("")
     isRecording = !isRecording
-    
     if isRecording { // 停止录音
       toolBarView.title = "停止录音"
+      
     }
     else { // 开始录音
       toolBarView.title = "开始录音"
     }
   }
+}
+
+extension MainViewController: IFlySpeechRecognizerDelegate {
+  func onResults(_ results: [Any]!, isLast: Bool) {
+    
+  }
+  func onError(_ errorCode: IFlySpeechError!) {
+    
+  }
+}
+
+extension MainViewController: IFlyPcmRecorderDelegate {
+    func onIFlyRecorderVolumeChanged(_ power: Int32) {
+        
+    }
+    
+    func onIFlyRecorderError(_ recoder: IFlyPcmRecorder!, theError error: Int32) {
+        
+    }
+    
+    func onIFlyRecorderBuffer(_ buffer: UnsafeRawPointer!, bufferSize size: Int32) {
+        
+    }
 }
 
 extension MainViewController: UITableViewDelegate {

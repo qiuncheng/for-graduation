@@ -32,12 +32,14 @@
 		F24CD6E01E7D1A340073889C /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */; };
 		F24CD6E11E7D1A340073889C /* DynamicColor.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */; };
-		F24CD6E61E7D1BD70073889C /* UITableView+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */; };
-		F24CD6E81E7D1C220073889C /* DispatchQueue+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */; };
+		F24CD6E61E7D1BD70073889C /* UITableView+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E51E7D1BD70073889C /* UITableView+Speech.swift */; };
+		F24CD6E81E7D1C220073889C /* DispatchQueue+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E71E7D1C220073889C /* DispatchQueue+Speech.swift */; };
 		F24CD6EB1E7D1C610073889C /* ViewIdentifierReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */; };
 		F24CD6ED1E7D2DAD0073889C /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */; };
 		F24CD6EF1E7D41DF0073889C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EE1E7D41DF0073889C /* Log.swift */; };
 		F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */; };
+		F2A6E52A1E8122040026188F /* SpeechConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E5291E8122040026188F /* SpeechConfig.swift */; };
+		F2A6E52C1E8127D20026188F /* UIAlertController+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E52B1E8127D20026188F /* UIAlertController+Speech.swift */; };
 		F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; };
 		F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; };
 		F2DEA0FC1E7AC31C00B4104D /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0FB1E7AC31C00B4104D /* Then.framework */; };
@@ -113,12 +115,14 @@
 		F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DynamicColor.framework; sourceTree = "<group>"; };
 		F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedResultCell.swift; sourceTree = "<group>"; };
-		F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Speed.swift"; sourceTree = "<group>"; };
-		F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Speed.swift"; sourceTree = "<group>"; };
+		F24CD6E51E7D1BD70073889C /* UITableView+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Speech.swift"; sourceTree = "<group>"; };
+		F24CD6E71E7D1C220073889C /* DispatchQueue+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Speech.swift"; sourceTree = "<group>"; };
 		F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifierReuseable.swift; sourceTree = "<group>"; };
 		F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
 		F24CD6EE1E7D41DF0073889C /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		F2A6E5291E8122040026188F /* SpeechConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechConfig.swift; sourceTree = "<group>"; };
+		F2A6E52B1E8127D20026188F /* UIAlertController+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Speech.swift"; sourceTree = "<group>"; };
 		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		F2DEA0F91E7AC31600B4104D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		F2DEA0FB1E7AC31C00B4104D /* Then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Then.framework; sourceTree = "<group>"; };
@@ -252,9 +256,10 @@
 		F24CD6E41E7D1BC80073889C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F24CD6E51E7D1BD70073889C /* UITableView+Speed.swift */,
-				F24CD6E71E7D1C220073889C /* DispatchQueue+Speed.swift */,
+				F24CD6E51E7D1BD70073889C /* UITableView+Speech.swift */,
+				F24CD6E71E7D1C220073889C /* DispatchQueue+Speech.swift */,
 				F22FBD211E7FD7490006C753 /* String+Speed.swift */,
+				F2A6E52B1E8127D20026188F /* UIAlertController+Speech.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				F2DEA1031E7AC46100B4104D /* Config.swift */,
+				F2A6E5291E8122040026188F /* SpeechConfig.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -469,13 +475,15 @@
 				F24CD6ED1E7D2DAD0073889C /* ToolBarView.swift in Sources */,
 				F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */,
 				F24CD6EF1E7D41DF0073889C /* Log.swift in Sources */,
+				F2A6E52C1E8127D20026188F /* UIAlertController+Speech.swift in Sources */,
 				F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */,
 				F22FBD201E7FD6A60006C753 /* WaitingVoiceCell.swift in Sources */,
 				F2DEA10A1E7AC46100B4104D /* Config.swift in Sources */,
-				F24CD6E61E7D1BD70073889C /* UITableView+Speed.swift in Sources */,
+				F24CD6E61E7D1BD70073889C /* UITableView+Speech.swift in Sources */,
 				F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */,
-				F24CD6E81E7D1C220073889C /* DispatchQueue+Speed.swift in Sources */,
+				F24CD6E81E7D1C220073889C /* DispatchQueue+Speech.swift in Sources */,
 				F24CD6EB1E7D1C610073889C /* ViewIdentifierReuseable.swift in Sources */,
+				F2A6E52A1E8122040026188F /* SpeechConfig.swift in Sources */,
 				F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
