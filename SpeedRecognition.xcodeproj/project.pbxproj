@@ -40,6 +40,13 @@
 		F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */; };
 		F2A6E52A1E8122040026188F /* SpeechConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E5291E8122040026188F /* SpeechConfig.swift */; };
 		F2A6E52C1E8127D20026188F /* UIAlertController+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E52B1E8127D20026188F /* UIAlertController+Speech.swift */; };
+		F2A6E52E1E8184290026188F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E52D1E8184290026188F /* RxSwift.framework */; };
+		F2A6E5301E81844E0026188F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E52F1E81844E0026188F /* RxCocoa.framework */; };
+		F2A6E5331E8185FB0026188F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E52F1E81844E0026188F /* RxCocoa.framework */; };
+		F2A6E5341E8185FB0026188F /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2A6E52F1E81844E0026188F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2A6E5351E8185FB0026188F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E52D1E8184290026188F /* RxSwift.framework */; };
+		F2A6E5361E8185FB0026188F /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2A6E52D1E8184290026188F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2A6E5391E818C010026188F /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E5381E818C010026188F /* ISRDataHelper.m */; };
 		F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; };
 		F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; };
 		F2DEA0FC1E7AC31C00B4104D /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0FB1E7AC31C00B4104D /* Then.framework */; };
@@ -76,7 +83,9 @@
 			files = (
 				F2DEA0FF1E7AC3BB00B4104D /* Then.framework in CopyFiles */,
 				F2DEA1001E7AC3BB00B4104D /* MBProgressHUD.framework in CopyFiles */,
+				F2A6E5361E8185FB0026188F /* RxSwift.framework in CopyFiles */,
 				F24CD6E11E7D1A340073889C /* DynamicColor.framework in CopyFiles */,
+				F2A6E5341E8185FB0026188F /* RxCocoa.framework in CopyFiles */,
 				F2DEA0FE1E7AC3A200B4104D /* SnapKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +132,10 @@
 		F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		F2A6E5291E8122040026188F /* SpeechConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechConfig.swift; sourceTree = "<group>"; };
 		F2A6E52B1E8127D20026188F /* UIAlertController+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Speech.swift"; sourceTree = "<group>"; };
+		F2A6E52D1E8184290026188F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
+		F2A6E52F1E81844E0026188F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		F2A6E5371E818C010026188F /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
+		F2A6E5381E818C010026188F /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
 		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		F2DEA0F91E7AC31600B4104D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		F2DEA0FB1E7AC31C00B4104D /* Then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Then.framework; sourceTree = "<group>"; };
@@ -135,6 +148,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A6E52E1E8184290026188F /* RxSwift.framework in Frameworks */,
+				F2A6E5351E8185FB0026188F /* RxSwift.framework in Frameworks */,
 				F22FBD231E7FD7790006C753 /* AVFoundation.framework in Frameworks */,
 				F23E467E1E76C20B0051F0EA /* CoreTelephony.framework in Frameworks */,
 				F23E467C1E76C1670051F0EA /* libc++.tbd in Frameworks */,
@@ -143,6 +158,7 @@
 				F23E46701E76BF170051F0EA /* UIKit.framework in Frameworks */,
 				F24CD6E01E7D1A340073889C /* DynamicColor.framework in Frameworks */,
 				F23E466E1E76BF0D0051F0EA /* QuartzCore.framework in Frameworks */,
+				F2A6E5301E81844E0026188F /* RxCocoa.framework in Frameworks */,
 				F23E466C1E76BF060051F0EA /* SystemConfiguration.framework in Frameworks */,
 				F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */,
 				F23E466A1E76BEFE0051F0EA /* AudioToolbox.framework in Frameworks */,
@@ -153,6 +169,7 @@
 				F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */,
 				F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */,
 				F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */,
+				F2A6E5331E8185FB0026188F /* RxCocoa.framework in Frameworks */,
 				F2DEA0FC1E7AC31C00B4104D /* Then.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +247,8 @@
 		F23E465A1E76BE9B0051F0EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2A6E52F1E81844E0026188F /* RxCocoa.framework */,
+				F2A6E52D1E8184290026188F /* RxSwift.framework */,
 				F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */,
 				F2DEA0FB1E7AC31C00B4104D /* Then.framework */,
 				F2DEA0F91E7AC31600B4104D /* SnapKit.framework */,
@@ -315,6 +334,8 @@
 		F2DEA1061E7AC46100B4104D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2A6E5371E818C010026188F /* ISRDataHelper.h */,
+				F2A6E5381E818C010026188F /* ISRDataHelper.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -405,6 +426,7 @@
 				TargetAttributes = {
 					F23E46261E76BD440051F0EA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AXEMXHF2MM;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -474,6 +496,7 @@
 				F22FBD221E7FD7490006C753 /* String+Speed.swift in Sources */,
 				F24CD6ED1E7D2DAD0073889C /* ToolBarView.swift in Sources */,
 				F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */,
+				F2A6E5391E818C010026188F /* ISRDataHelper.m in Sources */,
 				F24CD6EF1E7D41DF0073889C /* Log.swift in Sources */,
 				F2A6E52C1E8127D20026188F /* UIAlertController+Speech.swift in Sources */,
 				F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */,
@@ -627,7 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AXEMXHF2MM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -649,7 +672,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AXEMXHF2MM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

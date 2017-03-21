@@ -9,6 +9,8 @@
 import UIKit
 import DynamicColor
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class MainViewController: UIViewController {
   
@@ -16,7 +18,11 @@ class MainViewController: UIViewController {
   fileprivate weak var toolBarView: ToolBarView?
   fileprivate weak var imageView: UIImageView?
   
-  fileprivate var dataSources = [String]()
+  fileprivate var dataSources = [String]() {
+    didSet {
+      tableView?.reloadData()
+    }
+  }
   
   fileprivate var pcmFilePath: String?
   /// 识别对象
@@ -36,7 +42,7 @@ class MainViewController: UIViewController {
     super.viewDidLoad()
     automaticallyAdjustsScrollViewInsets = false
     view.backgroundColor = UIColor(hex: 0x232329)
-    title = "Speed Recognition"
+    title = "语音识别"
     
     let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
       .then({
@@ -54,6 +60,10 @@ class MainViewController: UIViewController {
     
     self.tableView = tableView
     view.addSubview(tableView)
+    
+//    tableView.rx.items(cellIdentifier: SpeedResultCell.identifier, cellType: SpeedResultCell.self) { 
+//      
+//    }
     
     let imageView = UIImageView()
     imageView.image = #imageLiteral(resourceName: "bg2")
@@ -123,6 +133,7 @@ class MainViewController: UIViewController {
     speechRecognizer?.setParameter(config.sampleRate, forKey: IFlySpeechConstant.sample_RATE())
     speechRecognizer?.setParameter(config.language, forKey: IFlySpeechConstant.language())
     speechRecognizer?.setParameter(config.accent, forKey: IFlySpeechConstant.accent())
+    speechRecognizer?.setParameter("1", forKey: IFlySpeechConstant.asr_PTT())
     
     /// 初始化录音器
     if pcmRecorder == nil {
@@ -142,22 +153,56 @@ extension MainViewController: ToolBarViewDelegate {
   func toolBarView(_ toolBarView: ToolBarView, speedButtonSelected sender: UIButton) {
     Log("")
     isRecording = !isRecording
-    if isRecording { // 停止录音
+    if isRecording {
       toolBarView.title = "停止录音"
-      
+      title = "录音..."
+      // 开始录音
+      if speechRecognizer == nil {
+        self.initRecognizer()
+      }
+      speechRecognizer?.cancel()
+      speechRecognizer?.setParameter(IFLY_AUDIO_SOURCE_MIC, forKey: "audio_source")
+      speechRecognizer?.setParameter("json", forKey: IFlySpeechConstant.result_TYPE())
+      speechRecognizer?.setParameter("asr.pcm", forKey: IFlySpeechConstant.asr_AUDIO_PATH())
+      speechRecognizer?.delegate = self
+      if let startResult = speechRecognizer?.startListening() {
+        if !startResult {
+          let alertController = UIAlertController(title: "提醒",
+                                                       message: "启动服务失败",
+                                                       sureAction: { _ in
+                                                        
+          })
+          
+          alertController.show(in: self)
+        }
+      }
     }
-    else { // 开始录音
+    else {
       toolBarView.title = "开始录音"
+      // 停止录音
+//      pcmRecorder?.stop()
+      title = "录音结束，正在解析..."
+      speechRecognizer?.stopListening()
     }
   }
 }
 
 extension MainViewController: IFlySpeechRecognizerDelegate {
   func onResults(_ results: [Any]!, isLast: Bool) {
-    
+    Log(results)
+    var resultStr = String()
+    guard let dict = results.first as? [String: Any?] else { return }
+    for str in dict.keys {
+      resultStr += str
+    }
+    if let resultFromJson = ISRDataHelper.string(fromJson: resultStr),
+      resultFromJson.characters.count > 1 {
+      dataSources.append(resultFromJson)
+    }
+    title = "语音识别"
   }
   func onError(_ errorCode: IFlySpeechError!) {
-    
+    Log(errorCode.errorDesc)
   }
 }
 
@@ -185,12 +230,12 @@ extension MainViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 2
+    return dataSources.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(indexPath) as SpeedResultCell
-    cell.contentText = "1234551474174017510848317894718978378175893104783184718987918790787587109789413788979ajfajfj9"
+    cell.contentText = dataSources[indexPath.row]
     return cell
   }
   
@@ -203,8 +248,11 @@ extension MainViewController: UITableViewDataSource {
   }
  
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    let contentText = "1234551474174017510848317894718978378175893104783184718987918790787587109789413788979ajfajfj9"
-    let height = contentText.getHeight(maxWidth: 190, font: UIFont.systemFont(ofSize: 16.0))
+    let str = dataSources[indexPath.row]
+    let height = str.getHeight(maxWidth: 190, font: UIFont.systemFont(ofSize: 16.0))
+    if height + 16 + 16 < 80 {
+      return 80.0
+    }
     return height + 16 + 16
   }
   
