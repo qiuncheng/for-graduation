@@ -49,6 +49,8 @@
 		F2C9BDCA1E8E55890030A24A /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB21E8E55890030A24A /* ToolBarView.swift */; };
 		F2C9BDCB1E8E55890030A24A /* WaitingVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB31E8E55890030A24A /* WaitingVoiceCell.swift */; };
 		F2C9BDD71E8E56650030A24A /* SpeechRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDD61E8E56650030A24A /* SpeechRecognitionTests.swift */; };
+		F2C9BDE01E8E57220030A24A /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C9BDDE1E8E57150030A24A /* YYCache.framework */; };
+		F2C9BDE11E8E57220030A24A /* YYCache.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2C9BDDE1E8E57150030A24A /* YYCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; };
 		F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; };
 		F2DEA0FC1E7AC31C00B4104D /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0FB1E7AC31C00B4104D /* Then.framework */; };
@@ -80,6 +82,7 @@
 				F24CD6E11E7D1A340073889C /* DynamicColor.framework in CopyFiles */,
 				F2A6E5341E8185FB0026188F /* RxCocoa.framework in CopyFiles */,
 				F2DEA0FE1E7AC3A200B4104D /* SnapKit.framework in CopyFiles */,
+				F2C9BDE11E8E57220030A24A /* YYCache.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +131,7 @@
 		F2C9BDD41E8E56650030A24A /* SpeechRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C9BDD61E8E56650030A24A /* SpeechRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionTests.swift; sourceTree = "<group>"; };
 		F2C9BDD81E8E56650030A24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C9BDDE1E8E57150030A24A /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YYCache.framework; sourceTree = "<group>"; };
 		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		F2DEA0F91E7AC31600B4104D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		F2DEA0FB1E7AC31C00B4104D /* Then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Then.framework; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				F2A6E52E1E8184290026188F /* RxSwift.framework in Frameworks */,
 				F2A6E5351E8185FB0026188F /* RxSwift.framework in Frameworks */,
 				F22FBD231E7FD7790006C753 /* AVFoundation.framework in Frameworks */,
+				F2C9BDE01E8E57220030A24A /* YYCache.framework in Frameworks */,
 				F23E467E1E76C20B0051F0EA /* CoreTelephony.framework in Frameworks */,
 				F23E467C1E76C1670051F0EA /* libc++.tbd in Frameworks */,
 				F23E46741E76BF260051F0EA /* CoreGraphics.framework in Frameworks */,
@@ -196,6 +201,7 @@
 		F23E465A1E76BE9B0051F0EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2C9BDDE1E8E57150030A24A /* YYCache.framework */,
 				F2A6E52F1E81844E0026188F /* RxCocoa.framework */,
 				F2A6E52D1E8184290026188F /* RxSwift.framework */,
 				F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */,

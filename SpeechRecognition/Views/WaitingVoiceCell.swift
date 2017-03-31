@@ -12,6 +12,8 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
   
   fileprivate var avatarImageView: UIImageView?
   fileprivate var redView: UIView?
+  fileprivate var blueView: UIView?
+  fileprivate var greenView: UIView?
   
   static var cellHeight: CGFloat {
     return 80.0
@@ -22,6 +24,8 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
     backgroundColor = UIColor.clear
     selectionStyle = .none
     initSubviews()
+    
+    startAnimation()
   }
   
   fileprivate func initSubviews() {
@@ -49,14 +53,61 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
     
     redView.snp.makeConstraints { [unowned self] make in
       make.centerY.equalTo(self.snp.centerY)
-      make.right.equalTo(self.contentView.snp.right).offset(-100)
+      make.right.equalTo(avatarImageView.snp.left).offset(-20)
       make.size.equalTo(15.0)
     }
+    
+    let blueView = UIView().then({
+      $0.backgroundColor = UIColor(hex: 0x47d60c)
+      $0.layer.cornerRadius = 7.5
+      $0.layer.masksToBounds = true
+    })
+    addSubview(blueView)
+    self.blueView = blueView
+    blueView.snp.makeConstraints({ [unowned self] make in
+      make.centerY.equalTo(self)
+      make.size.equalTo(redView)
+      make.right.equalTo(redView.snp.left).offset(-10)
+    })
+    
+    let greenView = UIView().then({
+      $0.backgroundColor = UIColor.init(hex: 0x60a942)
+      $0.layer.masksToBounds = true
+      $0.layer.cornerRadius = 7.5
+    })
+    
+    addSubview(greenView)
+    self.greenView = greenView
+    greenView.snp.makeConstraints({ [unowned self] make in
+      make.right.equalTo(blueView.snp.left).offset(-10)
+      make.centerY.equalTo(self)
+      make.size.equalTo(redView)
+    })
   }
   
   func startAnimation() {
-    let keyframeAnimation = CAKeyframeAnimation(keyPath: "").then {
-      $0.keyPath = "layer.position.y"
+    let currentY = 40.0
+    let keyframeAnimation = CAKeyframeAnimation().then {
+      $0.keyPath = "position.y"
+      $0.duration = 3.0
+      $0.keyTimes = [0.0, 0.2, 0.5, 0.68, 0.89, 1.0]
+      $0.values = [currentY, currentY - 7.5, currentY, currentY + 7.5, currentY, currentY]
+      $0.repeatCount = Float(CGFloat.greatestFiniteMagnitude)
+      $0.timingFunctions = [
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseInEaseOut),
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut),
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionDefault),
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseIn),
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionDefault),
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionDefault)
+      ]
+    }
+    self.redView?.layer.add(keyframeAnimation, forKey: "red_view_key_frame_animation")
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) { [weak self] in
+      self?.blueView?.layer.add(keyframeAnimation, forKey: "blue_view_key_frame_animation")
+      DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {  [weak self] in
+        self?.greenView?.layer.add(keyframeAnimation, forKey: "green_view_key_frame_animation")
+      }
     }
   }
   
