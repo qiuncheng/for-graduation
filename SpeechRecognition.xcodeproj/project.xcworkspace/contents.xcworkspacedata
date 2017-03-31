@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SpeedRecognition.xcodeproj">
+      location = "self:/Users/yolo/Desktop/for-graduation/SpeechRecognition.xcodeproj">
    </FileRef>
 </Workspace>

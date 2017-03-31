@@ -1,15 +1,14 @@
 //
-//  SpeedRecognitionTests.swift
-//  SpeedRecognitionTests
+//  SpeechRecognitionTests.swift
+//  SpeechRecognitionTests
 //
-//  Created by yolo on 2017/3/13.
+//  Created by yolo on 2017/3/31.
 //  Copyright © 2017年 Qiun Cheng. All rights reserved.
 //
 
 import XCTest
-@testable import SpeedRecognition
 
-class SpeedRecognitionTests: XCTestCase {
+class SpeechRecognitionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

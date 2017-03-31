@@ -43,10 +43,12 @@ class SpeedResultCell: UITableViewCell, ViewIdentifierReuseable {
     backgroundColor = UIColor.clear
     selectionStyle = .none
     
-    let avatarImageView = UIImageView().then({
-      $0.image = #imageLiteral(resourceName: "assistant")
-      $0.contentMode = .scaleAspectFill
-      $0.clipsToBounds = true
+    let avatarImageView    = UIImageView().then({
+      $0.image               = #imageLiteral(resourceName: "assistant")
+      $0.layer.cornerRadius  = 32.0
+      $0.layer.masksToBounds = true
+      $0.contentMode         = .scaleAspectFill
+      $0.clipsToBounds       = true
     })
     addSubview(avatarImageView)
     self.avatarImageView = avatarImageView

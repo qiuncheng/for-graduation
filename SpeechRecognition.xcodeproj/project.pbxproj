@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F22FBD201E7FD6A60006C753 /* WaitingVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FBD1F1E7FD6A60006C753 /* WaitingVoiceCell.swift */; };
-		F22FBD221E7FD7490006C753 /* String+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22FBD211E7FD7490006C753 /* String+Speed.swift */; };
 		F22FBD231E7FD7790006C753 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46611E76BEDC0051F0EA /* AVFoundation.framework */; };
-		F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E462A1E76BD440051F0EA /* AppDelegate.swift */; };
-		F23E46321E76BD440051F0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23E46311E76BD440051F0EA /* Assets.xcassets */; };
-		F23E46351E76BD440051F0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */; };
-		F23E46401E76BD440051F0EA /* SpeedRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E463F1E76BD440051F0EA /* SpeedRecognitionTests.swift */; };
-		F23E464B1E76BD440051F0EA /* SpeedRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E464A1E76BD440051F0EA /* SpeedRecognitionUITests.swift */; };
 		F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465B1E76BEA40051F0EA /* iflyMSC.framework */; };
 		F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465D1E76BECD0051F0EA /* libz.tbd */; };
 		F23E46601E76BED50051F0EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465F1E76BED50051F0EA /* CoreLocation.framework */; };
@@ -31,46 +24,46 @@
 		F24CD6DF1E7D1A2A0073889C /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */; };
 		F24CD6E01E7D1A340073889C /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */; };
 		F24CD6E11E7D1A340073889C /* DynamicColor.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */; };
-		F24CD6E61E7D1BD70073889C /* UITableView+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E51E7D1BD70073889C /* UITableView+Speech.swift */; };
-		F24CD6E81E7D1C220073889C /* DispatchQueue+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6E71E7D1C220073889C /* DispatchQueue+Speech.swift */; };
-		F24CD6EB1E7D1C610073889C /* ViewIdentifierReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */; };
-		F24CD6ED1E7D2DAD0073889C /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */; };
-		F24CD6EF1E7D41DF0073889C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CD6EE1E7D41DF0073889C /* Log.swift */; };
-		F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */; };
-		F2A6E52A1E8122040026188F /* SpeechConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E5291E8122040026188F /* SpeechConfig.swift */; };
-		F2A6E52C1E8127D20026188F /* UIAlertController+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E52B1E8127D20026188F /* UIAlertController+Speech.swift */; };
 		F2A6E52E1E8184290026188F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E52D1E8184290026188F /* RxSwift.framework */; };
 		F2A6E5301E81844E0026188F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E52F1E81844E0026188F /* RxCocoa.framework */; };
 		F2A6E5331E8185FB0026188F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E52F1E81844E0026188F /* RxCocoa.framework */; };
 		F2A6E5341E8185FB0026188F /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2A6E52F1E81844E0026188F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2A6E5351E8185FB0026188F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6E52D1E8184290026188F /* RxSwift.framework */; };
 		F2A6E5361E8185FB0026188F /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2A6E52D1E8184290026188F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F2A6E5391E818C010026188F /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A6E5381E818C010026188F /* ISRDataHelper.m */; };
+		F2C9BDBA1E8E55890030A24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BD991E8E55890030A24A /* AppDelegate.swift */; };
+		F2C9BDBB1E8E55890030A24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C9BD9A1E8E55890030A24A /* Assets.xcassets */; };
+		F2C9BDBC1E8E55890030A24A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C9BD9B1E8E55890030A24A /* LaunchScreen.storyboard */; };
+		F2C9BDBD1E8E55890030A24A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BD9E1E8E55890030A24A /* Config.swift */; };
+		F2C9BDBE1E8E55890030A24A /* SpeechConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BD9F1E8E55890030A24A /* SpeechConfig.swift */; };
+		F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA11E8E55890030A24A /* MainNavigationController.swift */; };
+		F2C9BDC01E8E55890030A24A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA21E8E55890030A24A /* MainViewController.swift */; };
+		F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA41E8E55890030A24A /* DispatchQueue+Speech.swift */; };
+		F2C9BDC21E8E55890030A24A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA51E8E55890030A24A /* Log.swift */; };
+		F2C9BDC31E8E55890030A24A /* String+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA61E8E55890030A24A /* String+Speed.swift */; };
+		F2C9BDC41E8E55890030A24A /* UIAlertController+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA71E8E55890030A24A /* UIAlertController+Speech.swift */; };
+		F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA81E8E55890030A24A /* UITableView+Speech.swift */; };
+		F2C9BDC61E8E55890030A24A /* ViewIdentifierReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */; };
+		F2C9BDC71E8E55890030A24A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2C9BDAA1E8E55890030A24A /* Info.plist */; };
+		F2C9BDC81E8E55890030A24A /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDAD1E8E55890030A24A /* ISRDataHelper.m */; };
+		F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB11E8E55890030A24A /* SpeedResultCell.swift */; };
+		F2C9BDCA1E8E55890030A24A /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB21E8E55890030A24A /* ToolBarView.swift */; };
+		F2C9BDCB1E8E55890030A24A /* WaitingVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB31E8E55890030A24A /* WaitingVoiceCell.swift */; };
+		F2C9BDD71E8E56650030A24A /* SpeechRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDD61E8E56650030A24A /* SpeechRecognitionTests.swift */; };
 		F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; };
 		F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; };
 		F2DEA0FC1E7AC31C00B4104D /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0FB1E7AC31C00B4104D /* Then.framework */; };
 		F2DEA0FE1E7AC3A200B4104D /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2DEA0FF1E7AC3BB00B4104D /* Then.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DEA0FB1E7AC31C00B4104D /* Then.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2DEA1001E7AC3BB00B4104D /* MBProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F2DEA10A1E7AC46100B4104D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DEA1031E7AC46100B4104D /* Config.swift */; };
-		F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DEA10C1E7AC48600B4104D /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F23E463C1E76BD440051F0EA /* PBXContainerItemProxy */ = {
+		F2C9BDD91E8E56650030A24A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F23E461F1E76BD430051F0EA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F23E46261E76BD440051F0EA;
-			remoteInfo = SpeedRecognition;
-		};
-		F23E46471E76BD440051F0EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F23E461F1E76BD430051F0EA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F23E46261E76BD440051F0EA;
-			remoteInfo = SpeedRecognition;
+			remoteInfo = SpeechRecognition;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -93,19 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F22FBD1F1E7FD6A60006C753 /* WaitingVoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingVoiceCell.swift; sourceTree = "<group>"; };
-		F22FBD211E7FD7490006C753 /* String+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Speed.swift"; sourceTree = "<group>"; };
-		F23E46271E76BD440051F0EA /* SpeedRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F23E462A1E76BD440051F0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F23E46311E76BD440051F0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F23E46341E76BD440051F0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F23E46361E76BD440051F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F23E463B1E76BD440051F0EA /* SpeedRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F23E463F1E76BD440051F0EA /* SpeedRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedRecognitionTests.swift; sourceTree = "<group>"; };
-		F23E46411E76BD440051F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F23E46461E76BD440051F0EA /* SpeedRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F23E464A1E76BD440051F0EA /* SpeedRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedRecognitionUITests.swift; sourceTree = "<group>"; };
-		F23E464C1E76BD440051F0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23E46271E76BD440051F0EA /* SpeechRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23E465B1E76BEA40051F0EA /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		F23E465D1E76BECD0051F0EA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F23E465F1E76BED50051F0EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -119,28 +100,37 @@
 		F23E466F1E76BF170051F0EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F23E46711E76BF1E0051F0EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F23E46731E76BF260051F0EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F23E46771E76C0220051F0EA /* SpeedRecognition-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
 		F23E467B1E76C1670051F0EA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		F23E467D1E76C20B0051F0EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F24CD6DE1E7D1A2A0073889C /* DynamicColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DynamicColor.framework; sourceTree = "<group>"; };
-		F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedResultCell.swift; sourceTree = "<group>"; };
-		F24CD6E51E7D1BD70073889C /* UITableView+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Speech.swift"; sourceTree = "<group>"; };
-		F24CD6E71E7D1C220073889C /* DispatchQueue+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Speech.swift"; sourceTree = "<group>"; };
-		F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifierReuseable.swift; sourceTree = "<group>"; };
-		F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
-		F24CD6EE1E7D41DF0073889C /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
-		F2A6E5291E8122040026188F /* SpeechConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechConfig.swift; sourceTree = "<group>"; };
-		F2A6E52B1E8127D20026188F /* UIAlertController+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Speech.swift"; sourceTree = "<group>"; };
 		F2A6E52D1E8184290026188F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		F2A6E52F1E81844E0026188F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
-		F2A6E5371E818C010026188F /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
-		F2A6E5381E818C010026188F /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
+		F2C9BD991E8E55890030A24A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2C9BD9A1E8E55890030A24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2C9BD9C1E8E55890030A24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2C9BD9E1E8E55890030A24A /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F2C9BD9F1E8E55890030A24A /* SpeechConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechConfig.swift; sourceTree = "<group>"; };
+		F2C9BDA11E8E55890030A24A /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		F2C9BDA21E8E55890030A24A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F2C9BDA41E8E55890030A24A /* DispatchQueue+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Speech.swift"; sourceTree = "<group>"; };
+		F2C9BDA51E8E55890030A24A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		F2C9BDA61E8E55890030A24A /* String+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Speed.swift"; sourceTree = "<group>"; };
+		F2C9BDA71E8E55890030A24A /* UIAlertController+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Speech.swift"; sourceTree = "<group>"; };
+		F2C9BDA81E8E55890030A24A /* UITableView+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Speech.swift"; sourceTree = "<group>"; };
+		F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifierReuseable.swift; sourceTree = "<group>"; };
+		F2C9BDAA1E8E55890030A24A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C9BDAC1E8E55890030A24A /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
+		F2C9BDAD1E8E55890030A24A /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
+		F2C9BDAE1E8E55890030A24A /* SpeechRecognition-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpeechRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
+		F2C9BDB11E8E55890030A24A /* SpeedResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedResultCell.swift; sourceTree = "<group>"; };
+		F2C9BDB21E8E55890030A24A /* ToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
+		F2C9BDB31E8E55890030A24A /* WaitingVoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingVoiceCell.swift; sourceTree = "<group>"; };
+		F2C9BDD41E8E56650030A24A /* SpeechRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C9BDD61E8E56650030A24A /* SpeechRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionTests.swift; sourceTree = "<group>"; };
+		F2C9BDD81E8E56650030A24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		F2DEA0F91E7AC31600B4104D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		F2DEA0FB1E7AC31C00B4104D /* Then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Then.framework; sourceTree = "<group>"; };
-		F2DEA1031E7AC46100B4104D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		F2DEA10C1E7AC48600B4104D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,14 +164,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F23E46381E76BD440051F0EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F23E46431E76BD440051F0EA /* Frameworks */ = {
+		F2C9BDD11E8E56650030A24A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,9 +177,8 @@
 		F23E461E1E76BD430051F0EA = {
 			isa = PBXGroup;
 			children = (
-				F23E46291E76BD440051F0EA /* SpeedRecognition */,
-				F23E463E1E76BD440051F0EA /* SpeedRecognitionTests */,
-				F23E46491E76BD440051F0EA /* SpeedRecognitionUITests */,
+				F2C9BD981E8E55890030A24A /* SpeechRecognition */,
+				F2C9BDD51E8E56650030A24A /* SpeechRecognitionTests */,
 				F23E46281E76BD440051F0EA /* Products */,
 				F23E465A1E76BE9B0051F0EA /* Frameworks */,
 			);
@@ -205,43 +187,10 @@
 		F23E46281E76BD440051F0EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F23E46271E76BD440051F0EA /* SpeedRecognition.app */,
-				F23E463B1E76BD440051F0EA /* SpeedRecognitionTests.xctest */,
-				F23E46461E76BD440051F0EA /* SpeedRecognitionUITests.xctest */,
+				F23E46271E76BD440051F0EA /* SpeechRecognition.app */,
+				F2C9BDD41E8E56650030A24A /* SpeechRecognitionTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F23E46291E76BD440051F0EA /* SpeedRecognition */ = {
-			isa = PBXGroup;
-			children = (
-				F2DEA1021E7AC46100B4104D /* Configs */,
-				F2DEA1041E7AC46100B4104D /* Controllers */,
-				F2DEA1051E7AC46100B4104D /* Helper */,
-				F2DEA1061E7AC46100B4104D /* Models */,
-				F2DEA1071E7AC46100B4104D /* ViewModels */,
-				F2DEA1091E7AC46100B4104D /* Views */,
-				F252DB2E1E7AC52B009D58E3 /* Support Files */,
-			);
-			path = SpeedRecognition;
-			sourceTree = "<group>";
-		};
-		F23E463E1E76BD440051F0EA /* SpeedRecognitionTests */ = {
-			isa = PBXGroup;
-			children = (
-				F23E463F1E76BD440051F0EA /* SpeedRecognitionTests.swift */,
-				F23E46411E76BD440051F0EA /* Info.plist */,
-			);
-			path = SpeedRecognitionTests;
-			sourceTree = "<group>";
-		};
-		F23E46491E76BD440051F0EA /* SpeedRecognitionUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F23E464A1E76BD440051F0EA /* SpeedRecognitionUITests.swift */,
-				F23E464C1E76BD440051F0EA /* Info.plist */,
-			);
-			path = SpeedRecognitionUITests;
 			sourceTree = "<group>";
 		};
 		F23E465A1E76BE9B0051F0EA /* Frameworks */ = {
@@ -272,97 +221,96 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		F24CD6E41E7D1BC80073889C /* Extension */ = {
+		F2C9BD981E8E55890030A24A /* SpeechRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				F24CD6E51E7D1BD70073889C /* UITableView+Speech.swift */,
-				F24CD6E71E7D1C220073889C /* DispatchQueue+Speech.swift */,
-				F22FBD211E7FD7490006C753 /* String+Speed.swift */,
-				F2A6E52B1E8127D20026188F /* UIAlertController+Speech.swift */,
+				F2C9BD991E8E55890030A24A /* AppDelegate.swift */,
+				F2C9BD9A1E8E55890030A24A /* Assets.xcassets */,
+				F2C9BD9B1E8E55890030A24A /* LaunchScreen.storyboard */,
+				F2C9BD9D1E8E55890030A24A /* Configs */,
+				F2C9BDA01E8E55890030A24A /* Controllers */,
+				F2C9BDA31E8E55890030A24A /* Helper */,
+				F2C9BDAA1E8E55890030A24A /* Info.plist */,
+				F2C9BDAB1E8E55890030A24A /* Models */,
+				F2C9BDAE1E8E55890030A24A /* SpeechRecognition-Bridging-Header.h */,
+				F2C9BDAF1E8E55890030A24A /* ViewModels */,
+				F2C9BDB01E8E55890030A24A /* Views */,
 			);
-			name = Extension;
+			path = SpeechRecognition;
 			sourceTree = "<group>";
 		};
-		F24CD6E91E7D1C4E0073889C /* Protocols */ = {
+		F2C9BD9D1E8E55890030A24A /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				F24CD6EA1E7D1C610073889C /* ViewIdentifierReuseable.swift */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
-		F252DB2E1E7AC52B009D58E3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F23E462A1E76BD440051F0EA /* AppDelegate.swift */,
-				F23E46311E76BD440051F0EA /* Assets.xcassets */,
-				F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */,
-				F23E46361E76BD440051F0EA /* Info.plist */,
-				F23E46771E76C0220051F0EA /* SpeedRecognition-Bridging-Header.h */,
-			);
-			name = "Support Files";
-			sourceTree = "<group>";
-		};
-		F2DEA1021E7AC46100B4104D /* Configs */ = {
-			isa = PBXGroup;
-			children = (
-				F2DEA1031E7AC46100B4104D /* Config.swift */,
-				F2A6E5291E8122040026188F /* SpeechConfig.swift */,
+				F2C9BD9E1E8E55890030A24A /* Config.swift */,
+				F2C9BD9F1E8E55890030A24A /* SpeechConfig.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
 		};
-		F2DEA1041E7AC46100B4104D /* Controllers */ = {
+		F2C9BDA01E8E55890030A24A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F2DEA10C1E7AC48600B4104D /* MainViewController.swift */,
-				F252DB2F1E7AC553009D58E3 /* MainNavigationController.swift */,
+				F2C9BDA11E8E55890030A24A /* MainNavigationController.swift */,
+				F2C9BDA21E8E55890030A24A /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		F2DEA1051E7AC46100B4104D /* Helper */ = {
+		F2C9BDA31E8E55890030A24A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F24CD6EE1E7D41DF0073889C /* Log.swift */,
-				F24CD6E91E7D1C4E0073889C /* Protocols */,
-				F24CD6E41E7D1BC80073889C /* Extension */,
+				F2C9BDA41E8E55890030A24A /* DispatchQueue+Speech.swift */,
+				F2C9BDA51E8E55890030A24A /* Log.swift */,
+				F2C9BDA61E8E55890030A24A /* String+Speed.swift */,
+				F2C9BDA71E8E55890030A24A /* UIAlertController+Speech.swift */,
+				F2C9BDA81E8E55890030A24A /* UITableView+Speech.swift */,
+				F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		F2DEA1061E7AC46100B4104D /* Models */ = {
+		F2C9BDAB1E8E55890030A24A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F2A6E5371E818C010026188F /* ISRDataHelper.h */,
-				F2A6E5381E818C010026188F /* ISRDataHelper.m */,
+				F2C9BDAC1E8E55890030A24A /* ISRDataHelper.h */,
+				F2C9BDAD1E8E55890030A24A /* ISRDataHelper.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F2DEA1071E7AC46100B4104D /* ViewModels */ = {
+		F2C9BDAF1E8E55890030A24A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		F2DEA1091E7AC46100B4104D /* Views */ = {
+		F2C9BDB01E8E55890030A24A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F24CD6E21E7D1BA40073889C /* SpeedResultCell.swift */,
-				F22FBD1F1E7FD6A60006C753 /* WaitingVoiceCell.swift */,
-				F24CD6EC1E7D2DAD0073889C /* ToolBarView.swift */,
+				F2C9BDB11E8E55890030A24A /* SpeedResultCell.swift */,
+				F2C9BDB21E8E55890030A24A /* ToolBarView.swift */,
+				F2C9BDB31E8E55890030A24A /* WaitingVoiceCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F2C9BDD51E8E56650030A24A /* SpeechRecognitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2C9BDD61E8E56650030A24A /* SpeechRecognitionTests.swift */,
+				F2C9BDD81E8E56650030A24A /* Info.plist */,
+			);
+			path = SpeechRecognitionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F23E46261E76BD440051F0EA /* SpeedRecognition */ = {
+		F23E46261E76BD440051F0EA /* SpeechRecognition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F23E464F1E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognition" */;
+			buildConfigurationList = F23E464F1E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeechRecognition" */;
 			buildPhases = (
 				F23E46231E76BD440051F0EA /* Sources */,
 				F23E46241E76BD440051F0EA /* Frameworks */,
@@ -373,46 +321,28 @@
 			);
 			dependencies = (
 			);
-			name = SpeedRecognition;
+			name = SpeechRecognition;
 			productName = SpeedRecognition;
-			productReference = F23E46271E76BD440051F0EA /* SpeedRecognition.app */;
+			productReference = F23E46271E76BD440051F0EA /* SpeechRecognition.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F23E463A1E76BD440051F0EA /* SpeedRecognitionTests */ = {
+		F2C9BDD31E8E56650030A24A /* SpeechRecognitionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F23E46521E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognitionTests" */;
+			buildConfigurationList = F2C9BDDB1E8E56650030A24A /* Build configuration list for PBXNativeTarget "SpeechRecognitionTests" */;
 			buildPhases = (
-				F23E46371E76BD440051F0EA /* Sources */,
-				F23E46381E76BD440051F0EA /* Frameworks */,
-				F23E46391E76BD440051F0EA /* Resources */,
+				F2C9BDD01E8E56650030A24A /* Sources */,
+				F2C9BDD11E8E56650030A24A /* Frameworks */,
+				F2C9BDD21E8E56650030A24A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F23E463D1E76BD440051F0EA /* PBXTargetDependency */,
+				F2C9BDDA1E8E56650030A24A /* PBXTargetDependency */,
 			);
-			name = SpeedRecognitionTests;
-			productName = SpeedRecognitionTests;
-			productReference = F23E463B1E76BD440051F0EA /* SpeedRecognitionTests.xctest */;
+			name = SpeechRecognitionTests;
+			productName = SpeechRecognitionTests;
+			productReference = F2C9BDD41E8E56650030A24A /* SpeechRecognitionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F23E46451E76BD440051F0EA /* SpeedRecognitionUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F23E46551E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognitionUITests" */;
-			buildPhases = (
-				F23E46421E76BD440051F0EA /* Sources */,
-				F23E46431E76BD440051F0EA /* Frameworks */,
-				F23E46441E76BD440051F0EA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F23E46481E76BD440051F0EA /* PBXTargetDependency */,
-			);
-			name = SpeedRecognitionUITests;
-			productName = SpeedRecognitionUITests;
-			productReference = F23E46461E76BD440051F0EA /* SpeedRecognitionUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -430,19 +360,14 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					F23E463A1E76BD440051F0EA = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = F23E46261E76BD440051F0EA;
-					};
-					F23E46451E76BD440051F0EA = {
+					F2C9BDD31E8E56650030A24A = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F23E46261E76BD440051F0EA;
 					};
 				};
 			};
-			buildConfigurationList = F23E46221E76BD430051F0EA /* Build configuration list for PBXProject "SpeedRecognition" */;
+			buildConfigurationList = F23E46221E76BD430051F0EA /* Build configuration list for PBXProject "SpeechRecognition" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -455,9 +380,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F23E46261E76BD440051F0EA /* SpeedRecognition */,
-				F23E463A1E76BD440051F0EA /* SpeedRecognitionTests */,
-				F23E46451E76BD440051F0EA /* SpeedRecognitionUITests */,
+				F23E46261E76BD440051F0EA /* SpeechRecognition */,
+				F2C9BDD31E8E56650030A24A /* SpeechRecognitionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -467,19 +391,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23E46351E76BD440051F0EA /* LaunchScreen.storyboard in Resources */,
-				F23E46321E76BD440051F0EA /* Assets.xcassets in Resources */,
+				F2C9BDBB1E8E55890030A24A /* Assets.xcassets in Resources */,
+				F2C9BDBC1E8E55890030A24A /* LaunchScreen.storyboard in Resources */,
+				F2C9BDC71E8E55890030A24A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F23E46391E76BD440051F0EA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F23E46441E76BD440051F0EA /* Resources */ = {
+		F2C9BDD21E8E56650030A24A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -493,60 +411,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22FBD221E7FD7490006C753 /* String+Speed.swift in Sources */,
-				F24CD6ED1E7D2DAD0073889C /* ToolBarView.swift in Sources */,
-				F2DEA10D1E7AC48600B4104D /* MainViewController.swift in Sources */,
-				F2A6E5391E818C010026188F /* ISRDataHelper.m in Sources */,
-				F24CD6EF1E7D41DF0073889C /* Log.swift in Sources */,
-				F2A6E52C1E8127D20026188F /* UIAlertController+Speech.swift in Sources */,
-				F24CD6E31E7D1BA40073889C /* SpeedResultCell.swift in Sources */,
-				F22FBD201E7FD6A60006C753 /* WaitingVoiceCell.swift in Sources */,
-				F2DEA10A1E7AC46100B4104D /* Config.swift in Sources */,
-				F24CD6E61E7D1BD70073889C /* UITableView+Speech.swift in Sources */,
-				F252DB301E7AC553009D58E3 /* MainNavigationController.swift in Sources */,
-				F24CD6E81E7D1C220073889C /* DispatchQueue+Speech.swift in Sources */,
-				F24CD6EB1E7D1C610073889C /* ViewIdentifierReuseable.swift in Sources */,
-				F2A6E52A1E8122040026188F /* SpeechConfig.swift in Sources */,
-				F23E462B1E76BD440051F0EA /* AppDelegate.swift in Sources */,
+				F2C9BDC31E8E55890030A24A /* String+Speed.swift in Sources */,
+				F2C9BDBA1E8E55890030A24A /* AppDelegate.swift in Sources */,
+				F2C9BDCA1E8E55890030A24A /* ToolBarView.swift in Sources */,
+				F2C9BDC21E8E55890030A24A /* Log.swift in Sources */,
+				F2C9BDC61E8E55890030A24A /* ViewIdentifierReuseable.swift in Sources */,
+				F2C9BDBD1E8E55890030A24A /* Config.swift in Sources */,
+				F2C9BDC41E8E55890030A24A /* UIAlertController+Speech.swift in Sources */,
+				F2C9BDC81E8E55890030A24A /* ISRDataHelper.m in Sources */,
+				F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */,
+				F2C9BDBE1E8E55890030A24A /* SpeechConfig.swift in Sources */,
+				F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */,
+				F2C9BDCB1E8E55890030A24A /* WaitingVoiceCell.swift in Sources */,
+				F2C9BDC01E8E55890030A24A /* MainViewController.swift in Sources */,
+				F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */,
+				F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F23E46371E76BD440051F0EA /* Sources */ = {
+		F2C9BDD01E8E56650030A24A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23E46401E76BD440051F0EA /* SpeedRecognitionTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F23E46421E76BD440051F0EA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F23E464B1E76BD440051F0EA /* SpeedRecognitionUITests.swift in Sources */,
+				F2C9BDD71E8E56650030A24A /* SpeechRecognitionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F23E463D1E76BD440051F0EA /* PBXTargetDependency */ = {
+		F2C9BDDA1E8E56650030A24A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F23E46261E76BD440051F0EA /* SpeedRecognition */;
-			targetProxy = F23E463C1E76BD440051F0EA /* PBXContainerItemProxy */;
-		};
-		F23E46481E76BD440051F0EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F23E46261E76BD440051F0EA /* SpeedRecognition */;
-			targetProxy = F23E46471E76BD440051F0EA /* PBXContainerItemProxy */;
+			target = F23E46261E76BD440051F0EA /* SpeechRecognition */;
+			targetProxy = F2C9BDD91E8E56650030A24A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F23E46331E76BD440051F0EA /* LaunchScreen.storyboard */ = {
+		F2C9BD9B1E8E55890030A24A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F23E46341E76BD440051F0EA /* Base */,
+				F2C9BD9C1E8E55890030A24A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -656,12 +561,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = SpeedRecognition/Info.plist;
+				INFOPLIST_FILE = SpeechRecognition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeechRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SpeedRecognition/SpeedRecognition-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeechRecognition/SpeechRecognition-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -678,74 +583,46 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = SpeedRecognition/Info.plist;
+				INFOPLIST_FILE = SpeechRecognition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeechRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SpeedRecognition/SpeedRecognition-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeechRecognition/SpeechRecognition-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		F23E46531E76BD440051F0EA /* Debug */ = {
+		F2C9BDDC1E8E56650030A24A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SpeedRecognitionTests/Info.plist;
+				INFOPLIST_FILE = SpeechRecognitionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognitionTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeechRecognitionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedRecognition.app/SpeedRecognition";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechRecognition.app/SpeechRecognition";
 			};
 			name = Debug;
 		};
-		F23E46541E76BD440051F0EA /* Release */ = {
+		F2C9BDDD1E8E56650030A24A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SpeedRecognitionTests/Info.plist;
+				INFOPLIST_FILE = SpeechRecognitionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognitionTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeechRecognitionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeedRecognition.app/SpeedRecognition";
-			};
-			name = Release;
-		};
-		F23E46561E76BD440051F0EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = SpeedRecognitionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognitionUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = SpeedRecognition;
-			};
-			name = Debug;
-		};
-		F23E46571E76BD440051F0EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = SpeedRecognitionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.SpeedRecognitionUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = SpeedRecognition;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechRecognition.app/SpeechRecognition";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F23E46221E76BD430051F0EA /* Build configuration list for PBXProject "SpeedRecognition" */ = {
+		F23E46221E76BD430051F0EA /* Build configuration list for PBXProject "SpeechRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F23E464D1E76BD440051F0EA /* Debug */,
@@ -754,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F23E464F1E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognition" */ = {
+		F23E464F1E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeechRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F23E46501E76BD440051F0EA /* Debug */,
@@ -763,23 +640,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F23E46521E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognitionTests" */ = {
+		F2C9BDDB1E8E56650030A24A /* Build configuration list for PBXNativeTarget "SpeechRecognitionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F23E46531E76BD440051F0EA /* Debug */,
-				F23E46541E76BD440051F0EA /* Release */,
+				F2C9BDDC1E8E56650030A24A /* Debug */,
+				F2C9BDDD1E8E56650030A24A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F23E46551E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeedRecognitionUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F23E46561E76BD440051F0EA /* Debug */,
-				F23E46571E76BD440051F0EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

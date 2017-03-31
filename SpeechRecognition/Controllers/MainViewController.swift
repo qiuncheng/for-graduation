@@ -55,6 +55,7 @@ class MainViewController: UIViewController {
         $0.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 49, right: 0)
         $0.contentOffset = CGPoint(x: 0, y: 0)
         $0.registerCell(SpeedResultCell.self)
+        $0.registerCell(WaitingVoiceCell.self)
       })
     
     
@@ -226,17 +227,28 @@ extension MainViewController: UITableViewDelegate {
 
 extension MainViewController: UITableViewDataSource {
   func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
+    return 2
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return dataSources.count
+    if section == 0 {
+      return dataSources.count
+    }
+    else {
+      return 1
+    }
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(indexPath) as SpeedResultCell
-    cell.contentText = dataSources[indexPath.row]
-    return cell
+    if indexPath.section == 0 {
+      let cell = tableView.dequeueReusableCell(indexPath) as SpeedResultCell
+      cell.contentText = dataSources[indexPath.row]
+      return cell
+    }
+    else {
+      let cell = tableView.dequeueReusableCell(indexPath) as WaitingVoiceCell
+      return cell
+    }
   }
   
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -248,12 +260,17 @@ extension MainViewController: UITableViewDataSource {
   }
  
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    let str = dataSources[indexPath.row]
-    let height = str.getHeight(maxWidth: 190, font: UIFont.systemFont(ofSize: 16.0))
-    if height + 16 + 16 < 80 {
-      return 80.0
+    if indexPath.section == 0 {
+      let str = dataSources[indexPath.row]
+      let height = str.getHeight(maxWidth: 190, font: UIFont.systemFont(ofSize: 16.0))
+      if height + 16 + 16 < 80 {
+        return 80.0
+      }
+      return height + 16 + 16
     }
-    return height + 16 + 16
+    else {
+      return WaitingVoiceCell.cellHeight
+    }
   }
   
 }
