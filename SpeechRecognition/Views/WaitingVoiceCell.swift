@@ -10,6 +10,8 @@ import UIKit
 
 class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
   
+  fileprivate let animationDuration = 3.0
+  
   fileprivate var avatarImageView: UIImageView?
   fileprivate var redView: UIView?
   fileprivate var blueView: UIView?
@@ -89,23 +91,23 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
     let currentY = 40.0
     let keyframeAnimation = CAKeyframeAnimation().then {
       $0.keyPath = "position.y"
-      $0.duration = 3.0
-      $0.keyTimes = [0.0, 0.2, 0.5, 0.68, 0.89, 1.0]
-      $0.values = [currentY, currentY - 7.5, currentY, currentY + 7.5, currentY, currentY]
+      $0.duration = self.animationDuration
+      $0.keyTimes = [0.0, 0.2, 0.5, 0.80, 1.0]
+      $0.values = [currentY, currentY - 7.5, currentY, currentY + 7.5, currentY]
       $0.repeatCount = Float(CGFloat.greatestFiniteMagnitude)
       $0.timingFunctions = [
         CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseInEaseOut),
         CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut),
         CAMediaTimingFunction.init(name: kCAMediaTimingFunctionDefault),
         CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseIn),
-        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionDefault),
-        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionDefault)
+        CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseInEaseOut),
       ]
     }
     self.redView?.layer.add(keyframeAnimation, forKey: "red_view_key_frame_animation")
-    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) { [weak self] in
+    let delay = self.animationDuration * 0.5
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay) { [weak self] in
       self?.blueView?.layer.add(keyframeAnimation, forKey: "blue_view_key_frame_animation")
-      DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {  [weak self] in
+      DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delay) {  [weak self] in
         self?.greenView?.layer.add(keyframeAnimation, forKey: "green_view_key_frame_animation")
       }
     }

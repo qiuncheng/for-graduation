@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
   fileprivate weak var toolBarView: ToolBarView?
   fileprivate weak var imageView: UIImageView?
   
+  fileprivate let disposedBag = DisposeBag()
   fileprivate var dataSources = [String]() {
     didSet {
       tableView?.reloadData()
@@ -43,6 +44,15 @@ class MainViewController: UIViewController {
     automaticallyAdjustsScrollViewInsets = false
     view.backgroundColor = UIColor(hex: 0x232329)
     title = "语音识别"
+    let rightItem = UIBarButtonItem.init(title: "设置", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+    self.navigationItem.rightBarButtonItem = rightItem
+    
+    rightItem.rx.tap
+      .subscribe(onNext: { [weak self] in
+        let settingVC = SettingViewController()
+        self?.navigationController?.show(settingVC, sender: nil)
+      })
+      .addDisposableTo(disposedBag)
     
     let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
       .then({
@@ -58,13 +68,8 @@ class MainViewController: UIViewController {
         $0.registerCell(WaitingVoiceCell.self)
       })
     
-    
     self.tableView = tableView
     view.addSubview(tableView)
-    
-//    tableView.rx.items(cellIdentifier: SpeedResultCell.identifier, cellType: SpeedResultCell.self) { 
-//      
-//    }
     
     let imageView = UIImageView()
     imageView.image = #imageLiteral(resourceName: "bg2")
@@ -272,6 +277,5 @@ extension MainViewController: UITableViewDataSource {
       return WaitingVoiceCell.cellHeight
     }
   }
-  
 }
 
