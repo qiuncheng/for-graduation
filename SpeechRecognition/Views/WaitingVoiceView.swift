@@ -8,9 +8,9 @@
 
 import UIKit
 
-class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
+class WaitingVoiceView: UIView {
   
-  fileprivate let animationDuration = 3.0
+  fileprivate let animationDuration = 2.0
   
   fileprivate var avatarImageView: UIImageView?
   fileprivate var redView: UIView?
@@ -20,33 +20,19 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
   static var cellHeight: CGFloat {
     return 80.0
   }
+
   
-  override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: style, reuseIdentifier: reuseIdentifier)
+  override init(frame: CGRect) {
+    super.init(frame: frame)
     backgroundColor = UIColor.clear
-    selectionStyle = .none
     initSubviews()
     
     startAnimation()
   }
   
   fileprivate func initSubviews() {
-    
-    let avatarImageView = UIImageView.init().then {
-      $0.image = #imageLiteral(resourceName: "assistant")
-      $0.layer.cornerRadius = 32.0
-      $0.layer.masksToBounds = true
-      $0.contentMode = .scaleAspectFill
-    }
-    addSubview(avatarImageView)
-    avatarImageView.snp.makeConstraints({ [unowned self] make in
-      make.right.equalTo(self.snp.right).offset(-10)
-      make.size.equalTo(64.0)
-      make.centerY.equalTo(self)
-    })
-    
     let redView = UIView().then {
-      $0.backgroundColor = UIColor(hex: 0xd33535)
+      $0.backgroundColor = UIColor(hex: 0xD55353)
       $0.layer.cornerRadius = 7.5
       $0.layer.masksToBounds = true
     }
@@ -55,12 +41,12 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
     
     redView.snp.makeConstraints { [unowned self] make in
       make.centerY.equalTo(self.snp.centerY)
-      make.right.equalTo(avatarImageView.snp.left).offset(-20)
+      make.centerX.equalTo(self.snp.centerX)
       make.size.equalTo(15.0)
     }
     
     let blueView = UIView().then({
-      $0.backgroundColor = UIColor(hex: 0x47d60c)
+      $0.backgroundColor = UIColor(hex: 0xD33535)
       $0.layer.cornerRadius = 7.5
       $0.layer.masksToBounds = true
     })
@@ -73,7 +59,7 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
     })
     
     let greenView = UIView().then({
-      $0.backgroundColor = UIColor.init(hex: 0x60a942)
+      $0.backgroundColor = UIColor.init(hex: 0xE87A7A)
       $0.layer.masksToBounds = true
       $0.layer.cornerRadius = 7.5
     })
@@ -81,7 +67,7 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
     addSubview(greenView)
     self.greenView = greenView
     greenView.snp.makeConstraints({ [unowned self] make in
-      make.right.equalTo(blueView.snp.left).offset(-10)
+      make.left.equalTo(redView.snp.right).offset(10)
       make.centerY.equalTo(self)
       make.size.equalTo(redView)
     })
@@ -121,11 +107,4 @@ class WaitingVoiceCell: UITableViewCell, ViewIdentifierReuseable {
     super.awakeFromNib()
     // Initialization code
   }
-  
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-    
-    // Configure the view for the selected state
-  }
-  
 }

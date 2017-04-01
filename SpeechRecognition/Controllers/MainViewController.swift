@@ -17,11 +17,17 @@ class MainViewController: UIViewController {
   fileprivate weak var tableView: UITableView?
   fileprivate weak var toolBarView: ToolBarView?
   fileprivate weak var imageView: UIImageView?
+  fileprivate var tempHUD: MBProgressHUD?
+  fileprivate var animatedView: WaitingVoiceView?
   
   fileprivate let disposedBag = DisposeBag()
   fileprivate var dataSources = [String]() {
     didSet {
+//      let indexSet = IndexSet(integer: 0)
+//      tableView?.reloadSections(indexSet, with: .fade)
       tableView?.reloadData()
+      let lastIndexPath = IndexPath.init(row: dataSources.count - 1, section: 0)
+      tableView?.scrollToRow(at: lastIndexPath, at: .none, animated: true)
     }
   }
   
@@ -65,7 +71,6 @@ class MainViewController: UIViewController {
         $0.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 49, right: 0)
         $0.contentOffset = CGPoint(x: 0, y: 0)
         $0.registerCell(SpeedResultCell.self)
-        $0.registerCell(WaitingVoiceCell.self)
       })
     
     self.tableView = tableView
@@ -157,11 +162,18 @@ class MainViewController: UIViewController {
 }
 extension MainViewController: ToolBarViewDelegate {
   func toolBarView(_ toolBarView: ToolBarView, speedButtonSelected sender: UIButton) {
-    Log("")
     isRecording = !isRecording
     if isRecording {
       toolBarView.title = "停止录音"
       title = "录音..."
+      animatedView = WaitingVoiceView()
+      view.addSubview(animatedView!)
+      animatedView?.snp.makeConstraints({ [unowned self] (make) in
+        make.left.equalTo(self.view.snp.left)
+        make.right.equalTo(self.view.snp.right)
+        make.bottom.equalTo(self.toolBarView!.snp.top)
+        make.height.equalTo(88.0)
+      })
       // 开始录音
       if speechRecognizer == nil {
         self.initRecognizer()
@@ -188,16 +200,28 @@ extension MainViewController: ToolBarViewDelegate {
       // 停止录音
 //      pcmRecorder?.stop()
       title = "录音结束，正在解析..."
+      tempHUD = self.showHUD(in: view, title: "录音结束，正在解析...")
       speechRecognizer?.stopListening()
     }
   }
 }
 
+extension MainViewController: HUDAble {
+}
+
 extension MainViewController: IFlySpeechRecognizerDelegate {
   func onResults(_ results: [Any]!, isLast: Bool) {
-    Log(results)
     var resultStr = String()
-    guard let dict = results.first as? [String: Any?] else { return }
+    guard let resultArray = results,
+      let dict = resultArray.first as? [String: Any?] else {
+        tempHUD?.hide(animated: false)
+        self.showHUD(in: self.view, title: "没有检测到你的话", duration: 0.75)
+        animatedView?.removeFromSuperview()
+        animatedView = nil
+        title = "语音识别"
+        toolBarView?.title = "开始录音"
+        return
+    }
     for str in dict.keys {
       resultStr += str
     }
@@ -205,10 +229,19 @@ extension MainViewController: IFlySpeechRecognizerDelegate {
       resultFromJson.characters.count > 1 {
       dataSources.append(resultFromJson)
     }
+    tempHUD?.hide(animated: true)
+    animatedView?.removeFromSuperview()
+    animatedView = nil
     title = "语音识别"
   }
   func onError(_ errorCode: IFlySpeechError!) {
-    Log(errorCode.errorDesc)
+    Log(errorCode.errorCode)
+    if errorCode.errorCode != 0 {
+      self.showHUD(in: view, title: "识别失败", duration: 1.0)
+      animatedView?.removeFromSuperview()
+      animatedView = nil
+    }
+    title = "语音识别"
   }
 }
 
@@ -232,28 +265,17 @@ extension MainViewController: UITableViewDelegate {
 
 extension MainViewController: UITableViewDataSource {
   func numberOfSections(in tableView: UITableView) -> Int {
-    return 2
+    return 1
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    if section == 0 {
       return dataSources.count
-    }
-    else {
-      return 1
-    }
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    if indexPath.section == 0 {
-      let cell = tableView.dequeueReusableCell(indexPath) as SpeedResultCell
-      cell.contentText = dataSources[indexPath.row]
-      return cell
-    }
-    else {
-      let cell = tableView.dequeueReusableCell(indexPath) as WaitingVoiceCell
-      return cell
-    }
+    let cell = tableView.dequeueReusableCell(indexPath) as SpeedResultCell
+    cell.contentText = dataSources[indexPath.row]
+    return cell
   }
   
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -265,17 +287,12 @@ extension MainViewController: UITableViewDataSource {
   }
  
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    if indexPath.section == 0 {
       let str = dataSources[indexPath.row]
       let height = str.getHeight(maxWidth: 190, font: UIFont.systemFont(ofSize: 16.0))
       if height + 16 + 16 < 80 {
         return 80.0
       }
       return height + 16 + 16
-    }
-    else {
-      return WaitingVoiceCell.cellHeight
-    }
   }
 }
 

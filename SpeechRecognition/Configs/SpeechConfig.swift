@@ -21,8 +21,8 @@ struct SpeechConfig {
 
     init() {
         speechTimeOut = "30000"
-        vadEos = "3000"
-        vadBos = "3000"
+        vadEos = "30000"
+        vadBos = "30000"
         dot = "1"
         sampleRate = "16000"
         language = "zh_cn"

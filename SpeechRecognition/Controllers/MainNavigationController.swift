@@ -30,6 +30,7 @@ class MainNavigationController: UINavigationController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationBar.tintColor = UIColor.black
   }
   
   override func didReceiveMemoryWarning() {

@@ -46,12 +46,13 @@
 		F2C9BDC81E8E55890030A24A /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDAD1E8E55890030A24A /* ISRDataHelper.m */; };
 		F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB11E8E55890030A24A /* SpeedResultCell.swift */; };
 		F2C9BDCA1E8E55890030A24A /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB21E8E55890030A24A /* ToolBarView.swift */; };
-		F2C9BDCB1E8E55890030A24A /* WaitingVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB31E8E55890030A24A /* WaitingVoiceCell.swift */; };
+		F2C9BDCB1E8E55890030A24A /* WaitingVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDB31E8E55890030A24A /* WaitingVoiceView.swift */; };
 		F2C9BDD71E8E56650030A24A /* SpeechRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDD61E8E56650030A24A /* SpeechRecognitionTests.swift */; };
 		F2C9BDE01E8E57220030A24A /* YYCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C9BDDE1E8E57150030A24A /* YYCache.framework */; };
 		F2C9BDE11E8E57220030A24A /* YYCache.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2C9BDDE1E8E57150030A24A /* YYCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2C9BE2C1E8E7C860030A24A /* CacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BE2B1E8E7C860030A24A /* CacheHelper.swift */; };
 		F2C9BE2E1E8E7EC20030A24A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BE2D1E8E7EC20030A24A /* SettingViewController.swift */; };
+		F2C9BE351E8FB0040030A24A /* MBProgressHUD+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BE341E8FB0040030A24A /* MBProgressHUD+Speech.swift */; };
 		F2DEA0F81E7AC30E00B4104D /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */; };
 		F2DEA0FA1E7AC31600B4104D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0F91E7AC31600B4104D /* SnapKit.framework */; };
 		F2DEA0FC1E7AC31C00B4104D /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DEA0FB1E7AC31C00B4104D /* Then.framework */; };
@@ -128,13 +129,14 @@
 		F2C9BDAE1E8E55890030A24A /* SpeechRecognition-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpeechRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
 		F2C9BDB11E8E55890030A24A /* SpeedResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedResultCell.swift; sourceTree = "<group>"; };
 		F2C9BDB21E8E55890030A24A /* ToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
-		F2C9BDB31E8E55890030A24A /* WaitingVoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingVoiceCell.swift; sourceTree = "<group>"; };
+		F2C9BDB31E8E55890030A24A /* WaitingVoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingVoiceView.swift; sourceTree = "<group>"; };
 		F2C9BDD41E8E56650030A24A /* SpeechRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C9BDD61E8E56650030A24A /* SpeechRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionTests.swift; sourceTree = "<group>"; };
 		F2C9BDD81E8E56650030A24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C9BDDE1E8E57150030A24A /* YYCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YYCache.framework; sourceTree = "<group>"; };
 		F2C9BE2B1E8E7C860030A24A /* CacheHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheHelper.swift; sourceTree = "<group>"; };
 		F2C9BE2D1E8E7EC20030A24A /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		F2C9BE341E8FB0040030A24A /* MBProgressHUD+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Speech.swift"; sourceTree = "<group>"; };
 		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		F2DEA0F91E7AC31600B4104D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		F2DEA0FB1E7AC31C00B4104D /* Then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Then.framework; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				F2C9BDA81E8E55890030A24A /* UITableView+Speech.swift */,
 				F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */,
 				F2C9BE2B1E8E7C860030A24A /* CacheHelper.swift */,
+				F2C9BE341E8FB0040030A24A /* MBProgressHUD+Speech.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -302,7 +305,7 @@
 			children = (
 				F2C9BDB11E8E55890030A24A /* SpeedResultCell.swift */,
 				F2C9BDB21E8E55890030A24A /* ToolBarView.swift */,
-				F2C9BDB31E8E55890030A24A /* WaitingVoiceCell.swift */,
+				F2C9BDB31E8E55890030A24A /* WaitingVoiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -430,11 +433,12 @@
 				F2C9BDC61E8E55890030A24A /* ViewIdentifierReuseable.swift in Sources */,
 				F2C9BDBD1E8E55890030A24A /* Config.swift in Sources */,
 				F2C9BDC41E8E55890030A24A /* UIAlertController+Speech.swift in Sources */,
+				F2C9BE351E8FB0040030A24A /* MBProgressHUD+Speech.swift in Sources */,
 				F2C9BDC81E8E55890030A24A /* ISRDataHelper.m in Sources */,
 				F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */,
 				F2C9BDBE1E8E55890030A24A /* SpeechConfig.swift in Sources */,
 				F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */,
-				F2C9BDCB1E8E55890030A24A /* WaitingVoiceCell.swift in Sources */,
+				F2C9BDCB1E8E55890030A24A /* WaitingVoiceView.swift in Sources */,
 				F2C9BDC01E8E55890030A24A /* MainViewController.swift in Sources */,
 				F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */,
 				F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */,
