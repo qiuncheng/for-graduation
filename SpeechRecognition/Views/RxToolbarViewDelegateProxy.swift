@@ -39,7 +39,8 @@ extension Reactive where Base: ToolBarView {
 
     var buttonTap: ControlEvent<(RecordState)> {
         return ControlEvent<(RecordState)>(events: self.delegate.methodInvoked(#selector(ToolBarViewDelegate.toolBarView(_:speedButtonSelected:))).map({ _ in
-            return RecordState.unrecord
+            
+            return self.base.recordState
         }))
     }
 }

@@ -26,6 +26,7 @@ class ToolBarView: UIView {
             button?.setTitle(title, for: .normal)
         }
     }
+    var recordState = RecordState.unrecord
     
     convenience init() {
         self.init(frame: CGRect.zero)
@@ -67,9 +68,15 @@ class ToolBarView: UIView {
     }
     
     @objc fileprivate func speedButtonSelected(_ sender: UIButton) {
+        if recordState == RecordState.unrecord {
+            recordState = RecordState.recording
+        }
+        else {
+            recordState = RecordState.unrecord
+        }
         delegate?.toolBarView?(self, speedButtonSelected: sender)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

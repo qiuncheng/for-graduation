@@ -107,13 +107,15 @@ class MainViewController: UIViewController, ToolBarViewDelegate {
         .subscribe { (event) in
             switch event {
             case .next(let state):
-                print("+++\(state)++")
+                self.speechButtonTouched(state: state)
             default:
                 break
             }
-        }.addDisposableTo(disposedBag)
+        }
+        .addDisposableTo(disposedBag)
 
   }
+
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
@@ -176,51 +178,53 @@ class MainViewController: UIViewController, ToolBarViewDelegate {
     super.didReceiveMemoryWarning()
   }
 }
-//extension MainViewController: ToolBarViewDelegate {
-//  func toolBarView(_ toolBarView: ToolBarView, speedButtonSelected sender: UIButton) {
-//    isRecording = !isRecording
-//    if isRecording {
-//      toolBarView.title = "停止录音"
-//      title = "录音..."
-//      animatedView = WaitingVoiceView()
-//      view.addSubview(animatedView!)
-//      animatedView?.snp.makeConstraints({ [unowned self] (make) in
-//        make.left.equalTo(self.view.snp.left)
-//        make.right.equalTo(self.view.snp.right)
-//        make.bottom.equalTo(self.toolBarView!.snp.top)
-//        make.height.equalTo(88.0)
-//      })
-//      // 开始录音
-//      if speechRecognizer == nil {
-//        self.initRecognizer()
-//      }
-//      speechRecognizer?.cancel()
-//      speechRecognizer?.setParameter(IFLY_AUDIO_SOURCE_MIC, forKey: "audio_source")
-//      speechRecognizer?.setParameter("json", forKey: IFlySpeechConstant.result_TYPE())
-//      speechRecognizer?.setParameter("asr.pcm", forKey: IFlySpeechConstant.asr_AUDIO_PATH())
-//      speechRecognizer?.delegate = self
-//      if let startResult = speechRecognizer?.startListening() {
-//        if !startResult {
-//          let alertController = UIAlertController(title: "提醒",
-//                                                       message: "启动服务失败",
-//                                                       sureAction: { _ in
-//                                                        
-//          })
-//          
-//          alertController.show(in: self)
-//        }
-//      }
-//    }
-//    else {
-//      toolBarView.title = "开始录音"
-//      // 停止录音
-////      pcmRecorder?.stop()
-//      title = "录音结束，正在解析..."
-//      tempHUD = self.showHUD(in: view, title: "录音结束，正在解析...")
-//      speechRecognizer?.stopListening()
-//    }
-//  }
-//}
+
+extension MainViewController {
+    func speechButtonTouched(state: RecordState) {
+        switch state {
+        case .recording:
+            toolBarView?.title = "停止录音"
+            title = "录音..."
+            animatedView = WaitingVoiceView()
+            view.addSubview(animatedView!)
+            animatedView?.snp.makeConstraints({ [unowned self] (make) in
+                make.left.equalTo(self.view.snp.left)
+                make.right.equalTo(self.view.snp.right)
+                make.bottom.equalTo(self.toolBarView!.snp.top)
+                make.height.equalTo(88.0)
+            })
+            // 开始录音
+            if speechRecognizer == nil {
+                self.initRecognizer()
+            }
+            speechRecognizer?.cancel()
+            speechRecognizer?.setParameter(IFLY_AUDIO_SOURCE_MIC, forKey: "audio_source")
+            speechRecognizer?.setParameter("json", forKey: IFlySpeechConstant.result_TYPE())
+            speechRecognizer?.setParameter("asr.pcm", forKey: IFlySpeechConstant.asr_AUDIO_PATH())
+            speechRecognizer?.delegate = self
+            if let startResult = speechRecognizer?.startListening() {
+                if !startResult {
+                    let alertController = UIAlertController(title: "提醒",
+                                                            message: "启动服务失败",
+                                                            sureAction: { _ in
+
+                    })
+
+                    alertController.show(in: self)
+                }
+            }
+            break
+        case .unrecord:
+            toolBarView?.title = "开始录音"
+            // 停止录音
+            //      pcmRecorder?.stop()
+            title = "录音结束，正在解析..."
+            tempHUD = self.showHUD(in: view, title: "录音结束，正在解析...")
+            speechRecognizer?.stopListening()
+            break
+        }
+    }
+}
 
 extension MainViewController: HUDAble {
 }

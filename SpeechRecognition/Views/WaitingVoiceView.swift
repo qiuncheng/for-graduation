@@ -16,7 +16,6 @@ class WaitingVoiceView: UIView {
   fileprivate var redView: UIView?
   fileprivate var blueView: UIView?
   fileprivate var greenView: UIView?
-    var recordState = RecordState.unrecord
   
   static var cellHeight: CGFloat {
     return 80.0
