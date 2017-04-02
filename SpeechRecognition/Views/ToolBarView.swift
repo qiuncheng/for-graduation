@@ -10,8 +10,9 @@ import UIKit
 import Then
 import SnapKit
 
-protocol ToolBarViewDelegate: class {
-    func toolBarView(_ toolBarView: ToolBarView, speedButtonSelected sender: UIButton)
+@objc protocol ToolBarViewDelegate: class {
+    @objc
+    optional func toolBarView(_ toolBarView: ToolBarView, speedButtonSelected sender: UIButton)
 }
 
 class ToolBarView: UIView {
@@ -66,7 +67,7 @@ class ToolBarView: UIView {
     }
     
     @objc fileprivate func speedButtonSelected(_ sender: UIButton) {
-        delegate?.toolBarView(self, speedButtonSelected: sender)
+        delegate?.toolBarView?(self, speedButtonSelected: sender)
     }
     
     required init?(coder aDecoder: NSCoder) {
