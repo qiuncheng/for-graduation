@@ -20,5 +20,9 @@ extension UITableView {
         }
         return cell
     }
-    
+
+  func scrollTo(atRow row: Int, atSection section: Int = 0, _ scrollPosition: UITableViewScrollPosition) {
+    let lastIndexPath = IndexPath(row: row, section: section)
+    self.scrollToRow(at: lastIndexPath, at: scrollPosition, animated: true)
+  }
 }

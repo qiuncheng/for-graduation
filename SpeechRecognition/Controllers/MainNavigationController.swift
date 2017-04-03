@@ -14,6 +14,7 @@ class MainNavigationController: UINavigationController {
   convenience init() {
     let mainVC = MainViewController()
     self.init(rootViewController: mainVC)
+    navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "", style: .plain, target: nil, action: nil)
   }
   
   override init(rootViewController: UIViewController) {
@@ -31,6 +32,10 @@ class MainNavigationController: UINavigationController {
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationBar.tintColor = UIColor.black
+  }
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationItem.backBarButtonItem?.title = ""
   }
   
   override func didReceiveMemoryWarning() {
