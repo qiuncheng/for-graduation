@@ -22,9 +22,10 @@ class SettingViewController: UIViewController, UITableViewDelegate {
     title = "设置"
     let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
       .then {
-        $0.register(UITableViewCell.self, forCellReuseIdentifier: "SettingCell")
+        $0.registerCell(SettingCell.self)
     }
     view.addSubview(tableView)
+    self.tableView = tableView
     
     tableView.do {
       $0.snp.makeConstraints({ [unowned self] (make) in
@@ -34,23 +35,26 @@ class SettingViewController: UIViewController, UITableViewDelegate {
     
     inputWordObservable
       .asObservable()
-      .bindTo(tableView.rx.items(cellIdentifier: "SettingCell", cellType: UITableViewCell.self))  { (row, element, cell) in
-        cell.textLabel?.text = element
+      .bindTo(tableView.rx.items(cellIdentifier: SettingCell.identifier, cellType: SettingCell.self))  { (row, element, cell) in
+        cell.titleLabel?.text = element
       }
-      .addDisposableTo(disposeBag)
+      .disposed(by: disposeBag)
     
     tableView.rx
       .setDelegate(self)
-      .addDisposableTo(disposeBag)
+      .disposed(by: disposeBag)
     
     tableView.rx
       .itemSelected
       .map({ [unowned self] indexPath in
         return (indexPath, self.inputWordObservable.value[indexPath.row])
       })
-      .subscribe(onNext: { (indexPath, str) in
+      .subscribe(onNext: { [weak self] (indexPath, str) in
         if indexPath.section == 0 && indexPath.row == 0 {
-          
+          if let cell = self?.tableView?.cellForRow(at: indexPath) as? SettingCell {
+            cell.textField?.isEnabled = true
+            cell.textField?.becomeFirstResponder()
+          }
         }
       })
       .addDisposableTo(disposeBag)

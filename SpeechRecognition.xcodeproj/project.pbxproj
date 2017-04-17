@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3E5FD01EA3C86E006274C1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */; };
+		3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */; };
+		3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */; };
+		3F3E5FD71EA463D6006274C1 /* WordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD61EA463D6006274C1 /* WordInputView.swift */; };
 		8686E1C51E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */; };
 		8686E1C91E90B66C0083AC54 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8686E1C71E90B66C0083AC54 /* RxSwift.framework */; };
 		8686E1CF1E90B69C0083AC54 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8686E1CE1E90B69C0083AC54 /* DynamicColor.framework */; };
@@ -90,6 +94,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploaderManager.swift; sourceTree = "<group>"; };
+		3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerManager.swift; sourceTree = "<group>"; };
+		3F3E5FD61EA463D6006274C1 /* WordInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordInputView.swift; sourceTree = "<group>"; };
 		8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxToolbarViewDelegateProxy.swift; sourceTree = "<group>"; };
 		8686E1C61E90B66C0083AC54 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		8686E1C71E90B66C0083AC54 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
@@ -182,6 +190,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3E5FD11EA3D518006274C1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */,
+				3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		8686E1C31E90B4350083AC54 /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +298,7 @@
 		F2C9BDA31E8E55890030A24A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				3F3E5FD11EA3D518006274C1 /* Manager */,
 				F2C9BDA41E8E55890030A24A /* DispatchQueue+Speech.swift */,
 				F2C9BDA51E8E55890030A24A /* Log.swift */,
 				F2C9BDA61E8E55890030A24A /* String+Speed.swift */,
@@ -315,6 +333,8 @@
 				F2C9BDB11E8E55890030A24A /* SpeedResultCell.swift */,
 				F2C9BDB21E8E55890030A24A /* ToolBarView.swift */,
 				F2C9BDB31E8E55890030A24A /* WaitingVoiceView.swift */,
+				3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */,
+				3F3E5FD61EA463D6006274C1 /* WordInputView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -433,10 +453,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */,
 				F2C9BE2C1E8E7C860030A24A /* CacheHelper.swift in Sources */,
 				8686E1C51E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift in Sources */,
 				F2C9BDC31E8E55890030A24A /* String+Speed.swift in Sources */,
 				F2C9BDBA1E8E55890030A24A /* AppDelegate.swift in Sources */,
+				3F3E5FD71EA463D6006274C1 /* WordInputView.swift in Sources */,
 				F2C9BDCA1E8E55890030A24A /* ToolBarView.swift in Sources */,
 				F2C9BDC21E8E55890030A24A /* Log.swift in Sources */,
 				F2C9BE2E1E8E7EC20030A24A /* SettingViewController.swift in Sources */,
@@ -444,6 +466,7 @@
 				F2C9BDBD1E8E55890030A24A /* Config.swift in Sources */,
 				F2C9BDC41E8E55890030A24A /* UIAlertController+Speech.swift in Sources */,
 				F2C9BE351E8FB0040030A24A /* MBProgressHUD+Speech.swift in Sources */,
+				3F3E5FD01EA3C86E006274C1 /* SettingCell.swift in Sources */,
 				F2C9BDC81E8E55890030A24A /* ISRDataHelper.m in Sources */,
 				8686E1DC1E9125C70083AC54 /* RecordState.swift in Sources */,
 				F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */,
@@ -453,6 +476,7 @@
 				F2C9BDC01E8E55890030A24A /* MainViewController.swift in Sources */,
 				F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */,
 				F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */,
+				3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
