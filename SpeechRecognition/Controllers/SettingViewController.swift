@@ -49,10 +49,9 @@ class SettingViewController: UIViewController, UITableViewDelegate {
       .map({ [unowned self] indexPath in
         return (indexPath, self.inputWordObservable.value[indexPath.row])
       })
-      .subscribe(onNext: { [weak self] (indexPath, str) in
+      .subscribe(onNext: { [unowned self] (indexPath, str) in
         if indexPath.section == 0 && indexPath.row == 0 {
-          if let cell = self?.tableView?.cellForRow(at: indexPath) as? SettingCell {
-            cell.textField?.isEnabled = true
+          if let cell = self.tableView?.cellForRow(at: indexPath) as? SettingCell {
             cell.textField?.becomeFirstResponder()
           }
         }

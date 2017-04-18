@@ -11,6 +11,9 @@
 		3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */; };
 		3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */; };
 		3F3E5FD71EA463D6006274C1 /* WordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD61EA463D6006274C1 /* WordInputView.swift */; };
+		3F3E5FDB1EA5124D006274C1 /* UIScreen+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FDA1EA5124D006274C1 /* UIScreen+Speech.swift */; };
+		3F3E5FDD1EA51788006274C1 /* UIView+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FDC1EA51788006274C1 /* UIView+Speech.swift */; };
+		3F3E5FDF1EA51A18006274C1 /* UIImage+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FDE1EA51A18006274C1 /* UIImage+Speech.swift */; };
 		8686E1C51E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */; };
 		8686E1C91E90B66C0083AC54 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8686E1C71E90B66C0083AC54 /* RxSwift.framework */; };
 		8686E1CF1E90B69C0083AC54 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8686E1CE1E90B69C0083AC54 /* DynamicColor.framework */; };
@@ -98,6 +101,9 @@
 		3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploaderManager.swift; sourceTree = "<group>"; };
 		3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerManager.swift; sourceTree = "<group>"; };
 		3F3E5FD61EA463D6006274C1 /* WordInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordInputView.swift; sourceTree = "<group>"; };
+		3F3E5FDA1EA5124D006274C1 /* UIScreen+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Speech.swift"; sourceTree = "<group>"; };
+		3F3E5FDC1EA51788006274C1 /* UIView+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Speech.swift"; sourceTree = "<group>"; };
+		3F3E5FDE1EA51A18006274C1 /* UIImage+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Speech.swift"; sourceTree = "<group>"; };
 		8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxToolbarViewDelegateProxy.swift; sourceTree = "<group>"; };
 		8686E1C61E90B66C0083AC54 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		8686E1C71E90B66C0083AC54 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
@@ -307,6 +313,9 @@
 				F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */,
 				F2C9BE2B1E8E7C860030A24A /* CacheHelper.swift */,
 				F2C9BE341E8FB0040030A24A /* MBProgressHUD+Speech.swift */,
+				3F3E5FDA1EA5124D006274C1 /* UIScreen+Speech.swift */,
+				3F3E5FDC1EA51788006274C1 /* UIView+Speech.swift */,
+				3F3E5FDE1EA51A18006274C1 /* UIImage+Speech.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -472,8 +481,11 @@
 				F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */,
 				F2C9BDBE1E8E55890030A24A /* SpeechConfig.swift in Sources */,
 				F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */,
+				3F3E5FDB1EA5124D006274C1 /* UIScreen+Speech.swift in Sources */,
+				3F3E5FDF1EA51A18006274C1 /* UIImage+Speech.swift in Sources */,
 				F2C9BDCB1E8E55890030A24A /* WaitingVoiceView.swift in Sources */,
 				F2C9BDC01E8E55890030A24A /* MainViewController.swift in Sources */,
+				3F3E5FDD1EA51788006274C1 /* UIView+Speech.swift in Sources */,
 				F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */,
 				F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */,
 				3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */,

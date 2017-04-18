@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import Then
+import RxSwift
 
 class SettingCell: UITableViewCell, ViewIdentifierReuseable {
   var textField: UITextField?
@@ -16,9 +17,27 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable {
   
   var inputAccessView: WordInputView?
   
+  let bag = DisposeBag()
+  
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setup()
+    
+    inputAccessView?.textHeightObservable.asObservable()
+      .subscribe(onNext: { [weak self] value in
+        if value > 0 {
+          self?.inputAccessView?.frame = CGRect.init(x: 0, y: 0, width: UIScreen.screenWidth, height: value + 22.0)
+          self?.textField?.reloadInputViews()
+        }
+      })
+    .disposed(by: bag)
+    
+    let tap = inputAccessView?.senderButton?.rx.tap
+    tap?.asObservable()
+      .subscribe(onNext: { _ in
+        print("---")
+      })
+      .disposed(by: bag)
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -32,14 +51,14 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable {
   }
   
   fileprivate func setup() {
-    textField = UITextField.init().with({
+    textField = UITextField.init().with({ [weak self] in
       $0.tintColor = UIColor.clear
       $0.borderStyle = .none
       $0.placeholder = ""
-      $0.isEnabled = false
-      let view = WordInputView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 200))
-      view.backgroundColor = UIColor.red
-      $0.inputAccessoryView = view
+      self?.inputAccessView = WordInputView()
+      self?.inputAccessView?.updateFrame()
+      $0.inputAccessoryView = self?.inputAccessView
+      $0.with(masksToBounds: true)
     })
     
     addSubview(textField!)
@@ -61,10 +80,10 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable {
     })
     
     textField?.snp.makeConstraints({ [unowned self] in
-      $0.left.equalTo(self.titleLabel!.snp.left).offset(10)
       $0.top.equalTo(self)
       $0.bottom.equalTo(self)
       $0.right.equalTo(self).offset(-10)
+      $0.width.equalTo(1.0)
     })
   }
   
@@ -73,5 +92,4 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable {
     
     // Configure the view for the selected state
   }
-  
 }
