@@ -11,10 +11,16 @@ import UIKit
 class UploaderManager: NSObject {
   static let manager = UploaderManager()
   
+  let name = "userword"
+  
   var uploader: IFlyDataUploader
+  
+  var userwords: IFlyUserWords
   
   override init() {
     uploader = IFlyDataUploader()
+    userwords = IFlyUserWords(json: "{\"userword\":[{\"name\":\"iflytek\",\"words\":[\"科大讯飞\",\"云平台\",\"用户词条\",\"开始上传词条\",\"无语无用\"]}]}")
+    
     super.init()
   }
   

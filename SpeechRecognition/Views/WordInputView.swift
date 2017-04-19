@@ -47,8 +47,8 @@ class WordInputView: UIView {
     textView?.do({
       $0.snp.makeConstraints({ (make) in
         make.left.equalTo(self.snp.left).offset(10)
-        make.top.equalTo(self.snp.top).offset(8)
-        make.bottom.equalTo(self.snp.bottom).offset(-8)
+        make.top.equalTo(self.snp.top).offset(4)
+        make.bottom.equalTo(self.snp.bottom).offset(-4)
         make.right.equalTo(self.snp.right).offset(-60)
       })
     })

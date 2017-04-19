@@ -11,7 +11,7 @@ import SnapKit
 import Then
 import RxSwift
 
-class SettingCell: UITableViewCell, ViewIdentifierReuseable {
+class SettingCell: UITableViewCell, ViewIdentifierReuseable, HUDAble {
   var textField: UITextField?
   var titleLabel: UILabel?
   
@@ -23,21 +23,6 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setup()
     
-    inputAccessView?.textHeightObservable.asObservable()
-      .subscribe(onNext: { [weak self] value in
-        if value > 0 {
-          self?.inputAccessView?.frame = CGRect.init(x: 0, y: 0, width: UIScreen.screenWidth, height: value + 22.0)
-          self?.textField?.reloadInputViews()
-        }
-      })
-    .disposed(by: bag)
-    
-    let tap = inputAccessView?.senderButton?.rx.tap
-    tap?.asObservable()
-      .subscribe(onNext: { _ in
-        print("---")
-      })
-      .disposed(by: bag)
   }
   
   required init?(coder aDecoder: NSCoder) {
