@@ -27,6 +27,11 @@
 		3F3E60371EA79632006274C1 /* PermissiveGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60231EA79632006274C1 /* PermissiveGestureRecognizerDelegate.swift */; };
 		3F3E60381EA79632006274C1 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60241EA79632006274C1 /* SharedTypes.swift */; };
 		3F3E60391EA79632006274C1 /* View+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60251EA79632006274C1 /* View+RxGesture.swift */; };
+		3F3E603D1EA836EF006274C1 /* OpenAudioStreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E603C1EA836EF006274C1 /* OpenAudioStreamCell.swift */; };
+		3F3E60431EAC7B68006274C1 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60421EAC7B68006274C1 /* SettingModel.swift */; };
+		3F3E60451EAC7F14006274C1 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3E60401EAC7B47006274C1 /* RxDataSources.framework */; };
+		3F3E60461EAC7F14006274C1 /* RxDataSources.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F3E60401EAC7B47006274C1 /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F3E60481EAC80A6006274C1 /* UserDefaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60471EAC80A6006274C1 /* UserDefaultable.swift */; };
 		8686E1C51E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */; };
 		8686E1C91E90B66C0083AC54 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8686E1C71E90B66C0083AC54 /* RxSwift.framework */; };
 		8686E1CF1E90B69C0083AC54 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8686E1CE1E90B69C0083AC54 /* DynamicColor.framework */; };
@@ -100,6 +105,7 @@
 				8686E1D71E90BEEC0083AC54 /* RxCocoa.framework in CopyFiles */,
 				8686E1D11E90BEEC0083AC54 /* DynamicColor.framework in CopyFiles */,
 				8686E1D91E90BEED0083AC54 /* RxSwift.framework in CopyFiles */,
+				3F3E60461EAC7F14006274C1 /* RxDataSources.framework in CopyFiles */,
 				F2DEA1001E7AC3BB00B4104D /* MBProgressHUD.framework in CopyFiles */,
 				F2C9BDE11E8E57220030A24A /* YYCache.framework in CopyFiles */,
 				8686E1D31E90BEEC0083AC54 /* SnapKit.framework in CopyFiles */,
@@ -130,6 +136,10 @@
 		3F3E60231EA79632006274C1 /* PermissiveGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissiveGestureRecognizerDelegate.swift; sourceTree = "<group>"; };
 		3F3E60241EA79632006274C1 /* SharedTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTypes.swift; sourceTree = "<group>"; };
 		3F3E60251EA79632006274C1 /* View+RxGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+RxGesture.swift"; sourceTree = "<group>"; };
+		3F3E603C1EA836EF006274C1 /* OpenAudioStreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAudioStreamCell.swift; sourceTree = "<group>"; };
+		3F3E60401EAC7B47006274C1 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxDataSources.framework; sourceTree = "<group>"; };
+		3F3E60421EAC7B68006274C1 /* SettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		3F3E60471EAC80A6006274C1 /* UserDefaultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultable.swift; sourceTree = "<group>"; };
 		8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxToolbarViewDelegateProxy.swift; sourceTree = "<group>"; };
 		8686E1C61E90B66C0083AC54 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		8686E1C71E90B66C0083AC54 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
@@ -209,6 +219,7 @@
 				8686E1CF1E90B69C0083AC54 /* DynamicColor.framework in Frameworks */,
 				F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */,
 				F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */,
+				3F3E60451EAC7F14006274C1 /* RxDataSources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +238,7 @@
 			children = (
 				3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */,
 				3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */,
+				3F3E60471EAC80A6006274C1 /* UserDefaultable.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -301,6 +313,7 @@
 			children = (
 				F2C9BDB11E8E55890030A24A /* SpeedResultCell.swift */,
 				3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */,
+				3F3E603C1EA836EF006274C1 /* OpenAudioStreamCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -337,6 +350,7 @@
 		F23E465A1E76BE9B0051F0EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F3E60401EAC7B47006274C1 /* RxDataSources.framework */,
 				8686E1CE1E90B69C0083AC54 /* DynamicColor.framework */,
 				8686E1CA1E90B6860083AC54 /* SnapKit.framework */,
 				8686E1CB1E90B6860083AC54 /* Then.framework */,
@@ -420,6 +434,7 @@
 		F2C9BDAF1E8E55890030A24A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3F3E60421EAC7B68006274C1 /* SettingModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -558,6 +573,7 @@
 				F2C9BDCA1E8E55890030A24A /* ToolBarView.swift in Sources */,
 				F2C9BDC21E8E55890030A24A /* Log.swift in Sources */,
 				F2C9BE2E1E8E7EC20030A24A /* SettingViewController.swift in Sources */,
+				3F3E603D1EA836EF006274C1 /* OpenAudioStreamCell.swift in Sources */,
 				3F3E602D1EA79632006274C1 /* UIScreenEdgePanGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E602A1EA79632006274C1 /* UIPanGestureRecognizer+RxGesture.swift in Sources */,
 				F2C9BDC61E8E55890030A24A /* ViewIdentifierReuseable.swift in Sources */,
@@ -574,6 +590,7 @@
 				8686E1DC1E9125C70083AC54 /* RecordState.swift in Sources */,
 				F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */,
 				3F3E60371EA79632006274C1 /* PermissiveGestureRecognizerDelegate.swift in Sources */,
+				3F3E60431EAC7B68006274C1 /* SettingModel.swift in Sources */,
 				F2C9BDBE1E8E55890030A24A /* SpeechConfig.swift in Sources */,
 				F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */,
 				3F3E602B1EA79632006274C1 /* UIPinchGestureRecognizer+RxGesture.swift in Sources */,
@@ -587,6 +604,7 @@
 				F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */,
 				3F3E60381EA79632006274C1 /* SharedTypes.swift in Sources */,
 				F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */,
+				3F3E60481EAC80A6006274C1 /* UserDefaultable.swift in Sources */,
 				3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */,
 				3F3E60281EA79632006274C1 /* UIGestureRecognizer+RxGesture.swift in Sources */,
 			);

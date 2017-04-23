@@ -9,11 +9,13 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
-class SettingViewController: UIViewController, UITableViewDelegate, HUDAble {
+class SettingViewController: UIViewController, UITableViewDelegate, HUDAble, UserDefaultable {
   
   fileprivate weak var tableView: UITableView?
-  fileprivate var inputWordObservable = Variable.init(["上传词表"])
+  fileprivate var inputWordObservable = Variable.init(["上传词表", "启用音频流识别"])
+//  fileprivate var openSwitchObservable = Variable.init([])
   fileprivate let disposeBag = DisposeBag()
   let manager = UploaderManager.manager
 
@@ -27,6 +29,7 @@ class SettingViewController: UIViewController, UITableViewDelegate, HUDAble {
     let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
       .then {
         $0.registerCell(SettingCell.self)
+        $0.registerCell(OpenAudioStreamCell.self)
         $0.keyboardDismissMode = .onDrag
     }
     view.addSubview(tableView)
@@ -41,8 +44,24 @@ class SettingViewController: UIViewController, UITableViewDelegate, HUDAble {
     
     inputWordObservable
       .asObservable()
-      .bindTo(tableView.rx.items(cellIdentifier: SettingCell.identifier, cellType: SettingCell.self))  { (row, element, cell) in
+      .bindTo(tableView.rx.items(cellIdentifier: SettingCell.identifier, cellType: SettingCell.self))  { [unowned self] (row, element, cell) in
         cell.titleLabel?.text = element
+        if row == 0 {
+          cell.openSwitch?.isHidden = true
+          cell.textField?.isHidden = false
+        }
+        else {
+          cell.openSwitch?.isHidden = false
+          cell.textField?.isHidden = true
+          cell.openSwitch?.isOn = self.isOpenAudioStream
+          cell.openSwitch?.rx.value
+            .asObservable()
+            .subscribe(onNext: { [weak self] currentValue in
+              print(currentValue)
+              self?.isOpenAudioStream = currentValue
+            })
+            .disposed(by: self.disposeBag)
+        }
       }
       .disposed(by: disposeBag)
     

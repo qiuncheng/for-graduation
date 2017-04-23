@@ -14,6 +14,7 @@ import RxSwift
 class SettingCell: UITableViewCell, ViewIdentifierReuseable, HUDAble {
   var textField: UITextField?
   var titleLabel: UILabel?
+  var openSwitch: UISwitch?
   
   var inputAccessView: WordInputView?
   
@@ -22,7 +23,6 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable, HUDAble {
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setup()
-    
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -54,6 +54,11 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable, HUDAble {
     })
     addSubview(titleLabel!)
     
+    openSwitch = UISwitch().with({
+      $0.sizeToFit()
+    })
+    addSubview(openSwitch!)
+    
     makeConstraints()
   }
   
@@ -69,6 +74,13 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable, HUDAble {
       $0.bottom.equalTo(self)
       $0.right.equalTo(self).offset(-10)
       $0.width.equalTo(1.0)
+    })
+    
+    openSwitch?.do({
+      $0.snp.makeConstraints({ [unowned self] in
+        $0.right.equalTo(self.snp.right).offset(-8)
+        $0.centerY.equalTo(self.snp.centerY)
+      })
     })
   }
   

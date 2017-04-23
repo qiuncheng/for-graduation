@@ -4,3 +4,4 @@ github "jdg/MBProgressHUD" ~> 1.0.0
 github "devxoul/Then" ~> 2.1.0
 github "yannickl/DynamicColor"
 github "ibireme/YYCache"
+github "RxSwiftCommunity/RxDataSources"
