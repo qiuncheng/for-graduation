@@ -12,7 +12,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class MainViewController: UIViewController, ToolBarViewDelegate {
+class MainViewController: UIViewController, ToolBarViewDelegate, UserDefaultable {
 
   fileprivate weak var tableView: UITableView?
   fileprivate weak var toolBarView: ToolBarView?
@@ -189,6 +189,10 @@ class MainViewController: UIViewController, ToolBarViewDelegate {
 
 extension MainViewController {
   func speechButtonTouched(state: RecordState) {
+      normalRecord(state: state)
+  }
+  
+  private func normalRecord(state: RecordState) {
     switch state {
     case .recording:
       toolBarView?.title = "停止录音"
@@ -215,9 +219,9 @@ extension MainViewController {
           let alertController = UIAlertController(title: "提醒",
                                                   message: "启动服务失败",
                                                   sureAction: { _ in
-
+                                                    
           })
-
+          
           alertController.show(in: self)
         }
       }
