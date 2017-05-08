@@ -23,6 +23,20 @@ class SettingCell: UITableViewCell, ViewIdentifierReuseable, HUDAble {
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setup()
+    inputAccessView?.textHeightObservable
+      .asObservable().subscribe(onNext: { [weak self] value in
+        if let lineHeight = (self?.textField?.inputAccessoryView as? WordInputView)?.textView?.font?.lineHeight {
+          var height = value + 8
+          if value > lineHeight * 5 {
+            height = lineHeight * 5 + 8
+          }
+          if value <= 36 {
+            height = 44
+          }
+          self?.textField?.inputAccessoryView?.changeInputAccessoryView(height: height)
+        }
+      })
+      .disposed(by: bag)
   }
   
   required init?(coder aDecoder: NSCoder) {

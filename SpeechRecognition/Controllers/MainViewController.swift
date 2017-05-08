@@ -74,7 +74,7 @@ class MainViewController: UIViewController, ToolBarViewDelegate, UserDefaultable
     self.imageView = imageView
 
     let toolBarView = ToolBarView().then({
-      $0.backgroundColor = UIColor.init(hex: 0xeeeeeeee)
+      $0.backgroundColor = UIColor(hex: 0xeeeeee)
       //      $0.delegate = self
     })
     self.toolBarView = toolBarView

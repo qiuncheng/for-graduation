@@ -25,4 +25,12 @@ extension HUDAble where Self: UIViewController {
     hud.label.text = title
     return hud
   }
+  
+  @discardableResult
+  func showProgress(in view: UIView) -> MBProgressHUD {
+    let hud = MBProgressHUD.showAdded(to: view, animated: true)
+    hud.animationType = .fade
+    hud.mode = .indeterminate
+    return hud
+  }
 }

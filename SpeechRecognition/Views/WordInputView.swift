@@ -17,6 +17,8 @@ class WordInputView: UIView {
   var textView: UITextView?
   var senderButton: UIButton?
   var textHeightObservable = Variable(CGFloat())
+  
+  fileprivate var disposeBag = DisposeBag()
 
   convenience init() {
     self.init(frame: CGRect.zero)
@@ -30,7 +32,7 @@ class WordInputView: UIView {
     else {
       selfHeight = height + 22.0
     }
-    frame = CGRect.init(x: 0, y: 0, width: UIScreen.screenWidth, height: selfHeight)
+    frame = CGRect(x: 0, y: 0, width: UIScreen.screenWidth, height: selfHeight)
   }
   
   func setup() {
@@ -39,6 +41,7 @@ class WordInputView: UIView {
     textView = UITextView().with({
       $0.textAlignment = .left
       $0.delegate = self
+      $0.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
       $0.font = UIFont.systemFont(ofSize: 18.0)
       $0.with(cornerRadius: 2.0)
     })

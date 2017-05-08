@@ -84,27 +84,34 @@ class SettingViewController: UIViewController, UITableViewDelegate, HUDAble, Use
         if indexPath.section == 0 && indexPath.row == 0 {
           if let cell = self.tableView?.cellForRow(at: indexPath) as? SettingCell {
             cell.textField?.becomeFirstResponder()
+            cell.inputAccessView?.textView?.becomeFirstResponder()
            
             let tapControl = cell.inputAccessView?.senderButton?.rx.tap
             tapControl?.asObservable()
-              .map({ [weak cell] in
-                return cell?.inputAccessView?.textView?.text
-              })
-              .ifEmpty(default: "")
-              .subscribe(onNext: { [weak self] element in
-                guard let strongSelf = self else { return }
-                /// upload user word.
-                strongSelf.manager.userwords.putWord("name", value: element ?? "")
-                self?.manager.uploader.uploadData(completionHandler: { (str, error) in
-                  
-                  self?.showHUD(in: strongSelf.view, title: "上传成功", duration: 1.0)
-                }, name: strongSelf.manager.name, data: strongSelf.manager.userwords.toString())
-              })
+                .map({ [weak cell] in
+                    return cell?.inputAccessView?.textView?.text
+                })
+                .ifEmpty(default: "")
+                .subscribe(onNext: { [weak self, weak cell] element in
+                    guard let strongSelf = self else { return }
+                    /// upload user word.
+                  let hud = self?.showProgress(in: strongSelf.view)
+                  strongSelf.manager.userwords.putWord("name", value: element ?? "")
+                  self?.manager.uploader.uploadData(completionHandler: { (str, error) in
+                    hud?.hide(animated: true)
+                    self?.showHUD(in: strongSelf.view, title: "上传成功", duration: 1.0)
+                    cell?.inputAccessView?.textView?.text = ""
+                  }, name: strongSelf.manager.name, data: strongSelf.manager.userwords.toString())
+                })
               .disposed(by: self.disposeBag)
           }
         }
       })
       .addDisposableTo(disposeBag)
+  }
+  
+  deinit {
+    print("setting view controller dealloced.")
   }
   
   override func didReceiveMemoryWarning() {

@@ -22,4 +22,24 @@ extension UIView {
     self.layer.masksToBounds = `is`
     return self
   }
+  
+  func changeInputAccessoryView(height: CGFloat) {
+    for constraint in self.constraints {
+      if constraint.firstAttribute == NSLayoutAttribute.height {
+        constraint.constant = height
+        self.layoutIfNeeded()
+        break
+      }
+    }
+  }
+  
+//  - (void)changeInputAccessoryView:(UIView *)inputAccessoryView toHeight:(CGFloat)height {
+//  for (NSLayoutConstraint *constraint in [inputAccessoryView constraints]) {
+//  if (constraint.firstAttribute == NSLayoutAttributeHeight) {
+//  constraint.constant = height;
+//  [inputAccessoryView layoutIfNeeded];
+//  break;
+//  }
+//  }
+//  }
 }
