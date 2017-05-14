@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F070AB91EC88DCB003BFB3A /* MTMathAtomFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A951EC88DCB003BFB3A /* MTMathAtomFactory.m */; };
+		3F070ABA1EC88DCB003BFB3A /* MTMathList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A971EC88DCB003BFB3A /* MTMathList.m */; };
+		3F070ABB1EC88DCB003BFB3A /* MTMathListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A991EC88DCB003BFB3A /* MTMathListBuilder.m */; };
+		3F070ABC1EC88DCB003BFB3A /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A9B1EC88DCB003BFB3A /* MTMathListIndex.m */; };
+		3F070ABD1EC88DCB003BFB3A /* MTUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A9D1EC88DCB003BFB3A /* MTUnicode.m */; };
+		3F070ABE1EC88DCB003BFB3A /* MTFontMathTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AA21EC88DCB003BFB3A /* MTFontMathTable.m */; };
+		3F070ABF1EC88DCB003BFB3A /* MTTypesetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AA51EC88DCB003BFB3A /* MTTypesetter.m */; };
+		3F070AC01EC88DCB003BFB3A /* MTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AA81EC88DCB003BFB3A /* MTFont.m */; };
+		3F070AC11EC88DCB003BFB3A /* MTFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AAA1EC88DCB003BFB3A /* MTFontManager.m */; };
+		3F070AC21EC88DCB003BFB3A /* MTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AAC1EC88DCB003BFB3A /* MTLabel.m */; };
+		3F070AC31EC88DCB003BFB3A /* MTMathListDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AAE1EC88DCB003BFB3A /* MTMathListDisplay.m */; };
+		3F070AC41EC88DCB003BFB3A /* MTMathUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB01EC88DCB003BFB3A /* MTMathUILabel.m */; };
+		3F070AC51EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB21EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m */; };
+		3F070AC61EC88DCB003BFB3A /* NSColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB41EC88DCB003BFB3A /* NSColor+HexString.m */; };
+		3F070AC71EC88DCB003BFB3A /* NSView+backgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB61EC88DCB003BFB3A /* NSView+backgroundColor.m */; };
+		3F070AC81EC88DCB003BFB3A /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB81EC88DCB003BFB3A /* UIColor+HexString.m */; };
 		3F3E5FD01EA3C86E006274C1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */; };
 		3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */; };
 		3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */; };
@@ -32,6 +48,8 @@
 		3F3E60451EAC7F14006274C1 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3E60401EAC7B47006274C1 /* RxDataSources.framework */; };
 		3F3E60461EAC7F14006274C1 /* RxDataSources.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F3E60401EAC7B47006274C1 /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F3E60481EAC80A6006274C1 /* UserDefaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60471EAC80A6006274C1 /* UserDefaultable.swift */; };
+		3F937DD01EC87E160044803F /* CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F937DCF1EC87E160044803F /* CacheKey.swift */; };
+		3F937DD21EC880F70044803F /* Dictionary+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F937DD11EC880F70044803F /* Dictionary+Speech.swift */; };
 		8686E1C51E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */; };
 		8686E1C91E90B66C0083AC54 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8686E1C71E90B66C0083AC54 /* RxSwift.framework */; };
 		8686E1CF1E90B69C0083AC54 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8686E1CE1E90B69C0083AC54 /* DynamicColor.framework */; };
@@ -116,6 +134,42 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F070A921EC88DCB003BFB3A /* IosMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosMath.h; sourceTree = "<group>"; };
+		3F070A941EC88DCB003BFB3A /* MTMathAtomFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathAtomFactory.h; sourceTree = "<group>"; };
+		3F070A951EC88DCB003BFB3A /* MTMathAtomFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathAtomFactory.m; sourceTree = "<group>"; };
+		3F070A961EC88DCB003BFB3A /* MTMathList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathList.h; sourceTree = "<group>"; };
+		3F070A971EC88DCB003BFB3A /* MTMathList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathList.m; sourceTree = "<group>"; };
+		3F070A981EC88DCB003BFB3A /* MTMathListBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListBuilder.h; sourceTree = "<group>"; };
+		3F070A991EC88DCB003BFB3A /* MTMathListBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListBuilder.m; sourceTree = "<group>"; };
+		3F070A9A1EC88DCB003BFB3A /* MTMathListIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListIndex.h; sourceTree = "<group>"; };
+		3F070A9B1EC88DCB003BFB3A /* MTMathListIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListIndex.m; sourceTree = "<group>"; };
+		3F070A9C1EC88DCB003BFB3A /* MTUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTUnicode.h; sourceTree = "<group>"; };
+		3F070A9D1EC88DCB003BFB3A /* MTUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTUnicode.m; sourceTree = "<group>"; };
+		3F070AA01EC88DCB003BFB3A /* MTFont+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTFont+Internal.h"; sourceTree = "<group>"; };
+		3F070AA11EC88DCB003BFB3A /* MTFontMathTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFontMathTable.h; sourceTree = "<group>"; };
+		3F070AA21EC88DCB003BFB3A /* MTFontMathTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFontMathTable.m; sourceTree = "<group>"; };
+		3F070AA31EC88DCB003BFB3A /* MTMathListDisplayInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListDisplayInternal.h; sourceTree = "<group>"; };
+		3F070AA41EC88DCB003BFB3A /* MTTypesetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTypesetter.h; sourceTree = "<group>"; };
+		3F070AA51EC88DCB003BFB3A /* MTTypesetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTypesetter.m; sourceTree = "<group>"; };
+		3F070AA61EC88DCB003BFB3A /* MTConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConfig.h; sourceTree = "<group>"; };
+		3F070AA71EC88DCB003BFB3A /* MTFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFont.h; sourceTree = "<group>"; };
+		3F070AA81EC88DCB003BFB3A /* MTFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFont.m; sourceTree = "<group>"; };
+		3F070AA91EC88DCB003BFB3A /* MTFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFontManager.h; sourceTree = "<group>"; };
+		3F070AAA1EC88DCB003BFB3A /* MTFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFontManager.m; sourceTree = "<group>"; };
+		3F070AAB1EC88DCB003BFB3A /* MTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLabel.h; sourceTree = "<group>"; };
+		3F070AAC1EC88DCB003BFB3A /* MTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLabel.m; sourceTree = "<group>"; };
+		3F070AAD1EC88DCB003BFB3A /* MTMathListDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListDisplay.h; sourceTree = "<group>"; };
+		3F070AAE1EC88DCB003BFB3A /* MTMathListDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListDisplay.m; sourceTree = "<group>"; };
+		3F070AAF1EC88DCB003BFB3A /* MTMathUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathUILabel.h; sourceTree = "<group>"; };
+		3F070AB01EC88DCB003BFB3A /* MTMathUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathUILabel.m; sourceTree = "<group>"; };
+		3F070AB11EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+addLineToPoint.h"; sourceTree = "<group>"; };
+		3F070AB21EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+addLineToPoint.m"; sourceTree = "<group>"; };
+		3F070AB31EC88DCB003BFB3A /* NSColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+HexString.h"; sourceTree = "<group>"; };
+		3F070AB41EC88DCB003BFB3A /* NSColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+HexString.m"; sourceTree = "<group>"; };
+		3F070AB51EC88DCB003BFB3A /* NSView+backgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+backgroundColor.h"; sourceTree = "<group>"; };
+		3F070AB61EC88DCB003BFB3A /* NSView+backgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+backgroundColor.m"; sourceTree = "<group>"; };
+		3F070AB71EC88DCB003BFB3A /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		3F070AB81EC88DCB003BFB3A /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 		3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploaderManager.swift; sourceTree = "<group>"; };
 		3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerManager.swift; sourceTree = "<group>"; };
@@ -140,6 +194,8 @@
 		3F3E60401EAC7B47006274C1 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxDataSources.framework; sourceTree = "<group>"; };
 		3F3E60421EAC7B68006274C1 /* SettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		3F3E60471EAC80A6006274C1 /* UserDefaultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultable.swift; sourceTree = "<group>"; };
+		3F937DCF1EC87E160044803F /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
+		3F937DD11EC880F70044803F /* Dictionary+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Speech.swift"; sourceTree = "<group>"; };
 		8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxToolbarViewDelegateProxy.swift; sourceTree = "<group>"; };
 		8686E1C61E90B66C0083AC54 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		8686E1C71E90B66C0083AC54 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
@@ -233,6 +289,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F070A911EC88DCB003BFB3A /* iosMath */ = {
+			isa = PBXGroup;
+			children = (
+				3F070A921EC88DCB003BFB3A /* IosMath.h */,
+				3F070A931EC88DCB003BFB3A /* lib */,
+				3F070A9E1EC88DCB003BFB3A /* render */,
+			);
+			path = iosMath;
+			sourceTree = "<group>";
+		};
+		3F070A931EC88DCB003BFB3A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3F070A941EC88DCB003BFB3A /* MTMathAtomFactory.h */,
+				3F070A951EC88DCB003BFB3A /* MTMathAtomFactory.m */,
+				3F070A961EC88DCB003BFB3A /* MTMathList.h */,
+				3F070A971EC88DCB003BFB3A /* MTMathList.m */,
+				3F070A981EC88DCB003BFB3A /* MTMathListBuilder.h */,
+				3F070A991EC88DCB003BFB3A /* MTMathListBuilder.m */,
+				3F070A9A1EC88DCB003BFB3A /* MTMathListIndex.h */,
+				3F070A9B1EC88DCB003BFB3A /* MTMathListIndex.m */,
+				3F070A9C1EC88DCB003BFB3A /* MTUnicode.h */,
+				3F070A9D1EC88DCB003BFB3A /* MTUnicode.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		3F070A9E1EC88DCB003BFB3A /* render */ = {
+			isa = PBXGroup;
+			children = (
+				3F070A9F1EC88DCB003BFB3A /* internal */,
+				3F070AA61EC88DCB003BFB3A /* MTConfig.h */,
+				3F070AA71EC88DCB003BFB3A /* MTFont.h */,
+				3F070AA81EC88DCB003BFB3A /* MTFont.m */,
+				3F070AA91EC88DCB003BFB3A /* MTFontManager.h */,
+				3F070AAA1EC88DCB003BFB3A /* MTFontManager.m */,
+				3F070AAB1EC88DCB003BFB3A /* MTLabel.h */,
+				3F070AAC1EC88DCB003BFB3A /* MTLabel.m */,
+				3F070AAD1EC88DCB003BFB3A /* MTMathListDisplay.h */,
+				3F070AAE1EC88DCB003BFB3A /* MTMathListDisplay.m */,
+				3F070AAF1EC88DCB003BFB3A /* MTMathUILabel.h */,
+				3F070AB01EC88DCB003BFB3A /* MTMathUILabel.m */,
+				3F070AB11EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.h */,
+				3F070AB21EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m */,
+				3F070AB31EC88DCB003BFB3A /* NSColor+HexString.h */,
+				3F070AB41EC88DCB003BFB3A /* NSColor+HexString.m */,
+				3F070AB51EC88DCB003BFB3A /* NSView+backgroundColor.h */,
+				3F070AB61EC88DCB003BFB3A /* NSView+backgroundColor.m */,
+				3F070AB71EC88DCB003BFB3A /* UIColor+HexString.h */,
+				3F070AB81EC88DCB003BFB3A /* UIColor+HexString.m */,
+			);
+			path = render;
+			sourceTree = "<group>";
+		};
+		3F070A9F1EC88DCB003BFB3A /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				3F070AA01EC88DCB003BFB3A /* MTFont+Internal.h */,
+				3F070AA11EC88DCB003BFB3A /* MTFontMathTable.h */,
+				3F070AA21EC88DCB003BFB3A /* MTFontMathTable.m */,
+				3F070AA31EC88DCB003BFB3A /* MTMathListDisplayInternal.h */,
+				3F070AA41EC88DCB003BFB3A /* MTTypesetter.h */,
+				3F070AA51EC88DCB003BFB3A /* MTTypesetter.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
 		3F3E5FD11EA3D518006274C1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +375,8 @@
 				F2C9BDA81E8E55890030A24A /* UITableView+Speech.swift */,
 				F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */,
 				F2C9BE2B1E8E7C860030A24A /* CacheHelper.swift */,
+				3F937DCF1EC87E160044803F /* CacheKey.swift */,
+				3F937DD11EC880F70044803F /* Dictionary+Speech.swift */,
 				F2C9BE341E8FB0040030A24A /* MBProgressHUD+Speech.swift */,
 				3F3E5FDA1EA5124D006274C1 /* UIScreen+Speech.swift */,
 				3F3E5FDC1EA51788006274C1 /* UIView+Speech.swift */,
@@ -275,6 +400,7 @@
 		3F3E600E1EA79631006274C1 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				3F070A911EC88DCB003BFB3A /* iosMath */,
 				3F3E600F1EA79631006274C1 /* RxGesture */,
 			);
 			path = Vendor;
@@ -567,17 +693,23 @@
 				3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */,
 				F2C9BE2C1E8E7C860030A24A /* CacheHelper.swift in Sources */,
 				8686E1C51E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift in Sources */,
+				3F070AC31EC88DCB003BFB3A /* MTMathListDisplay.m in Sources */,
+				3F070ABF1EC88DCB003BFB3A /* MTTypesetter.m in Sources */,
 				F2C9BDC31E8E55890030A24A /* String+Speed.swift in Sources */,
 				F2C9BDBA1E8E55890030A24A /* AppDelegate.swift in Sources */,
 				3F3E5FD71EA463D6006274C1 /* WordInputView.swift in Sources */,
+				3F937DD01EC87E160044803F /* CacheKey.swift in Sources */,
 				F2C9BDCA1E8E55890030A24A /* ToolBarView.swift in Sources */,
+				3F070ABE1EC88DCB003BFB3A /* MTFontMathTable.m in Sources */,
 				F2C9BDC21E8E55890030A24A /* Log.swift in Sources */,
+				3F070AC61EC88DCB003BFB3A /* NSColor+HexString.m in Sources */,
 				F2C9BE2E1E8E7EC20030A24A /* SettingViewController.swift in Sources */,
 				3F3E603D1EA836EF006274C1 /* OpenAudioStreamCell.swift in Sources */,
 				3F3E602D1EA79632006274C1 /* UIScreenEdgePanGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E602A1EA79632006274C1 /* UIPanGestureRecognizer+RxGesture.swift in Sources */,
 				F2C9BDC61E8E55890030A24A /* ViewIdentifierReuseable.swift in Sources */,
 				3F3E602F1EA79632006274C1 /* UITapGestureRecognizer+RxGesture.swift in Sources */,
+				3F070AC41EC88DCB003BFB3A /* MTMathUILabel.m in Sources */,
 				3F3E60261EA79632006274C1 /* GestureFactory.swift in Sources */,
 				F2C9BDBD1E8E55890030A24A /* Config.swift in Sources */,
 				F2C9BDC41E8E55890030A24A /* UIAlertController+Speech.swift in Sources */,
@@ -585,27 +717,39 @@
 				3F3E60391EA79632006274C1 /* View+RxGesture.swift in Sources */,
 				3F3E602E1EA79632006274C1 /* UISwipeGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E602C1EA79632006274C1 /* UIRotationGestureRecognizer+RxGesture.swift in Sources */,
+				3F070AC51EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m in Sources */,
 				3F3E5FD01EA3C86E006274C1 /* SettingCell.swift in Sources */,
 				F2C9BDC81E8E55890030A24A /* ISRDataHelper.m in Sources */,
+				3F070AC01EC88DCB003BFB3A /* MTFont.m in Sources */,
 				8686E1DC1E9125C70083AC54 /* RecordState.swift in Sources */,
 				F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */,
+				3F070AC71EC88DCB003BFB3A /* NSView+backgroundColor.m in Sources */,
+				3F937DD21EC880F70044803F /* Dictionary+Speech.swift in Sources */,
 				3F3E60371EA79632006274C1 /* PermissiveGestureRecognizerDelegate.swift in Sources */,
+				3F070AC21EC88DCB003BFB3A /* MTLabel.m in Sources */,
+				3F070ABA1EC88DCB003BFB3A /* MTMathList.m in Sources */,
 				3F3E60431EAC7B68006274C1 /* SettingModel.swift in Sources */,
 				F2C9BDBE1E8E55890030A24A /* SpeechConfig.swift in Sources */,
 				F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */,
+				3F070AC11EC88DCB003BFB3A /* MTFontManager.m in Sources */,
 				3F3E602B1EA79632006274C1 /* UIPinchGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E5FDB1EA5124D006274C1 /* UIScreen+Speech.swift in Sources */,
 				3F3E5FDF1EA51A18006274C1 /* UIImage+Speech.swift in Sources */,
 				3F3E60271EA79632006274C1 /* TransformGestureRecognizers.swift in Sources */,
+				3F070ABD1EC88DCB003BFB3A /* MTUnicode.m in Sources */,
 				F2C9BDCB1E8E55890030A24A /* WaitingVoiceView.swift in Sources */,
 				F2C9BDC01E8E55890030A24A /* MainViewController.swift in Sources */,
 				3F3E60291EA79632006274C1 /* UILongPressGestureRecognizer+RxGesture.swift in Sources */,
+				3F070AB91EC88DCB003BFB3A /* MTMathAtomFactory.m in Sources */,
 				3F3E5FDD1EA51788006274C1 /* UIView+Speech.swift in Sources */,
 				F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */,
 				3F3E60381EA79632006274C1 /* SharedTypes.swift in Sources */,
 				F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */,
+				3F070ABB1EC88DCB003BFB3A /* MTMathListBuilder.m in Sources */,
 				3F3E60481EAC80A6006274C1 /* UserDefaultable.swift in Sources */,
 				3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */,
+				3F070ABC1EC88DCB003BFB3A /* MTMathListIndex.m in Sources */,
+				3F070AC81EC88DCB003BFB3A /* UIColor+HexString.m in Sources */,
 				3F3E60281EA79632006274C1 /* UIGestureRecognizer+RxGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
