@@ -32,14 +32,4 @@ extension UIView {
       }
     }
   }
-  
-//  - (void)changeInputAccessoryView:(UIView *)inputAccessoryView toHeight:(CGFloat)height {
-//  for (NSLayoutConstraint *constraint in [inputAccessoryView constraints]) {
-//  if (constraint.firstAttribute == NSLayoutAttributeHeight) {
-//  constraint.constant = height;
-//  [inputAccessoryView layoutIfNeeded];
-//  break;
-//  }
-//  }
-//  }
 }
