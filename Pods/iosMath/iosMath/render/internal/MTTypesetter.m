@@ -47,7 +47,6 @@ NSArray* getInterElementSpaces() {
 // Get's the index for the given type. If row is true, the index is for the row (i.e. left element) otherwise it is for the column (right element)
 NSUInteger getInterElementSpaceArrayIndexForType(MTMathAtomType type, BOOL row) {
     switch (type) {
-        case kMTMathAtomColor:
         case kMTMathAtomOrdinary:
         case kMTMathAtomPlaceholder:   // A placeholder is treated as ordinary
             return 0;
@@ -613,20 +612,6 @@ static void getBboxDetails(CGRect bbox, CGFloat* ascent, CGFloat* descent)
                 // We need to preserve the prevNode for any interelement space changes.
                 // so we skip to the next node.
                 continue;
-            }
-                
-            case kMTMathAtomColor: {
-                // stash the existing layout
-                if (_currentLine.length > 0) {
-                    [self addDisplayLine];
-                }
-                MTMathColor* colorAtom = (MTMathColor*) atom;
-                MTDisplay* display = [MTTypesetter createLineForMathList:colorAtom.innerList font:_font style:_style];
-                display.localTextColor = [MTColor colorFromHexString:colorAtom.colorString];
-                display.position = _currentPosition;
-                _currentPosition.x += display.width;
-                [_displayAtoms addObject:display];
-                break;
             }
                 
             case kMTMathAtomRadical: {
@@ -1756,7 +1741,7 @@ static const CGFloat kJotMultiplier = 0.3; // A jot is 3pt for a 10pt font.
         NSMutableArray<MTDisplay*>* colDisplays = [NSMutableArray arrayWithCapacity:row.count];
         [displays addObject:colDisplays];
         for (int i = 0; i < row.count; i++) {
-            MTMathListDisplay* disp = [MTTypesetter createLineForMathList:row[i] font:_font style:_style cramped:NO];
+            MTMathListDisplay* disp = [MTTypesetter createLineForMathList:row[i] font:_font style:_style];
             columnWidths[i] = MAX(disp.width, columnWidths[i]);
             [colDisplays addObject:disp];
         };

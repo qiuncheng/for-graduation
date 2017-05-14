@@ -7,4 +7,3 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "ISRDataHelper.h"
 #import <YYCache/YYCache.h>
-#import "IosMath.h"

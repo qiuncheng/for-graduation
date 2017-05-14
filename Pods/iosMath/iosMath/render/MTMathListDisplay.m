@@ -200,13 +200,7 @@ static BOOL isIos6Supported() {
     // Set the color on all subdisplays
     [super setTextColor:textColor];
     for (MTDisplay* displayAtom in self.subDisplays) {
-        // set the global color, if there is no local color
-        if(displayAtom.localTextColor == nil) {
-            displayAtom.textColor = textColor;
-        } else {
-            displayAtom.textColor = displayAtom.localTextColor;
-        }
-        
+        displayAtom.textColor = textColor;
     }
 }
 

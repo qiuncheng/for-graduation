@@ -7,22 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F070AB91EC88DCB003BFB3A /* MTMathAtomFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A951EC88DCB003BFB3A /* MTMathAtomFactory.m */; };
-		3F070ABA1EC88DCB003BFB3A /* MTMathList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A971EC88DCB003BFB3A /* MTMathList.m */; };
-		3F070ABB1EC88DCB003BFB3A /* MTMathListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A991EC88DCB003BFB3A /* MTMathListBuilder.m */; };
-		3F070ABC1EC88DCB003BFB3A /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A9B1EC88DCB003BFB3A /* MTMathListIndex.m */; };
-		3F070ABD1EC88DCB003BFB3A /* MTUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070A9D1EC88DCB003BFB3A /* MTUnicode.m */; };
-		3F070ABE1EC88DCB003BFB3A /* MTFontMathTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AA21EC88DCB003BFB3A /* MTFontMathTable.m */; };
-		3F070ABF1EC88DCB003BFB3A /* MTTypesetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AA51EC88DCB003BFB3A /* MTTypesetter.m */; };
-		3F070AC01EC88DCB003BFB3A /* MTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AA81EC88DCB003BFB3A /* MTFont.m */; };
-		3F070AC11EC88DCB003BFB3A /* MTFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AAA1EC88DCB003BFB3A /* MTFontManager.m */; };
-		3F070AC21EC88DCB003BFB3A /* MTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AAC1EC88DCB003BFB3A /* MTLabel.m */; };
-		3F070AC31EC88DCB003BFB3A /* MTMathListDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AAE1EC88DCB003BFB3A /* MTMathListDisplay.m */; };
-		3F070AC41EC88DCB003BFB3A /* MTMathUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB01EC88DCB003BFB3A /* MTMathUILabel.m */; };
-		3F070AC51EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB21EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m */; };
-		3F070AC61EC88DCB003BFB3A /* NSColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB41EC88DCB003BFB3A /* NSColor+HexString.m */; };
-		3F070AC71EC88DCB003BFB3A /* NSView+backgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB61EC88DCB003BFB3A /* NSView+backgroundColor.m */; };
-		3F070AC81EC88DCB003BFB3A /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AB81EC88DCB003BFB3A /* UIColor+HexString.m */; };
+		316D8FCA74AF7C7B0BB55115 /* Pods_SpeechRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6EF50D547DB881435C6D59 /* Pods_SpeechRecognition.framework */; };
 		3F3E5FD01EA3C86E006274C1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */; };
 		3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */; };
 		3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */; };
@@ -62,6 +47,7 @@
 		8686E1D71E90BEEC0083AC54 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8686E1C61E90B66C0083AC54 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8686E1D91E90BEED0083AC54 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8686E1C71E90B66C0083AC54 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8686E1DC1E9125C70083AC54 /* RecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8686E1DB1E9125C70083AC54 /* RecordState.swift */; };
+		896974FE96E77AD84357F30C /* Pods_SpeechRecognitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFD3F24816C419ECDE61BCC /* Pods_SpeechRecognitionTests.framework */; };
 		F22FBD231E7FD7790006C753 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E46611E76BEDC0051F0EA /* AVFoundation.framework */; };
 		F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465B1E76BEA40051F0EA /* iflyMSC.framework */; };
 		F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F23E465D1E76BECD0051F0EA /* libz.tbd */; };
@@ -134,42 +120,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3F070A921EC88DCB003BFB3A /* IosMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosMath.h; sourceTree = "<group>"; };
-		3F070A941EC88DCB003BFB3A /* MTMathAtomFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathAtomFactory.h; sourceTree = "<group>"; };
-		3F070A951EC88DCB003BFB3A /* MTMathAtomFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathAtomFactory.m; sourceTree = "<group>"; };
-		3F070A961EC88DCB003BFB3A /* MTMathList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathList.h; sourceTree = "<group>"; };
-		3F070A971EC88DCB003BFB3A /* MTMathList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathList.m; sourceTree = "<group>"; };
-		3F070A981EC88DCB003BFB3A /* MTMathListBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListBuilder.h; sourceTree = "<group>"; };
-		3F070A991EC88DCB003BFB3A /* MTMathListBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListBuilder.m; sourceTree = "<group>"; };
-		3F070A9A1EC88DCB003BFB3A /* MTMathListIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListIndex.h; sourceTree = "<group>"; };
-		3F070A9B1EC88DCB003BFB3A /* MTMathListIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListIndex.m; sourceTree = "<group>"; };
-		3F070A9C1EC88DCB003BFB3A /* MTUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTUnicode.h; sourceTree = "<group>"; };
-		3F070A9D1EC88DCB003BFB3A /* MTUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTUnicode.m; sourceTree = "<group>"; };
-		3F070AA01EC88DCB003BFB3A /* MTFont+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTFont+Internal.h"; sourceTree = "<group>"; };
-		3F070AA11EC88DCB003BFB3A /* MTFontMathTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFontMathTable.h; sourceTree = "<group>"; };
-		3F070AA21EC88DCB003BFB3A /* MTFontMathTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFontMathTable.m; sourceTree = "<group>"; };
-		3F070AA31EC88DCB003BFB3A /* MTMathListDisplayInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListDisplayInternal.h; sourceTree = "<group>"; };
-		3F070AA41EC88DCB003BFB3A /* MTTypesetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTypesetter.h; sourceTree = "<group>"; };
-		3F070AA51EC88DCB003BFB3A /* MTTypesetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTypesetter.m; sourceTree = "<group>"; };
-		3F070AA61EC88DCB003BFB3A /* MTConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConfig.h; sourceTree = "<group>"; };
-		3F070AA71EC88DCB003BFB3A /* MTFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFont.h; sourceTree = "<group>"; };
-		3F070AA81EC88DCB003BFB3A /* MTFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFont.m; sourceTree = "<group>"; };
-		3F070AA91EC88DCB003BFB3A /* MTFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFontManager.h; sourceTree = "<group>"; };
-		3F070AAA1EC88DCB003BFB3A /* MTFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFontManager.m; sourceTree = "<group>"; };
-		3F070AAB1EC88DCB003BFB3A /* MTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLabel.h; sourceTree = "<group>"; };
-		3F070AAC1EC88DCB003BFB3A /* MTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLabel.m; sourceTree = "<group>"; };
-		3F070AAD1EC88DCB003BFB3A /* MTMathListDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathListDisplay.h; sourceTree = "<group>"; };
-		3F070AAE1EC88DCB003BFB3A /* MTMathListDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathListDisplay.m; sourceTree = "<group>"; };
-		3F070AAF1EC88DCB003BFB3A /* MTMathUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMathUILabel.h; sourceTree = "<group>"; };
-		3F070AB01EC88DCB003BFB3A /* MTMathUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMathUILabel.m; sourceTree = "<group>"; };
-		3F070AB11EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+addLineToPoint.h"; sourceTree = "<group>"; };
-		3F070AB21EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+addLineToPoint.m"; sourceTree = "<group>"; };
-		3F070AB31EC88DCB003BFB3A /* NSColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+HexString.h"; sourceTree = "<group>"; };
-		3F070AB41EC88DCB003BFB3A /* NSColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+HexString.m"; sourceTree = "<group>"; };
-		3F070AB51EC88DCB003BFB3A /* NSView+backgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+backgroundColor.h"; sourceTree = "<group>"; };
-		3F070AB61EC88DCB003BFB3A /* NSView+backgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+backgroundColor.m"; sourceTree = "<group>"; };
-		3F070AB71EC88DCB003BFB3A /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
-		3F070AB81EC88DCB003BFB3A /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		06A3ED29B4D6E16D6F31CB3B /* Pods-SpeechRecognitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognitionTests/Pods-SpeechRecognitionTests.release.xcconfig"; sourceTree = "<group>"; };
+		0D6EF50D547DB881435C6D59 /* Pods_SpeechRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B21D86074D866E3C6480C25 /* Pods-SpeechRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognition.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognition/Pods-SpeechRecognition.release.xcconfig"; sourceTree = "<group>"; };
 		3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploaderManager.swift; sourceTree = "<group>"; };
 		3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerManager.swift; sourceTree = "<group>"; };
@@ -196,6 +149,7 @@
 		3F3E60471EAC80A6006274C1 /* UserDefaultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultable.swift; sourceTree = "<group>"; };
 		3F937DCF1EC87E160044803F /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
 		3F937DD11EC880F70044803F /* Dictionary+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Speech.swift"; sourceTree = "<group>"; };
+		47FEE8E321294CAF26BF4DCA /* Pods-SpeechRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognition/Pods-SpeechRecognition.debug.xcconfig"; sourceTree = "<group>"; };
 		8686E1C41E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxToolbarViewDelegateProxy.swift; sourceTree = "<group>"; };
 		8686E1C61E90B66C0083AC54 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		8686E1C71E90B66C0083AC54 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
@@ -247,6 +201,8 @@
 		F2C9BE2D1E8E7EC20030A24A /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F2C9BE341E8FB0040030A24A /* MBProgressHUD+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Speech.swift"; sourceTree = "<group>"; };
 		F2DEA0F71E7AC30D00B4104D /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
+		FAFD3F24816C419ECDE61BCC /* Pods_SpeechRecognitionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechRecognitionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA912A84E7BC498ECC4A709 /* Pods-SpeechRecognitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognitionTests/Pods-SpeechRecognitionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +232,7 @@
 				F23E465E1E76BECD0051F0EA /* libz.tbd in Frameworks */,
 				F23E465C1E76BEA40051F0EA /* iflyMSC.framework in Frameworks */,
 				3F3E60451EAC7F14006274C1 /* RxDataSources.framework in Frameworks */,
+				316D8FCA74AF7C7B0BB55115 /* Pods_SpeechRecognition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,77 +240,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896974FE96E77AD84357F30C /* Pods_SpeechRecognitionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F070A911EC88DCB003BFB3A /* iosMath */ = {
+		3AF668095649C55EE604BB2B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3F070A921EC88DCB003BFB3A /* IosMath.h */,
-				3F070A931EC88DCB003BFB3A /* lib */,
-				3F070A9E1EC88DCB003BFB3A /* render */,
+				47FEE8E321294CAF26BF4DCA /* Pods-SpeechRecognition.debug.xcconfig */,
+				3B21D86074D866E3C6480C25 /* Pods-SpeechRecognition.release.xcconfig */,
+				FBA912A84E7BC498ECC4A709 /* Pods-SpeechRecognitionTests.debug.xcconfig */,
+				06A3ED29B4D6E16D6F31CB3B /* Pods-SpeechRecognitionTests.release.xcconfig */,
 			);
-			path = iosMath;
-			sourceTree = "<group>";
-		};
-		3F070A931EC88DCB003BFB3A /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				3F070A941EC88DCB003BFB3A /* MTMathAtomFactory.h */,
-				3F070A951EC88DCB003BFB3A /* MTMathAtomFactory.m */,
-				3F070A961EC88DCB003BFB3A /* MTMathList.h */,
-				3F070A971EC88DCB003BFB3A /* MTMathList.m */,
-				3F070A981EC88DCB003BFB3A /* MTMathListBuilder.h */,
-				3F070A991EC88DCB003BFB3A /* MTMathListBuilder.m */,
-				3F070A9A1EC88DCB003BFB3A /* MTMathListIndex.h */,
-				3F070A9B1EC88DCB003BFB3A /* MTMathListIndex.m */,
-				3F070A9C1EC88DCB003BFB3A /* MTUnicode.h */,
-				3F070A9D1EC88DCB003BFB3A /* MTUnicode.m */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		3F070A9E1EC88DCB003BFB3A /* render */ = {
-			isa = PBXGroup;
-			children = (
-				3F070A9F1EC88DCB003BFB3A /* internal */,
-				3F070AA61EC88DCB003BFB3A /* MTConfig.h */,
-				3F070AA71EC88DCB003BFB3A /* MTFont.h */,
-				3F070AA81EC88DCB003BFB3A /* MTFont.m */,
-				3F070AA91EC88DCB003BFB3A /* MTFontManager.h */,
-				3F070AAA1EC88DCB003BFB3A /* MTFontManager.m */,
-				3F070AAB1EC88DCB003BFB3A /* MTLabel.h */,
-				3F070AAC1EC88DCB003BFB3A /* MTLabel.m */,
-				3F070AAD1EC88DCB003BFB3A /* MTMathListDisplay.h */,
-				3F070AAE1EC88DCB003BFB3A /* MTMathListDisplay.m */,
-				3F070AAF1EC88DCB003BFB3A /* MTMathUILabel.h */,
-				3F070AB01EC88DCB003BFB3A /* MTMathUILabel.m */,
-				3F070AB11EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.h */,
-				3F070AB21EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m */,
-				3F070AB31EC88DCB003BFB3A /* NSColor+HexString.h */,
-				3F070AB41EC88DCB003BFB3A /* NSColor+HexString.m */,
-				3F070AB51EC88DCB003BFB3A /* NSView+backgroundColor.h */,
-				3F070AB61EC88DCB003BFB3A /* NSView+backgroundColor.m */,
-				3F070AB71EC88DCB003BFB3A /* UIColor+HexString.h */,
-				3F070AB81EC88DCB003BFB3A /* UIColor+HexString.m */,
-			);
-			path = render;
-			sourceTree = "<group>";
-		};
-		3F070A9F1EC88DCB003BFB3A /* internal */ = {
-			isa = PBXGroup;
-			children = (
-				3F070AA01EC88DCB003BFB3A /* MTFont+Internal.h */,
-				3F070AA11EC88DCB003BFB3A /* MTFontMathTable.h */,
-				3F070AA21EC88DCB003BFB3A /* MTFontMathTable.m */,
-				3F070AA31EC88DCB003BFB3A /* MTMathListDisplayInternal.h */,
-				3F070AA41EC88DCB003BFB3A /* MTTypesetter.h */,
-				3F070AA51EC88DCB003BFB3A /* MTTypesetter.m */,
-			);
-			path = internal;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		3F3E5FD11EA3D518006274C1 /* Manager */ = {
@@ -400,7 +302,6 @@
 		3F3E600E1EA79631006274C1 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				3F070A911EC88DCB003BFB3A /* iosMath */,
 				3F3E600F1EA79631006274C1 /* RxGesture */,
 			);
 			path = Vendor;
@@ -461,6 +362,7 @@
 				F2C9BDD51E8E56650030A24A /* SpeechRecognitionTests */,
 				F23E46281E76BD440051F0EA /* Products */,
 				F23E465A1E76BE9B0051F0EA /* Frameworks */,
+				3AF668095649C55EE604BB2B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -499,6 +401,8 @@
 				F23E465F1E76BED50051F0EA /* CoreLocation.framework */,
 				F23E465D1E76BECD0051F0EA /* libz.tbd */,
 				F23E465B1E76BEA40051F0EA /* iflyMSC.framework */,
+				0D6EF50D547DB881435C6D59 /* Pods_SpeechRecognition.framework */,
+				FAFD3F24816C419ECDE61BCC /* Pods_SpeechRecognitionTests.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -592,10 +496,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F23E464F1E76BD440051F0EA /* Build configuration list for PBXNativeTarget "SpeechRecognition" */;
 			buildPhases = (
+				10449BF7D0C17BCD3DFF6A4F /* [CP] Check Pods Manifest.lock */,
 				F23E46231E76BD440051F0EA /* Sources */,
 				F23E46241E76BD440051F0EA /* Frameworks */,
 				F23E46251E76BD440051F0EA /* Resources */,
 				F2DEA0FD1E7AC39900B4104D /* CopyFiles */,
+				82309C216D805D26EEA15EA1 /* [CP] Embed Pods Frameworks */,
+				ED23D0D3328FCCFFC5074B7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -610,9 +517,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2C9BDDB1E8E56650030A24A /* Build configuration list for PBXNativeTarget "SpeechRecognitionTests" */;
 			buildPhases = (
+				8A883A449F98D44EC2C72E75 /* [CP] Check Pods Manifest.lock */,
 				F2C9BDD01E8E56650030A24A /* Sources */,
 				F2C9BDD11E8E56650030A24A /* Frameworks */,
 				F2C9BDD21E8E56650030A24A /* Resources */,
+				69540239DD6C8941787B6EC6 /* [CP] Embed Pods Frameworks */,
+				3EA122011A88AB153E857464 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -685,6 +595,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10449BF7D0C17BCD3DFF6A4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3EA122011A88AB153E857464 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognitionTests/Pods-SpeechRecognitionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69540239DD6C8941787B6EC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognitionTests/Pods-SpeechRecognitionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82309C216D805D26EEA15EA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognition/Pods-SpeechRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A883A449F98D44EC2C72E75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED23D0D3328FCCFFC5074B7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechRecognition/Pods-SpeechRecognition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F23E46231E76BD440051F0EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -693,23 +696,18 @@
 				3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */,
 				F2C9BE2C1E8E7C860030A24A /* CacheHelper.swift in Sources */,
 				8686E1C51E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift in Sources */,
-				3F070AC31EC88DCB003BFB3A /* MTMathListDisplay.m in Sources */,
-				3F070ABF1EC88DCB003BFB3A /* MTTypesetter.m in Sources */,
 				F2C9BDC31E8E55890030A24A /* String+Speed.swift in Sources */,
 				F2C9BDBA1E8E55890030A24A /* AppDelegate.swift in Sources */,
 				3F3E5FD71EA463D6006274C1 /* WordInputView.swift in Sources */,
 				3F937DD01EC87E160044803F /* CacheKey.swift in Sources */,
 				F2C9BDCA1E8E55890030A24A /* ToolBarView.swift in Sources */,
-				3F070ABE1EC88DCB003BFB3A /* MTFontMathTable.m in Sources */,
 				F2C9BDC21E8E55890030A24A /* Log.swift in Sources */,
-				3F070AC61EC88DCB003BFB3A /* NSColor+HexString.m in Sources */,
 				F2C9BE2E1E8E7EC20030A24A /* SettingViewController.swift in Sources */,
 				3F3E603D1EA836EF006274C1 /* OpenAudioStreamCell.swift in Sources */,
 				3F3E602D1EA79632006274C1 /* UIScreenEdgePanGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E602A1EA79632006274C1 /* UIPanGestureRecognizer+RxGesture.swift in Sources */,
 				F2C9BDC61E8E55890030A24A /* ViewIdentifierReuseable.swift in Sources */,
 				3F3E602F1EA79632006274C1 /* UITapGestureRecognizer+RxGesture.swift in Sources */,
-				3F070AC41EC88DCB003BFB3A /* MTMathUILabel.m in Sources */,
 				3F3E60261EA79632006274C1 /* GestureFactory.swift in Sources */,
 				F2C9BDBD1E8E55890030A24A /* Config.swift in Sources */,
 				F2C9BDC41E8E55890030A24A /* UIAlertController+Speech.swift in Sources */,
@@ -717,39 +715,28 @@
 				3F3E60391EA79632006274C1 /* View+RxGesture.swift in Sources */,
 				3F3E602E1EA79632006274C1 /* UISwipeGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E602C1EA79632006274C1 /* UIRotationGestureRecognizer+RxGesture.swift in Sources */,
-				3F070AC51EC88DCB003BFB3A /* NSBezierPath+addLineToPoint.m in Sources */,
 				3F3E5FD01EA3C86E006274C1 /* SettingCell.swift in Sources */,
 				F2C9BDC81E8E55890030A24A /* ISRDataHelper.m in Sources */,
-				3F070AC01EC88DCB003BFB3A /* MTFont.m in Sources */,
 				8686E1DC1E9125C70083AC54 /* RecordState.swift in Sources */,
 				F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */,
-				3F070AC71EC88DCB003BFB3A /* NSView+backgroundColor.m in Sources */,
 				3F937DD21EC880F70044803F /* Dictionary+Speech.swift in Sources */,
 				3F3E60371EA79632006274C1 /* PermissiveGestureRecognizerDelegate.swift in Sources */,
-				3F070AC21EC88DCB003BFB3A /* MTLabel.m in Sources */,
-				3F070ABA1EC88DCB003BFB3A /* MTMathList.m in Sources */,
 				3F3E60431EAC7B68006274C1 /* SettingModel.swift in Sources */,
 				F2C9BDBE1E8E55890030A24A /* SpeechConfig.swift in Sources */,
 				F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */,
-				3F070AC11EC88DCB003BFB3A /* MTFontManager.m in Sources */,
 				3F3E602B1EA79632006274C1 /* UIPinchGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E5FDB1EA5124D006274C1 /* UIScreen+Speech.swift in Sources */,
 				3F3E5FDF1EA51A18006274C1 /* UIImage+Speech.swift in Sources */,
 				3F3E60271EA79632006274C1 /* TransformGestureRecognizers.swift in Sources */,
-				3F070ABD1EC88DCB003BFB3A /* MTUnicode.m in Sources */,
 				F2C9BDCB1E8E55890030A24A /* WaitingVoiceView.swift in Sources */,
 				F2C9BDC01E8E55890030A24A /* MainViewController.swift in Sources */,
 				3F3E60291EA79632006274C1 /* UILongPressGestureRecognizer+RxGesture.swift in Sources */,
-				3F070AB91EC88DCB003BFB3A /* MTMathAtomFactory.m in Sources */,
 				3F3E5FDD1EA51788006274C1 /* UIView+Speech.swift in Sources */,
 				F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */,
 				3F3E60381EA79632006274C1 /* SharedTypes.swift in Sources */,
 				F2C9BDC91E8E55890030A24A /* SpeedResultCell.swift in Sources */,
-				3F070ABB1EC88DCB003BFB3A /* MTMathListBuilder.m in Sources */,
 				3F3E60481EAC80A6006274C1 /* UserDefaultable.swift in Sources */,
 				3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */,
-				3F070ABC1EC88DCB003BFB3A /* MTMathListIndex.m in Sources */,
-				3F070AC81EC88DCB003BFB3A /* UIColor+HexString.m in Sources */,
 				3F3E60281EA79632006274C1 /* UIGestureRecognizer+RxGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,6 +864,7 @@
 		};
 		F23E46501E76BD440051F0EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47FEE8E321294CAF26BF4DCA /* Pods-SpeechRecognition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -899,6 +887,7 @@
 		};
 		F23E46511E76BD440051F0EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B21D86074D866E3C6480C25 /* Pods-SpeechRecognition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -920,6 +909,7 @@
 		};
 		F2C9BDDC1E8E56650030A24A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA912A84E7BC498ECC4A709 /* Pods-SpeechRecognitionTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SpeechRecognitionTests/Info.plist;
@@ -933,6 +923,7 @@
 		};
 		F2C9BDDD1E8E56650030A24A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06A3ED29B4D6E16D6F31CB3B /* Pods-SpeechRecognitionTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SpeechRecognitionTests/Info.plist;
