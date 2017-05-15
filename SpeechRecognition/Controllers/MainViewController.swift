@@ -19,6 +19,7 @@ class MainViewController: UIViewController, ToolBarViewDelegate, UserDefaultable
   fileprivate weak var imageView: UIImageView?
   fileprivate var tempHUD: MBProgressHUD?
   fileprivate var animatedView: WaitingVoiceView?
+  fileprivate var mathView: MathView!
 
   fileprivate let disposedBag = DisposeBag()
 
@@ -133,6 +134,14 @@ class MainViewController: UIViewController, ToolBarViewDelegate, UserDefaultable
     tableView.rx
       .setDelegate(self)
       .addDisposableTo(disposedBag)
+    
+    /// math view
+    mathView = MathView()
+      .then({
+        $0.backgroundColor = UIColor(white: 1.0, alpha: 0.4)
+        $0.layer.borderColor = UIColor.black.cgColor
+        $0.layer.borderWidth = 1.0
+      })
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -269,6 +278,7 @@ extension MainViewController: IFlySpeechRecognizerDelegate {
     if let resultFromJson = ISRDataHelper.string(fromJson: resultStr),
       resultFromJson.characters.count > 1 {
       dataSources.value.append(resultFromJson)
+      showMathView(withLatex: resultFromJson)
     }
     tempHUD?.hide(animated: true)
     animatedView?.removeFromSuperview()
@@ -320,3 +330,16 @@ extension MainViewController: UITableViewDelegate {
   }
 }
 
+
+extension MainViewController {
+  fileprivate func showMathView(withLatex latex: String?) {
+    mathView.latex = latex
+    view.addSubview(mathView)
+    mathView.transform = CGAffineTransform.identity
+    mathView.snp.makeConstraints({ [unowned self] in
+      $0.bottom.equalTo(self.toolBarView!.snp.top)
+      $0.left.right.equalTo(self.view)
+      $0.height.equalTo(60)
+    })
+  }
+}

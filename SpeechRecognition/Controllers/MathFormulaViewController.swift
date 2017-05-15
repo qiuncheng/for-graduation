@@ -47,7 +47,7 @@ class MathFormulaViewController: UITableViewController, HUDAble {
         return (self.mathTextField.text, self.chineseTextField.text)
       })
       .subscribe(onNext: { (mathText, chineseText) in
-        CacheHelper.share.updateMathFormula(withValue: mathText!, forKey: chineseText!)
+        CacheHelper.share.updateMathFormula(withValue: chineseText!, forKey: mathText!)
         self.showHUD(in: self.view, title: "已保存", duration: 1.0)
         self.view.endEditing(true)
       })

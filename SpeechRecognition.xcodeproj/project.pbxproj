@@ -74,7 +74,7 @@
 		F2C9BDC01E8E55890030A24A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA21E8E55890030A24A /* MainViewController.swift */; };
 		F2C9BDC11E8E55890030A24A /* DispatchQueue+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA41E8E55890030A24A /* DispatchQueue+Speech.swift */; };
 		F2C9BDC21E8E55890030A24A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA51E8E55890030A24A /* Log.swift */; };
-		F2C9BDC31E8E55890030A24A /* String+Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA61E8E55890030A24A /* String+Speed.swift */; };
+		F2C9BDC31E8E55890030A24A /* String+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA61E8E55890030A24A /* String+Speech.swift */; };
 		F2C9BDC41E8E55890030A24A /* UIAlertController+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA71E8E55890030A24A /* UIAlertController+Speech.swift */; };
 		F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA81E8E55890030A24A /* UITableView+Speech.swift */; };
 		F2C9BDC61E8E55890030A24A /* ViewIdentifierReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */; };
@@ -188,7 +188,7 @@
 		F2C9BDA21E8E55890030A24A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F2C9BDA41E8E55890030A24A /* DispatchQueue+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Speech.swift"; sourceTree = "<group>"; };
 		F2C9BDA51E8E55890030A24A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		F2C9BDA61E8E55890030A24A /* String+Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Speed.swift"; sourceTree = "<group>"; };
+		F2C9BDA61E8E55890030A24A /* String+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Speech.swift"; sourceTree = "<group>"; };
 		F2C9BDA71E8E55890030A24A /* UIAlertController+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Speech.swift"; sourceTree = "<group>"; };
 		F2C9BDA81E8E55890030A24A /* UITableView+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Speech.swift"; sourceTree = "<group>"; };
 		F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifierReuseable.swift; sourceTree = "<group>"; };
@@ -278,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				F2C9BDA41E8E55890030A24A /* DispatchQueue+Speech.swift */,
-				F2C9BDA61E8E55890030A24A /* String+Speed.swift */,
+				F2C9BDA61E8E55890030A24A /* String+Speech.swift */,
 				F2C9BDA71E8E55890030A24A /* UIAlertController+Speech.swift */,
 				F2C9BDA81E8E55890030A24A /* UITableView+Speech.swift */,
 				F2C9BDA91E8E55890030A24A /* ViewIdentifierReuseable.swift */,
@@ -706,7 +706,7 @@
 				3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */,
 				F2C9BE2C1E8E7C860030A24A /* CacheHelper.swift in Sources */,
 				8686E1C51E90B5150083AC54 /* RxToolbarViewDelegateProxy.swift in Sources */,
-				F2C9BDC31E8E55890030A24A /* String+Speed.swift in Sources */,
+				F2C9BDC31E8E55890030A24A /* String+Speech.swift in Sources */,
 				F2C9BDBA1E8E55890030A24A /* AppDelegate.swift in Sources */,
 				3F3E5FD71EA463D6006274C1 /* WordInputView.swift in Sources */,
 				3F937DD01EC87E160044803F /* CacheKey.swift in Sources */,

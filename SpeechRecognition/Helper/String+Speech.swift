@@ -16,4 +16,14 @@ extension String {
   func getWidth(maxHeight height: CGFloat, font: UIFont) -> CGFloat {
     return self.boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: height), options: [.usesFontLeading, .usesLineFragmentOrigin], attributes: [NSFontAttributeName: font], context: nil).width
   }
+  
+  mutating func replace(withStr str: String, for forStr: String) -> String {
+    if let range = range(of: forStr) {
+      let result = replacingCharacters(in: range, with: str)
+      return result
+    }
+    else {
+        return self
+    }
+  }
 }
