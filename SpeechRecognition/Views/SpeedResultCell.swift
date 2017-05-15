@@ -10,7 +10,6 @@ import UIKit
 import SnapKit
 import Then
 import DynamicColor
-import iosMath
 
 class SpeedResultCell: UITableViewCell, ViewIdentifierReuseable {
   
@@ -19,7 +18,7 @@ class SpeedResultCell: UITableViewCell, ViewIdentifierReuseable {
       guard let content = contentText else {
         return
       }
-      self.contentLabel?.latex = content
+      self.contentLabel?.text = content
       let width = content.getWidth(maxHeight: 20, font: UIFont.systemFont(ofSize: 16))
       if width > 190 {
         let height = content.getHeight(maxWidth: 190, font: UIFont.systemFont(ofSize: 16))
@@ -36,7 +35,7 @@ class SpeedResultCell: UITableViewCell, ViewIdentifierReuseable {
   }
   
   fileprivate weak var avatarImageView: UIImageView?
-  var contentLabel: MTMathUILabel?
+  var contentLabel: UILabel?
   fileprivate var bgView: UIView?
   
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -62,11 +61,11 @@ class SpeedResultCell: UITableViewCell, ViewIdentifierReuseable {
     addSubview(bgView)
     self.bgView = bgView
     
-    let label = MTMathUILabel().then({
+    let label = UILabel().then({
       $0.textAlignment = .left
       $0.textColor = UIColor(hex: 0x232329)
-//      $0.font = UIFont.systemFont(ofSize: 16)
-//      $0.numberOfLines = 0
+      $0.font = UIFont.systemFont(ofSize: 16)
+      $0.numberOfLines = 0
     })
     addSubview(label)
     self.contentLabel = label

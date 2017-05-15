@@ -23,7 +23,8 @@ class MainViewController: UIViewController, ToolBarViewDelegate, UserDefaultable
   fileprivate let disposedBag = DisposeBag()
 
   fileprivate var dataSources = Variable([String]())
-
+  
+  /// 音频流识别过程中pcm文件地址
   fileprivate var pcmFilePath: String?
   /// 识别对象
   fileprivate var speechRecognizer: IFlySpeechRecognizer?
@@ -44,6 +45,15 @@ class MainViewController: UIViewController, ToolBarViewDelegate, UserDefaultable
     view.backgroundColor = UIColor(hex: 0x232329)
     navigationItem.title = "语音识别"
     navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: nil, action: nil)
+  
+    let leftItem = UIBarButtonItem(title: "清空", style: .plain, target: nil, action: nil)
+    self.navigationItem.leftBarButtonItem = leftItem
+    
+    leftItem.rx.tap
+      .subscribe(onNext: { [weak self] in
+        self?.dataSources.value.removeAll()
+      })
+      .disposed(by: disposedBag)
 
     let rightItem = UIBarButtonItem.init(title: "设置", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
     self.navigationItem.rightBarButtonItem = rightItem
@@ -242,6 +252,7 @@ extension MainViewController: HUDAble {
 extension MainViewController: IFlySpeechRecognizerDelegate {
   func onResults(_ results: [Any]!, isLast: Bool) {
     var resultStr = String()
+    print(results)
     guard let resultArray = results,
       let dict = resultArray.first as? [String: Any?] else {
         tempHUD?.hide(animated: false)

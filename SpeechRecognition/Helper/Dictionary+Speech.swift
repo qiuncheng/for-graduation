@@ -22,3 +22,8 @@ extension Dictionary where Value: Equatable {
 //let dict = ["a" : 1, "b" : 2, "c" : 1, "d" : 2]
 //let keys = dict.allKeys(forValue: 1)
 //print(keys) // [a, c]
+
+infix operator -->
+func -->(dict: Dictionary<String, [String]>, value: String) -> [String]? {
+  return dict.filter({ $1.contains(value) }).map { $0.0 }
+}

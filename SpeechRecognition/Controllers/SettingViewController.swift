@@ -14,17 +14,15 @@ import RxDataSources
 class SettingViewController: UIViewController, UITableViewDelegate, HUDAble, UserDefaultable {
   
   fileprivate weak var tableView: UITableView?
-  fileprivate var inputWordObservable = Variable.init(["上传词表", "启用音频流识别"])
+  fileprivate var inputWordObservable = Variable.init(["上传词表", "启用音频流识别", "映射数学公式"])
 //  fileprivate var openSwitchObservable = Variable.init([])
   fileprivate let disposeBag = DisposeBag()
   let manager = UploaderManager.manager
-
-  
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor.white
     title = "设置"
-    
     
     let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
       .then {
@@ -50,7 +48,7 @@ class SettingViewController: UIViewController, UITableViewDelegate, HUDAble, Use
           cell.openSwitch?.isHidden = true
           cell.textField?.isHidden = false
         }
-        else {
+        else if row == 1 {
           cell.openSwitch?.isHidden = false
           cell.textField?.isHidden = true
           cell.openSwitch?.isOn = self.isOpenAudioStream
@@ -61,6 +59,10 @@ class SettingViewController: UIViewController, UITableViewDelegate, HUDAble, Use
               self?.isOpenAudioStream = currentValue
             })
             .disposed(by: self.disposeBag)
+        }
+        else {
+          cell.openSwitch?.isHidden = true
+          cell.textField?.isHidden = true
         }
       }
       .disposed(by: disposeBag)
@@ -106,6 +108,12 @@ class SettingViewController: UIViewController, UITableViewDelegate, HUDAble, Use
               .disposed(by: self.disposeBag)
           }
         }
+        else if indexPath.section == 0 && indexPath.row == 2 {
+          if let mathSb = UIStoryboard(name: "MathFormula", bundle: nil).instantiateInitialViewController() as? MathFormulaViewController {
+            self.show(mathSb, sender: self)
+          }
+        }
+        
       })
       .addDisposableTo(disposeBag)
   }

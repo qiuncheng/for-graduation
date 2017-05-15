@@ -64,6 +64,4 @@ struct CacheHelper {
       CacheHelper.share.cacheForMathFormula?.setObject(temp as NSCoding, forKey: CacheKey.cacheForMathFormulaKey)
     }
   }
-  
-  
 }

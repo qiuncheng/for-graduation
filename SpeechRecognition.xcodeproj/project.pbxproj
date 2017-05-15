@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		316D8FCA74AF7C7B0BB55115 /* Pods_SpeechRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6EF50D547DB881435C6D59 /* Pods_SpeechRecognition.framework */; };
+		3F070AD01EC8B26E003BFB3A /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F070ACF1EC8B26E003BFB3A /* MathView.swift */; };
+		3F070AD81EC959D8003BFB3A /* MathFormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F070AD61EC959D8003BFB3A /* MathFormulaViewController.swift */; };
+		3F070ADB1EC95A69003BFB3A /* MathFormula.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F070ADA1EC95A69003BFB3A /* MathFormula.storyboard */; };
 		3F3E5FD01EA3C86E006274C1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */; };
 		3F3E5FD31EA3D531006274C1 /* UploaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */; };
 		3F3E5FD51EA3D547006274C1 /* RecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */; };
@@ -29,7 +32,7 @@
 		3F3E60381EA79632006274C1 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60241EA79632006274C1 /* SharedTypes.swift */; };
 		3F3E60391EA79632006274C1 /* View+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60251EA79632006274C1 /* View+RxGesture.swift */; };
 		3F3E603D1EA836EF006274C1 /* OpenAudioStreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E603C1EA836EF006274C1 /* OpenAudioStreamCell.swift */; };
-		3F3E60431EAC7B68006274C1 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60421EAC7B68006274C1 /* SettingModel.swift */; };
+		3F3E60431EAC7B68006274C1 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60421EAC7B68006274C1 /* SectionModel.swift */; };
 		3F3E60451EAC7F14006274C1 /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3E60401EAC7B47006274C1 /* RxDataSources.framework */; };
 		3F3E60461EAC7F14006274C1 /* RxDataSources.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F3E60401EAC7B47006274C1 /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F3E60481EAC80A6006274C1 /* UserDefaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E60471EAC80A6006274C1 /* UserDefaultable.swift */; };
@@ -123,6 +126,9 @@
 		06A3ED29B4D6E16D6F31CB3B /* Pods-SpeechRecognitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognitionTests/Pods-SpeechRecognitionTests.release.xcconfig"; sourceTree = "<group>"; };
 		0D6EF50D547DB881435C6D59 /* Pods_SpeechRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B21D86074D866E3C6480C25 /* Pods-SpeechRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognition.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognition/Pods-SpeechRecognition.release.xcconfig"; sourceTree = "<group>"; };
+		3F070ACF1EC8B26E003BFB3A /* MathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
+		3F070AD61EC959D8003BFB3A /* MathFormulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathFormulaViewController.swift; sourceTree = "<group>"; };
+		3F070ADA1EC95A69003BFB3A /* MathFormula.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MathFormula.storyboard; sourceTree = "<group>"; };
 		3F3E5FCF1EA3C86E006274C1 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		3F3E5FD21EA3D531006274C1 /* UploaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploaderManager.swift; sourceTree = "<group>"; };
 		3F3E5FD41EA3D547006274C1 /* RecognizerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizerManager.swift; sourceTree = "<group>"; };
@@ -145,7 +151,7 @@
 		3F3E60251EA79632006274C1 /* View+RxGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+RxGesture.swift"; sourceTree = "<group>"; };
 		3F3E603C1EA836EF006274C1 /* OpenAudioStreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAudioStreamCell.swift; sourceTree = "<group>"; };
 		3F3E60401EAC7B47006274C1 /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxDataSources.framework; sourceTree = "<group>"; };
-		3F3E60421EAC7B68006274C1 /* SettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		3F3E60421EAC7B68006274C1 /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		3F3E60471EAC80A6006274C1 /* UserDefaultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultable.swift; sourceTree = "<group>"; };
 		3F937DCF1EC87E160044803F /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
 		3F937DD11EC880F70044803F /* Dictionary+Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Speech.swift"; sourceTree = "<group>"; };
@@ -438,6 +444,8 @@
 				F2C9BDA11E8E55890030A24A /* MainNavigationController.swift */,
 				F2C9BDA21E8E55890030A24A /* MainViewController.swift */,
 				F2C9BE2D1E8E7EC20030A24A /* SettingViewController.swift */,
+				3F070AD61EC959D8003BFB3A /* MathFormulaViewController.swift */,
+				3F070ADA1EC95A69003BFB3A /* MathFormula.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -464,7 +472,7 @@
 		F2C9BDAF1E8E55890030A24A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				3F3E60421EAC7B68006274C1 /* SettingModel.swift */,
+				3F3E60421EAC7B68006274C1 /* SectionModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -474,6 +482,7 @@
 			children = (
 				3F3E603A1EA7990D006274C1 /* Cell */,
 				F2C9BDB21E8E55890030A24A /* ToolBarView.swift */,
+				3F070ACF1EC8B26E003BFB3A /* MathView.swift */,
 				F2C9BDB31E8E55890030A24A /* WaitingVoiceView.swift */,
 				3F3E5FD61EA463D6006274C1 /* WordInputView.swift */,
 			);
@@ -583,6 +592,7 @@
 			files = (
 				F2C9BDBB1E8E55890030A24A /* Assets.xcassets in Resources */,
 				F2C9BDBC1E8E55890030A24A /* LaunchScreen.storyboard in Resources */,
+				3F070ADB1EC95A69003BFB3A /* MathFormula.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,14 +725,16 @@
 				3F3E60391EA79632006274C1 /* View+RxGesture.swift in Sources */,
 				3F3E602E1EA79632006274C1 /* UISwipeGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E602C1EA79632006274C1 /* UIRotationGestureRecognizer+RxGesture.swift in Sources */,
+				3F070AD81EC959D8003BFB3A /* MathFormulaViewController.swift in Sources */,
 				3F3E5FD01EA3C86E006274C1 /* SettingCell.swift in Sources */,
 				F2C9BDC81E8E55890030A24A /* ISRDataHelper.m in Sources */,
 				8686E1DC1E9125C70083AC54 /* RecordState.swift in Sources */,
 				F2C9BDBF1E8E55890030A24A /* MainNavigationController.swift in Sources */,
 				3F937DD21EC880F70044803F /* Dictionary+Speech.swift in Sources */,
 				3F3E60371EA79632006274C1 /* PermissiveGestureRecognizerDelegate.swift in Sources */,
-				3F3E60431EAC7B68006274C1 /* SettingModel.swift in Sources */,
+				3F3E60431EAC7B68006274C1 /* SectionModel.swift in Sources */,
 				F2C9BDBE1E8E55890030A24A /* SpeechConfig.swift in Sources */,
+				3F070AD01EC8B26E003BFB3A /* MathView.swift in Sources */,
 				F2C9BDC51E8E55890030A24A /* UITableView+Speech.swift in Sources */,
 				3F3E602B1EA79632006274C1 /* UIPinchGestureRecognizer+RxGesture.swift in Sources */,
 				3F3E5FDB1EA5124D006274C1 /* UIScreen+Speech.swift in Sources */,
