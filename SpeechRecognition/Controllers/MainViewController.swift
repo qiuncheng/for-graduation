@@ -45,7 +45,7 @@ class MainViewController: UIViewController, ToolBarViewDelegate, UserDefaultable
     automaticallyAdjustsScrollViewInsets = false
     view.backgroundColor = UIColor(hex: 0x232329)
     navigationItem.title = "语音识别"
-    navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: nil, action: nil)
+//    navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "返回", style: .plain, target: nil, action: nil)
   
     let leftItem = UIBarButtonItem(title: "清空", style: .plain, target: nil, action: nil)
     self.navigationItem.leftBarButtonItem = leftItem
@@ -139,8 +139,8 @@ class MainViewController: UIViewController, ToolBarViewDelegate, UserDefaultable
     mathView = MathView()
       .then({
         $0.backgroundColor = UIColor(white: 1.0, alpha: 0.4)
-        $0.layer.borderColor = UIColor.black.cgColor
-        $0.layer.borderWidth = 1.0
+        $0.layer.borderColor = UIColor.lightGray.cgColor
+        $0.layer.borderWidth = 0.5
       })
   }
 

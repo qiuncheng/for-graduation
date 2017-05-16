@@ -64,19 +64,19 @@ class MathView: UIView {
       })
     })
     
-    dismissButton = UIButton()
+    dismissButton = UIButton(type: .system)
       .then({
-        $0.setTitle("取消", for: .normal)
-        $0.titleLabel?.font = UIFont.systemFont(ofSize: 14.0)
-        $0.setTitleColor(UIColor.black, for: .normal)
-        $0.setTitleColor(UIColor.gray, for: .highlighted)
+        $0.setImage(#imageLiteral(resourceName: "dismissButton"), for: .normal)
+        $0.contentMode = .scaleToFill
+        $0.tintColor = UIColor.black
       })
     addSubview(dismissButton)
     
     dismissButton.do({
       $0.snp.makeConstraints({
         $0.right.equalTo(-10)
-        $0.top.equalTo(10)
+        $0.top.equalTo(5)
+        $0.size.equalTo(20)
       })
     })
   }
@@ -86,20 +86,34 @@ class MathView: UIView {
       return
     }
     let tempDict = CacheHelper.share.mathFormulaObject
-//    tempDict.values.sorted(by: <#T##([String], [String]) -> Bool#>)
-    let str = tempDict.values.filter { strs in
-      return !strs.filter({ latex.contains($0) }).isEmpty
+    var values = [String]()
+    tempDict.values.forEach {
+      values.append(contentsOf: $0)
+    }
+    values = values.sorted { (str1, str2) -> Bool in
+      return str1.characters.count > str2.characters.count
     }
     
-    let strs = str.sorted { (strs0, strs1) -> Bool in
-      let str0 = strs0.first!
-      let str1 = strs1.first!
+    var tempLatex = latex
+    let str = values.filter {
+      let result = tempLatex.contains($0)
+      if result,
+        let range = tempLatex.range(of: $0) {
+        tempLatex.removeSubrange(range)
+      }
+      return result
+    }
+    
+    guard str.count > 0 else {
+      return
+    }
+    
+    let strs = str.sorted { (str0, str1) -> Bool in
       return latex.range(of: str0)!.lowerBound < latex.range(of: str1)!.lowerBound
     }
     
     var latexes = ""
-    for s in strs {
-      let value = s.first!
+    for value in strs {
       if let key = (tempDict --> value)?.first {
         if !latexes.contains(key) {
           latexes.append(key)
